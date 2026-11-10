@@ -1,0 +1,2759 @@
+
+/*******************************************************************************
+**                                                                            **
+** Copyright (C) Infineon Technologies (2019)                                 **
+**                                                                            **
+** All rights reserved.                                                       **
+**                                                                            **
+** This document contains proprietary information belonging to Infineon       **
+** Technologies. Passing on and copying of this document, and communication   **
+** of its contents is not permitted without prior written authorization.      **
+**                                                                            **
+********************************************************************************
+**                                                                            **
+**  FILENAME  : Fr_17_Eray_PBcfg.c                                            **
+**                                                                            **
+**  VERSION   : 15.0.0                                                        **
+**                                                                            **
+**  DATE, TIME: 2025-07-23, 09:42:16             !!!IGNORE-LINE!!!        **
+**                                                                            **
+**  GENERATOR : Build b191017-0938               !!!IGNORE-LINE!!!          **
+**                                                                            **
+**  BSW MODULE DECRIPTION : Fr_17_Eray.bmd                                    **
+**                                                                            **
+**  VARIANT   : Variant PB                                                    **
+**                                                                            **
+**  PLATFORM  : Infineon AURIX2G                                              **
+**                                                                            **
+**  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+**                                                                            **
+**  VENDOR    : Infineon Technologies                                         **
+**                                                                            **
+**  DESCRIPTION  : Fr configuration generated out of ECUC file                **
+**                                                                            **
+**  SPECIFICATION(S) : Specification of FlexRay Driver, AUTOSAR Release 4.2.2 **
+**                                                                            **
+**  MAY BE CHANGED BY USER : no                                               **
+**                                                                            **
+*******************************************************************************/
+
+
+
+/*******************************************************************************
+**  Include Section   **
+*******************************************************************************/
+/* Include module header File */
+#include "Fr_17_Eray.h"
+  
+/*******************************************************************************
+**  Inclusion File Check  **
+*******************************************************************************/
+
+
+/*******************************************************************************
+**  Private Macro Definitions **
+*******************************************************************************/
+
+/*******************************************************************************
+**  Private Type Definitions  **
+*******************************************************************************/
+
+
+/*******************************************************************************
+**  Private Function Declarations **
+*******************************************************************************/
+
+
+/*******************************************************************************
+**  Global Function Declarations   **
+*******************************************************************************/
+
+/*******************************************************************************
+  Global Constant Definitions
+*******************************************************************************/
+
+/*
+@@@@@@START_OF_BUFFER_RECONFIG_DUMP@@@@@@
+MSG_RAM_SIZE_TOTAL 8192
+MSG_BUFFER_COUNT_MAX 128
+HW_BUFFER_RECONFIGURATION_USED NO, Controller Index:0 634 32-bit words
+KEY_SLOT_LPDU,1,0,64
+DYNAMIC_LPDU,18
+23,8
+24,8
+25,8
+26,12
+27,24
+28,12
+29,24
+30,22
+31,14
+32,12
+33,12
+34,24
+35,12
+36,12
+37,12
+38,36
+39,64
+41,8
+Static LPDUs for which FrIf reconfig available, length
+RECONFIG_LPDU,Total:0
+Number of LPDU which may share HW buffer
+STATIC_LPDU,23
+COM_OP,macrotick,LpduIdx,Length
+
+HW_BUFFER_RECONFIGURATION_USED NO, Controller Index:1 654 32-bit words
+KEY_SLOT_LPDU,1,0,64
+DYNAMIC_LPDU,18
+24,8
+25,8
+26,8
+27,12
+28,24
+29,12
+30,24
+31,22
+32,14
+33,12
+34,12
+35,24
+36,12
+37,12
+38,12
+39,36
+40,64
+42,8
+Static LPDUs for which FrIf reconfig available, length
+RECONFIG_LPDU,Total:0
+Number of LPDU which may share HW buffer
+STATIC_LPDU,1
+COM_OP,macrotick,LpduIdx,Length
+
+
+PB_CFG_END
+
+@@@@@@END_OF_BUFFER_RECONFIG_DUMP@@@@@@
+*/
+
+#define FR_17_ERAY_START_SEC_CONFIG_DATA_QM_LOCAL_UNSPECIFIED
+/* MISRA2012_RULE_4_10_JUSTIFICATION: MemMap.h is used to define memory sections
+of the data or code, so included multiple times from code. This violation is an
+approved exception without side effects by AUTOSAR. */
+#include "Fr_17_Eray_MemMap.h"
+/*
+LPduIdx to message buffer mapping for Controller 0
+*/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const uint8 Fr_17_Eray_FrMultipleConfiguration_LPduIdx2MsgBuff_0[42] =
+{
+  0U, 2U, 3U, 4U, 5U, 6U, 7U, 8U, 9U, 10U, 
+  11U, 12U, 13U, 14U, 15U, 16U, 17U, 18U, 19U, 20U, 21U, 
+  22U, 23U, 24U, 25U, 26U, 27U, 28U, 29U, 30U, 31U, 32U, 
+  33U, 34U, 35U, 36U, 37U, 38U, 39U, 40U, 1U, 41U
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const uint16 Fr_17_Eray_FrMultipleConfiguration_DataPointerOffset_0[42] =
+{
+  168U, 184U, 200U, 216U, 232U, 248U, 264U, 280U, 296U, 312U, 328U, 344U, 360U, 376U, 392U, 408U, 424U, 440U, 456U, 472U, 488U, 504U, 520U, 536U, 552U, 554U, 556U, 558U, 561U, 567U, 570U, 576U, 582U, 586U, 589U, 592U, 598U, 601U, 604U, 607U, 616U, 632U
+};
+
+/*
+LPduIdx to message buffer mapping for Controller 1
+*/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const uint8 Fr_17_Eray_FrMultipleConfiguration_LPduIdx2MsgBuff_1[43] =
+{
+  0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U, 9U, 
+  10U, 11U, 12U, 13U, 14U, 15U, 16U, 17U, 18U, 19U, 20U, 
+  21U, 22U, 23U, 24U, 25U, 26U, 27U, 28U, 29U, 30U, 31U, 
+  32U, 33U, 34U, 35U, 36U, 37U, 38U, 39U, 40U, 41U, 42U
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const uint16 Fr_17_Eray_FrMultipleConfiguration_DataPointerOffset_1[43] =
+{
+  172U, 188U, 204U, 220U, 236U, 252U, 268U, 284U, 300U, 316U, 332U, 348U, 364U, 380U, 396U, 412U, 428U, 444U, 460U, 476U, 492U, 508U, 524U, 540U, 556U, 558U, 560U, 562U, 565U, 571U, 574U, 580U, 586U, 590U, 593U, 596U, 602U, 605U, 608U, 611U, 620U, 636U, 652U
+};
+
+/*************** LPDU configuration Controller 0 ***************/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const Fr_17_Eray_LPduConfigType Fr_17_Eray_FrMultipleConfiguration_kLPduConfig_0 [42] =
+{
+  /* -------------------------  LPDU 0 ------------------------------- */
+  {
+    /*
+    20U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    0U, - Transmission Mode : 0 - Continuous startup/sync
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x05010014U,
+    /*
+    0x6deU - Header CRC (startup=1, sync=1)
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002006deU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 1 ------------------------------- */
+  {
+    /*
+    2U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010002U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 2 ------------------------------- */
+  {
+    /*
+    3U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010003U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 3 ------------------------------- */
+  {
+    /*
+    4U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010004U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 4 ------------------------------- */
+  {
+    /*
+    11U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101000bU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 5 ------------------------------- */
+  {
+    /*
+    12U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101000cU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 6 ------------------------------- */
+  {
+    /*
+    13U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101000dU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 7 ------------------------------- */
+  {
+    /*
+    14U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101000eU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 8 ------------------------------- */
+  {
+    /*
+    16U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010010U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 9 ------------------------------- */
+  {
+    /*
+    18U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010012U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 10 ------------------------------- */
+  {
+    /*
+    19U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010013U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 11 ------------------------------- */
+  {
+    /*
+    23U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010017U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 12 ------------------------------- */
+  {
+    /*
+    24U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010018U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 13 ------------------------------- */
+  {
+    /*
+    26U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101001aU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 14 ------------------------------- */
+  {
+    /*
+    27U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101001bU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 15 ------------------------------- */
+  {
+    /*
+    28U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101001cU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 16 ------------------------------- */
+  {
+    /*
+    29U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101001dU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 17 ------------------------------- */
+  {
+    /*
+    30U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101001eU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 18 ------------------------------- */
+  {
+    /*
+    31U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101001fU,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 19 ------------------------------- */
+  {
+    /*
+    35U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010023U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 20 ------------------------------- */
+  {
+    /*
+    36U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010024U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 21 ------------------------------- */
+  {
+    /*
+    37U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010025U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 22 ------------------------------- */
+  {
+    /*
+    38U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010026U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 23 ------------------------------- */
+  {
+    /*
+    39U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010027U,
+    /*
+    0x0U - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00040000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 24 ------------------------------- */
+  {
+    /*
+    40U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010028U,
+    /*
+    0x0U - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00040000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 25 ------------------------------- */
+  {
+    /*
+    41U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010029U,
+    /*
+    0x0U - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00040000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 26 ------------------------------- */
+  {
+    /*
+    45U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101002dU,
+    /*
+    0x0U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 27 ------------------------------- */
+  {
+    /*
+    46U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101002eU,
+    /*
+    0x0U - Header CRC
+    12U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000c0000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 28 ------------------------------- */
+  {
+    /*
+    47U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101002fU,
+    /*
+    0x0U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 29 ------------------------------- */
+  {
+    /*
+    59U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101003bU,
+    /*
+    0x0U - Header CRC
+    12U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000c0000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 30 ------------------------------- */
+  {
+    /*
+    60U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101003cU,
+    /*
+    0x0U - Header CRC
+    11U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000b0000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 31 ------------------------------- */
+  {
+    /*
+    61U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101003dU,
+    /*
+    0x0U - Header CRC
+    7U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00070000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 32 ------------------------------- */
+  {
+    /*
+    62U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101003eU,
+    /*
+    0x0U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 33 ------------------------------- */
+  {
+    /*
+    63U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101003fU,
+    /*
+    0x0U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 34 ------------------------------- */
+  {
+    /*
+    64U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010040U,
+    /*
+    0x0U - Header CRC
+    12U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000c0000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 35 ------------------------------- */
+  {
+    /*
+    66U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010042U,
+    /*
+    0x0U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 36 ------------------------------- */
+  {
+    /*
+    67U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010043U,
+    /*
+    0x0U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 37 ------------------------------- */
+  {
+    /*
+    69U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010045U,
+    /*
+    0x0U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 38 ------------------------------- */
+  {
+    /*
+    87U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010057U,
+    /*
+    0x0U - Header CRC
+    18U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00120000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 39 ------------------------------- */
+  {
+    /*
+    103U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010067U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 40 ------------------------------- */
+  {
+    /*
+    17U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010011U,
+    /*
+    0x7dcU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002007dcU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 41 ------------------------------- */
+  {
+    /*
+    42U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501002aU,
+    /*
+    0x282U - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00040282U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  }
+};
+
+/***** Communication controller configuration Controller 0  *****/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const Fr_17_Eray_CCConfigType Fr_17_Eray_FrMultipleConfiguration_kCCCfg_0 =
+{
+  /* SUCC1 register configuration */
+  /*
+  0U - CmdPOCBusy (Unused member)
+    1U - pKeySlotUsedForStartup
+    1U - pKeySlotUsedForSync
+  0U - Reserved bit
+  0x1fU - FrIfGColdStartAttempts
+  7U - FrPAllowPassiveToActive
+  0U - FrPWakeupChannel
+    0U - FrPKeySlotOnlyEnabled in FlexRay Protocol 2.1 Rev. A
+    1U - FrPAllowHaltDueToClock
+  0U - pChannelsMTS (Unused), 0 means no channels selected
+  1U- FrPChannels, add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2 and ChannelAB = 3
+  */
+  0x0487fb00U,
+  /* SUCC2 register settings */
+  /*
+  0x5ffdaU - FrPdListenTimeout
+  0xfU - (FrIfGListenNoise - 1)
+  */
+  0x0f05ffdaU,
+  /* SUCC3 register settings */
+  /*
+  0x1U - FrIfGMaxWithoutClockCorrectPassive
+  0x1U - FrIfGMaxWithoutClockCorrectFatal
+  */
+  0x00000011U,
+  /* NEMC register settings */
+  /*
+  0x2U - FrIfGNetworkManagementVectorLength
+  */
+  0x00000002U,
+  /* PRTC1 register settings */
+  /*
+  0xaU - FrIfGdTSSTransmitter
+  0x59U - FrIfGdCasRxLowMax
+  0U - Strobe Point Position. Always zero (default)
+  0U - BRP. Always zero as driver supports only 10Mbps rate
+  0x8cU - FrIfgdWakeupRxWindow
+  0x2U - FrPWakeupPattern
+  */
+  0x088c059aU,
+  /* PRTC2 register settings */
+  /*
+  0x2dU - FrIfgdWakeupRxIdle
+  0x12U - FrIfgdWakeupRxLow
+  0x2dU - FrIfGdWakeupTxIdle
+  0x12U - FrIfGdWakeupTxActive
+  */
+  0x122d122dU,
+  /* MHDC register settings */
+  /*
+  0x20U - FrIfGPayloadLengthStatic
+  0xbaU - FrPLatestTx
+  */
+  0x00ba0020U,
+  /* GTUC01 register settings */
+  /*
+  0x2fda0U - UT: FrPMicroPerCycle
+  */
+  0x0002fda0U,
+  /* GTUC02 register settings */
+  /*
+  0x1324U - FrIfGMacroPerCycle
+  0x4U - FrIfGSyncFrameIDCountMax maps to FrIfGSyncNodeMax FR Pr 2.1
+  */
+  0x00041324U,
+  /* GTUC03 register settings */
+  /*
+  0x18U - FrPMicroInitialOffsetA [A]
+  0x18U - FrPMicroInitialOffsetB [B]
+  0xaU - FrPMacroInitialOffsetA [A]
+  0x2U - FrPMacroInitialOffsetB [B]
+  */
+  0x020a1818U,
+  /* GTUC04 register settings */
+  /*
+  0x125cU- NetworkIdleTimeStart = (FrIfGMacroPerCycle - FrIfGdNit - 1)
+  0x1312U- Range: 8 -15998, maps to (FrPOffsetCorrectionStart - 1)
+  */
+  0x1312125cU,
+  /* GTUC05 register settings */
+  /*
+  0x4U - FrPDelayCompensationA
+  0x4U - FrPDelayCompensationB
+  0x1U - FrPClusterDriftDamping
+  0x34U - FrPDecodingCorrection
+  */
+  0x34010404U,
+  /* GTUC06 register settings */
+  /*
+  0x81U - FrPdAcceptedStartupRange
+  0x24dU - is same as FrPdMaxDrift
+  */
+  0x024d0081U,
+  /* GTUC07 register settings */
+  /*
+  0x5cU - FrIfGdStaticSlot
+  0x26 - FrIfGNumberOfStaticSlots
+  */
+  0x0026005cU,
+  /* GTUC08 register settings */
+  /*
+  0x6U - FrIfGdMinislot
+  0xc8U - FrIfGNumberOfMinislots
+  */
+  0x00c80006U,
+  /* GTUC09 register settings */
+  /*
+  0x8U - FrIfgdActionPointOffset
+  0x3U - FrIfgdMinislotActionPointOffset
+  0x1U - FrIfgdDynamicSlotIdlePhase
+  */
+  0x00010308U,
+  /* GTUC10 register settings */
+  /*
+  0x67U - FrPOffsetCorrectionOut
+  0x24dU - FrPRateCorrectionOut
+  */
+  0x024d0067U,
+  /* GTUC11 register settings */
+  /*
+  0x0000U - Unused (FrPExternOffsetControl, FrPExternRateControl
+  0U - FrPExternOffsetCorrection is not present in AS40
+  0U - FrPExternRateCorrection is not present in AS40
+  */
+  0x00000000U,
+  /* CUST1 register settings */
+  /*
+  0x00U - Unused
+  0x00U - Reserved
+  FR_RXSEL3 - FrRxInputSelection Channel A
+  FR_RXSEL0 - FrRxInputSelection Channel B
+  0x00U - Unused
+  */
+  0x00000c00U
+};
+
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const uint32 Fr_17_Eray_FrMultipleConfiguration_CCConfigArray_0[63] =
+{
+  0x004ac4a0U,  /* FrIfGdCycle */
+  0x0002fda0U, /* UT: FrPMicroPerCycle */
+  0x0005ffdaU, /* FrPdListenTimeout */
+  0x00001324U, /* FrIfGMacroPerCycle */
+  0x000003e8U,  /* FrIfGdMacrotick */
+  0x000000c8U, /* FrIfGNumberOfMinislots */
+  0x00000026U, /* FrIfGNumberOfStaticSlots */
+  0x000000c7U,  /* FrIfGdNit */
+  0x0000005cU, /* FrIfGdStaticSlot */
+  0x0000008cU, /* FrIfgdWakeupRxWindow */
+  0x00000014U, /* FrPKeySlotId */
+  0x000000baU, /* FrPLatestTx */
+  0x00000067U, /* FrPOffsetCorrectionOut */
+  0x00001313U, /* FrPOffsetCorrectionStart */
+  0x0000024dU, /* FrPRateCorrectionOut */
+  0x00000000U,  /* Second Keyslot ID */
+  0x00000081U, /* FrPdAcceptedStartupRange */
+  0x0000001fU, /* FrIfGColdStartAttempts */
+  0x0000003fU,  /* FrIfGCycleCountMax */
+  0x00000010U, /*FrIfGListenNoise */
+  0x00000001U, /* FrIfGMaxWithoutClockCorrectFatal */
+  0x00000001U, /* FrIfGMaxWithoutClockCorrectPassive */
+  0x00000002U, /* FrIfGNetworkManagementVectorLength */
+  0x00000020U, /* FrIfGPayloadLengthStatic */
+  0x00000004U, /* FrIfGSyncFrameIDCountMax maps to FrIfGSyncNodeMax FR Pr 2.1 */
+  0x00000008U, /* FrIfgdActionPointOffset */
+  0x00000000U, /* FrIfGdBit */
+  0x00000059U, /* FrIfGdCasRxLowMax */
+  0x00000001U, /* FrIfgdDynamicSlotIdlePhase */
+  0x00000003U, /* FrIfgdMinislotActionPointOffset */
+  0x00000006U, /* FrIfGdMinislot */
+  0x00000000U, /*  0 - T12_5NS -> 10 Mbps */
+  0x00000000U,  /* FrIfGdSymbolWindow */
+  0x00000008U, /* FrIfgdActionPointOffset */
+  0x0000000aU, /* FrIfGdTSSTransmitter */
+  0x0000002dU, /* FrIfgdWakeupRxIdle */
+  0x00000012U, /* FrIfgdWakeupRxLow */
+  0x00000012U, /* FrIfGdWakeupTxActive */
+  0x0000002dU, /* FrIfGdWakeupTxIdle */
+  0x00000007U, /* FrPAllowPassiveToActive */
+  0x00000000U,/* FrPChannels */
+  0x00000001U, /* FrPClusterDriftDamping */
+  0x00000034U, /* FrPDecodingCorrection */
+  0x00000004U, /* FrPDelayCompensationA */
+  0x00000004U, /* FrPDelayCompensationB */
+  0x0000000aU, /* FrPMacroInitialOffsetA */
+  0x00000002U, /* FrPMacroInitialOffsetB */
+  0x00000018U, /* FrPMicroInitialOffsetA */
+  0x00000018U, /* FrPMicroInitialOffsetB */
+  0x00000020U, /* FrPPayloadLengthDynMax */
+  0x00000001U, /* 1 - N2SAMPLES - Fixed at N2 samples as the baudrate supported is 10Mbit/s */
+  0x00000000U, /* FrPWakeupChannel ->  0 - FR_CHANNEL_A */
+  0x00000002U, /* FrPWakeupPattern */
+  0x00000001U, /* FrPdMicrotick -> 1 - T25NS */
+  0x00000000U, /* FrIfGdIgnoreAfterTx - Set to 0 for FR Pr 2.1 */
+  0x00000001U, /* FrPAllowHaltDueToClock */
+  0x00000000U, /* FrPExternalSync - Set to 0 for FR Pr 2.1 */
+  0x00000000U, /* FrPFallBackInternal - Set to 0 for FR Pr 2.1 */
+  0x00000000U, /* FrPKeySlotOnlyEnabled */
+  0x00000001U, /* FrPKeySlotUsedForStartup */
+  0x00000001U, /* FrPKeySlotUsedForSync */
+  0x00000000U, /* FrPNmVectorEarlyUpdate - Set to 0 for FR Pr 2.1 */
+  0x00000000U  /* FrPTwoKeySlotMode - Set to 0 for FR Pr 2.1 */
+};
+
+
+
+
+/*************** LPDU configuration Controller 1 ***************/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const Fr_17_Eray_LPduConfigType Fr_17_Eray_FrMultipleConfiguration_kLPduConfig_1 [43] =
+{
+  /* -------------------------  LPDU 0 ------------------------------- */
+  {
+    /*
+    5U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    0U, - Transmission Mode : 0 - Continuous startup/sync
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x05010005U,
+    /*
+    0x4f4U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002004f4U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 1 ------------------------------- */
+  {
+    /*
+    1U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010001U,
+    /*
+    0x403U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200403U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 2 ------------------------------- */
+  {
+    /*
+    2U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010002U,
+    /*
+    0x61cU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0020061cU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 3 ------------------------------- */
+  {
+    /*
+    3U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010003U,
+    /*
+    0x7e9U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002007e9U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 4 ------------------------------- */
+  {
+    /*
+    4U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010004U,
+    /*
+    0x222U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200222U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 5 ------------------------------- */
+  {
+    /*
+    11U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501000bU,
+    /*
+    0x3c4U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002003c4U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 6 ------------------------------- */
+  {
+    /*
+    12U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501000cU,
+    /*
+    0x60fU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0020060fU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 7 ------------------------------- */
+  {
+    /*
+    13U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501000dU,
+    /*
+    0x7faU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002007faU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 8 ------------------------------- */
+  {
+    /*
+    14U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501000eU,
+    /*
+    0x5e5U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002005e5U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 9 ------------------------------- */
+  {
+    /*
+    16U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010010U,
+    /*
+    0x629U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200629U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 10 ------------------------------- */
+  {
+    /*
+    18U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010012U,
+    /*
+    0x5c3U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002005c3U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 11 ------------------------------- */
+  {
+    /*
+    19U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010013U,
+    /*
+    0x436U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200436U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 12 ------------------------------- */
+  {
+    /*
+    23U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010017U,
+    /*
+    0x3e2U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002003e2U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 13 ------------------------------- */
+  {
+    /*
+    24U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010018U,
+    /*
+    0x204U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200204U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 14 ------------------------------- */
+  {
+    /*
+    26U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501001aU,
+    /*
+    0x1eeU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002001eeU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 15 ------------------------------- */
+  {
+    /*
+    27U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501001bU,
+    /*
+    0x1bU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0020001bU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 16 ------------------------------- */
+  {
+    /*
+    28U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501001cU,
+    /*
+    0x5d0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002005d0U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 17 ------------------------------- */
+  {
+    /*
+    29U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501001dU,
+    /*
+    0x425U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200425U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 18 ------------------------------- */
+  {
+    /*
+    30U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501001eU,
+    /*
+    0x63aU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0020063aU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 19 ------------------------------- */
+  {
+    /*
+    31U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501001fU,
+    /*
+    0x7cfU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x002007cfU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 20 ------------------------------- */
+  {
+    /*
+    35U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010023U,
+    /*
+    0x57U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200057U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 21 ------------------------------- */
+  {
+    /*
+    36U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010024U,
+    /*
+    0x59cU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0020059cU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 22 ------------------------------- */
+  {
+    /*
+    37U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010025U,
+    /*
+    0x469U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200469U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 23 ------------------------------- */
+  {
+    /*
+    38U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010026U,
+    /*
+    0x676U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200676U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 24 ------------------------------- */
+  {
+    /*
+    39U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010027U,
+    /*
+    0x8eU - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0004008eU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 25 ------------------------------- */
+  {
+    /*
+    40U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010028U,
+    /*
+    0x168U - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00040168U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 26 ------------------------------- */
+  {
+    /*
+    41U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010029U,
+    /*
+    0x9dU - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0004009dU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 27 ------------------------------- */
+  {
+    /*
+    45U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501002dU,
+    /*
+    0x43U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060043U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 28 ------------------------------- */
+  {
+    /*
+    46U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501002eU,
+    /*
+    0x5f1U - Header CRC
+    12U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000c05f1U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 29 ------------------------------- */
+  {
+    /*
+    47U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501002fU,
+    /*
+    0x3a9U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000603a9U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 30 ------------------------------- */
+  {
+    /*
+    59U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501003bU,
+    /*
+    0xfU - Header CRC
+    12U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000c000fU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 31 ------------------------------- */
+  {
+    /*
+    60U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501003cU,
+    /*
+    0x4daU - Header CRC
+    11U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000b04daU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 32 ------------------------------- */
+  {
+    /*
+    61U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501003dU,
+    /*
+    0x19U - Header CRC
+    7U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00070019U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 33 ------------------------------- */
+  {
+    /*
+    62U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501003eU,
+    /*
+    0x183U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060183U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 34 ------------------------------- */
+  {
+    /*
+    63U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1501003fU,
+    /*
+    0x76U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060076U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 35 ------------------------------- */
+  {
+    /*
+    64U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010040U,
+    /*
+    0x6a5U - Header CRC
+    12U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000c06a5U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 36 ------------------------------- */
+  {
+    /*
+    66U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010042U,
+    /*
+    0x2e2U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x000602e2U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 37 ------------------------------- */
+  {
+    /*
+    67U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010043U,
+    /*
+    0x317U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060317U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 38 ------------------------------- */
+  {
+    /*
+    69U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010045U,
+    /*
+    0x729U - Header CRC
+    6U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00060729U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 39 ------------------------------- */
+  {
+    /*
+    87U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010057U,
+    /*
+    0x3c3U - Header CRC
+    18U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x001203c3U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 40 ------------------------------- */
+  {
+    /*
+    103U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    1U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x15010067U,
+    /*
+    0x37aU - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x0020037aU,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 41 ------------------------------- */
+  {
+    /*
+    17U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x11010011U,
+    /*
+    0x0U - Header CRC
+    32U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00200000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  },
+  /* -------------------------  LPDU 42 ------------------------------- */
+  {
+    /*
+    42U - Slot ID
+    1U - Cycle code
+    1U,- FrPChannels , add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2
+    and ChannelAB = 3
+    0U - Message Buffer Direction: 0 - Receive, 1 - Transmit
+    0U, - PPIT: 0 - Disable, 1 - Enable
+    1U, - Transmission Mode : 1 - Single shot - always single shot
+    0U  - Message Buffer Service Request - always set to 0
+    */
+    0x1101002aU,
+    /*
+    0x0U - Header CRC
+    4U - Payload Length Configured
+    0U - FrIfAllowDynamicLSduLength
+    */
+    0x00040000U,
+    FR_17_ERAY_LPDU_NOT_RECONFIGURABLE,
+    /*DEM Id for FlexRay Slot Status Error. */
+    FR_17_ERAY_DEM_REPORT_DISABLED
+  }
+};
+
+/***** Communication controller configuration Controller 1  *****/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const Fr_17_Eray_CCConfigType Fr_17_Eray_FrMultipleConfiguration_kCCCfg_1 =
+{
+  /* SUCC1 register configuration */
+  /*
+  0U - CmdPOCBusy (Unused member)
+    1U - pKeySlotUsedForStartup
+    1U - pKeySlotUsedForSync
+  0U - Reserved bit
+  0x1fU - FrIfGColdStartAttempts
+  7U - FrPAllowPassiveToActive
+  0U - FrPWakeupChannel
+    0U - FrPKeySlotOnlyEnabled in FlexRay Protocol 2.1 Rev. A
+    1U - FrPAllowHaltDueToClock
+  0U - pChannelsMTS (Unused), 0 means no channels selected
+  1U- FrPChannels, add 0x1 as the hw regs take ChannelA = 1, ChannelB = 2 and ChannelAB = 3
+  */
+  0x0487fb00U,
+  /* SUCC2 register settings */
+  /*
+  0x5ffdaU - FrPdListenTimeout
+  0xfU - (FrIfGListenNoise - 1)
+  */
+  0x0f05ffdaU,
+  /* SUCC3 register settings */
+  /*
+  0x1U - FrIfGMaxWithoutClockCorrectPassive
+  0x1U - FrIfGMaxWithoutClockCorrectFatal
+  */
+  0x00000011U,
+  /* NEMC register settings */
+  /*
+  0x2U - FrIfGNetworkManagementVectorLength
+  */
+  0x00000002U,
+  /* PRTC1 register settings */
+  /*
+  0xaU - FrIfGdTSSTransmitter
+  0x59U - FrIfGdCasRxLowMax
+  0U - Strobe Point Position. Always zero (default)
+  0U - BRP. Always zero as driver supports only 10Mbps rate
+  0x8cU - FrIfgdWakeupRxWindow
+  0x2U - FrPWakeupPattern
+  */
+  0x088c059aU,
+  /* PRTC2 register settings */
+  /*
+  0x2dU - FrIfgdWakeupRxIdle
+  0x12U - FrIfgdWakeupRxLow
+  0x2dU - FrIfGdWakeupTxIdle
+  0x12U - FrIfGdWakeupTxActive
+  */
+  0x122d122dU,
+  /* MHDC register settings */
+  /*
+  0x20U - FrIfGPayloadLengthStatic
+  0xbaU - FrPLatestTx
+  */
+  0x00ba0020U,
+  /* GTUC01 register settings */
+  /*
+  0x2fda0U - UT: FrPMicroPerCycle
+  */
+  0x0002fda0U,
+  /* GTUC02 register settings */
+  /*
+  0x1324U - FrIfGMacroPerCycle
+  0x4U - FrIfGSyncFrameIDCountMax maps to FrIfGSyncNodeMax FR Pr 2.1
+  */
+  0x00041324U,
+  /* GTUC03 register settings */
+  /*
+  0x18U - FrPMicroInitialOffsetA [A]
+  0x18U - FrPMicroInitialOffsetB [B]
+  0xaU - FrPMacroInitialOffsetA [A]
+  0x2U - FrPMacroInitialOffsetB [B]
+  */
+  0x020a1818U,
+  /* GTUC04 register settings */
+  /*
+  0x125cU- NetworkIdleTimeStart = (FrIfGMacroPerCycle - FrIfGdNit - 1)
+  0x1312U- Range: 8 -15998, maps to (FrPOffsetCorrectionStart - 1)
+  */
+  0x1312125cU,
+  /* GTUC05 register settings */
+  /*
+  0x4U - FrPDelayCompensationA
+  0x4U - FrPDelayCompensationB
+  0x1U - FrPClusterDriftDamping
+  0x34U - FrPDecodingCorrection
+  */
+  0x34010404U,
+  /* GTUC06 register settings */
+  /*
+  0x81U - FrPdAcceptedStartupRange
+  0x24dU - is same as FrPdMaxDrift
+  */
+  0x024d0081U,
+  /* GTUC07 register settings */
+  /*
+  0x5cU - FrIfGdStaticSlot
+  0x26 - FrIfGNumberOfStaticSlots
+  */
+  0x0026005cU,
+  /* GTUC08 register settings */
+  /*
+  0x6U - FrIfGdMinislot
+  0xc8U - FrIfGNumberOfMinislots
+  */
+  0x00c80006U,
+  /* GTUC09 register settings */
+  /*
+  0x8U - FrIfgdActionPointOffset
+  0x3U - FrIfgdMinislotActionPointOffset
+  0x1U - FrIfgdDynamicSlotIdlePhase
+  */
+  0x00010308U,
+  /* GTUC10 register settings */
+  /*
+  0x67U - FrPOffsetCorrectionOut
+  0x24dU - FrPRateCorrectionOut
+  */
+  0x024d0067U,
+  /* GTUC11 register settings */
+  /*
+  0x0000U - Unused (FrPExternOffsetControl, FrPExternRateControl
+  0U - FrPExternOffsetCorrection is not present in AS40
+  0U - FrPExternRateCorrection is not present in AS40
+  */
+  0x00000000U,
+  /* CUST1 register settings */
+  /*
+  0x00U - Unused
+  0x00U - Reserved
+  FR_RXSEL0 - FrRxInputSelection Channel A
+  FR_RXSEL0 - FrRxInputSelection Channel B
+  0x00U - Unused
+  */
+  0x00000000U
+};
+
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const uint32 Fr_17_Eray_FrMultipleConfiguration_CCConfigArray_1[63] =
+{
+  0x004ac4a0U,  /* FrIfGdCycle */
+  0x0002fda0U, /* UT: FrPMicroPerCycle */
+  0x0005ffdaU, /* FrPdListenTimeout */
+  0x00001324U, /* FrIfGMacroPerCycle */
+  0x000003e8U,  /* FrIfGdMacrotick */
+  0x000000c8U, /* FrIfGNumberOfMinislots */
+  0x00000026U, /* FrIfGNumberOfStaticSlots */
+  0x000000c7U,  /* FrIfGdNit */
+  0x0000005cU, /* FrIfGdStaticSlot */
+  0x0000008cU, /* FrIfgdWakeupRxWindow */
+  0x00000005U, /* FrPKeySlotId */
+  0x000000baU, /* FrPLatestTx */
+  0x00000067U, /* FrPOffsetCorrectionOut */
+  0x00001313U, /* FrPOffsetCorrectionStart */
+  0x0000024dU, /* FrPRateCorrectionOut */
+  0x00000000U,  /* Second Keyslot ID */
+  0x00000081U, /* FrPdAcceptedStartupRange */
+  0x0000001fU, /* FrIfGColdStartAttempts */
+  0x0000003fU,  /* FrIfGCycleCountMax */
+  0x00000010U, /*FrIfGListenNoise */
+  0x00000001U, /* FrIfGMaxWithoutClockCorrectFatal */
+  0x00000001U, /* FrIfGMaxWithoutClockCorrectPassive */
+  0x00000002U, /* FrIfGNetworkManagementVectorLength */
+  0x00000020U, /* FrIfGPayloadLengthStatic */
+  0x00000004U, /* FrIfGSyncFrameIDCountMax maps to FrIfGSyncNodeMax FR Pr 2.1 */
+  0x00000008U, /* FrIfgdActionPointOffset */
+  0x00000000U, /* FrIfGdBit */
+  0x00000059U, /* FrIfGdCasRxLowMax */
+  0x00000001U, /* FrIfgdDynamicSlotIdlePhase */
+  0x00000003U, /* FrIfgdMinislotActionPointOffset */
+  0x00000006U, /* FrIfGdMinislot */
+  0x00000000U, /*  0 - T12_5NS -> 10 Mbps */
+  0x00000000U,  /* FrIfGdSymbolWindow */
+  0x00000008U, /* FrIfgdActionPointOffset */
+  0x0000000aU, /* FrIfGdTSSTransmitter */
+  0x0000002dU, /* FrIfgdWakeupRxIdle */
+  0x00000012U, /* FrIfgdWakeupRxLow */
+  0x00000012U, /* FrIfGdWakeupTxActive */
+  0x0000002dU, /* FrIfGdWakeupTxIdle */
+  0x00000007U, /* FrPAllowPassiveToActive */
+  0x00000000U,/* FrPChannels */
+  0x00000001U, /* FrPClusterDriftDamping */
+  0x00000034U, /* FrPDecodingCorrection */
+  0x00000004U, /* FrPDelayCompensationA */
+  0x00000004U, /* FrPDelayCompensationB */
+  0x0000000aU, /* FrPMacroInitialOffsetA */
+  0x00000002U, /* FrPMacroInitialOffsetB */
+  0x00000018U, /* FrPMicroInitialOffsetA */
+  0x00000018U, /* FrPMicroInitialOffsetB */
+  0x00000020U, /* FrPPayloadLengthDynMax */
+  0x00000001U, /* 1 - N2SAMPLES - Fixed at N2 samples as the baudrate supported is 10Mbit/s */
+  0x00000000U, /* FrPWakeupChannel ->  0 - FR_CHANNEL_A */
+  0x00000002U, /* FrPWakeupPattern */
+  0x00000001U, /* FrPdMicrotick -> 1 - T25NS */
+  0x00000000U, /* FrIfGdIgnoreAfterTx - Set to 0 for FR Pr 2.1 */
+  0x00000001U, /* FrPAllowHaltDueToClock */
+  0x00000000U, /* FrPExternalSync - Set to 0 for FR Pr 2.1 */
+  0x00000000U, /* FrPFallBackInternal - Set to 0 for FR Pr 2.1 */
+  0x00000000U, /* FrPKeySlotOnlyEnabled */
+  0x00000001U, /* FrPKeySlotUsedForStartup */
+  0x00000001U, /* FrPKeySlotUsedForSync */
+  0x00000000U, /* FrPNmVectorEarlyUpdate - Set to 0 for FR Pr 2.1 */
+  0x00000000U  /* FrPTwoKeySlotMode - Set to 0 for FR Pr 2.1 */
+};
+
+
+
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const Fr_17_Eray_CCType Fr_17_Eray_FrMultipleConfiguration_CC[] =
+{
+  {
+    /* Pointer to configuration of Communication Controller */
+    &Fr_17_Eray_FrMultipleConfiguration_kCCCfg_0,
+    
+    /* Pointer to array of LPDU configurations */
+    Fr_17_Eray_FrMultipleConfiguration_kLPduConfig_0,
+    
+    #if (FR_17_ERAY_FIFO_CONFIGURED == STD_ON)
+    NULL_PTR,
+    #endif
+    
+    /* Pointer to array of FR parameters accessed by Fr_ReadCCConfig */
+    Fr_17_Eray_FrMultipleConfiguration_CCConfigArray_0,
+    
+    /* Pointer to LPDU to message buffer mapping array */
+    Fr_17_Eray_FrMultipleConfiguration_LPduIdx2MsgBuff_0,
+    
+    /* Pointer to Data pointer offsets */
+    Fr_17_Eray_FrMultipleConfiguration_DataPointerOffset_0,
+    
+    /* Number of LPDUs configured */
+    42U,
+    
+    /* ERAY Module clock configuration : Runtime Mode Control setting */
+    1U,
+    
+    /* Buffer Reconfiguration Status */
+    0U,
+    
+    /*DEM Id for FlexRay controller hardware test failure.*/
+    DemConf_DemEventParameter_FR_CTRL_TESTRESULT_ERROR,
+    
+    /* Number of HW message buffers required */
+    42U
+  },
+  {
+    /* Pointer to configuration of Communication Controller */
+    &Fr_17_Eray_FrMultipleConfiguration_kCCCfg_1,
+    
+    /* Pointer to array of LPDU configurations */
+    Fr_17_Eray_FrMultipleConfiguration_kLPduConfig_1,
+    
+    #if (FR_17_ERAY_FIFO_CONFIGURED == STD_ON)
+    NULL_PTR,
+    #endif
+    
+    /* Pointer to array of FR parameters accessed by Fr_ReadCCConfig */
+    Fr_17_Eray_FrMultipleConfiguration_CCConfigArray_1,
+    
+    /* Pointer to LPDU to message buffer mapping array */
+    Fr_17_Eray_FrMultipleConfiguration_LPduIdx2MsgBuff_1,
+    
+    /* Pointer to Data pointer offsets */
+    Fr_17_Eray_FrMultipleConfiguration_DataPointerOffset_1,
+    
+    /* Number of LPDUs configured */
+    43U,
+    
+    /* ERAY Module clock configuration : Runtime Mode Control setting */
+    1U,
+    
+    /* Buffer Reconfiguration Status */
+    0U,
+    
+    /*DEM Id for FlexRay controller hardware test failure.*/
+    DemConf_DemEventParameter_FR_CTRL_TESTRESULT_ERROR,
+    
+    /* Number of HW message buffers required */
+    43U
+  }
+};
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Name of identifiers going beyond 32 chars.
+due to Autosar Naming constraints.*/
+static const uint8 Fr_17_Eray_FrMultipleConfiguration_CCMap[FR_17_ERAY_NUM_CONTROLLERS_IN_DEVICE] =
+{
+  0U,
+  1U
+};
+
+
+/* Implementation-specific post build configuration for FlexRay driver */
+/* MISRA2012_RULE_8_7_JUSTIFICATION: Module configuration data structure
+declaration as per AUTOSAR guidelines. This data structure may be needed
+by SW units using FR Driver Initialisation API */
+/* MISRA2012_RULE_8_4_JUSTIFICATION: Definition is as per AUTOSAR guidelines */
+const Fr_17_Eray_ConfigType Fr_17_Eray_Config =
+{
+  &Fr_17_Eray_FrMultipleConfiguration_CC[0],
+  &Fr_17_Eray_FrMultipleConfiguration_CCMap[0]
+
+};
+
+#define FR_17_ERAY_STOP_SEC_CONFIG_DATA_QM_LOCAL_UNSPECIFIED
+/* MISRA2012_RULE_4_10_JUSTIFICATION: MemMap.h is used to define memory sections
+of the data or code, so included multiple times from code. This violation is an
+approved exception without side effects by AUTOSAR. */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: MemMap.h is used to define memory
+sections of the data or code, so included multiple times from code.
+Variable declared before MemMap header file */
+#include "Fr_17_Eray_MemMap.h"

@@ -1,0 +1,224 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc30016a --dep-file=BSW/Infra/Integration/SchM_Fr_17_Eray.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc38x -D__CPU_TC38X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc38x -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21 -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS\\\\main -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Autosar_Srv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Integration -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA\\\\_Reg -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Configurations -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC38x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o BSW/Infra/Integration/SchM_Fr_17_Eray.src ../BSW/Infra/Integration/SchM_Fr_17_Eray.c"
+	.compiler_name		"ctc"
+	;source	'../BSW/Infra/Integration/SchM_Fr_17_Eray.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.SchM_Fr_17_Eray.SchM_Enter_Fr_17_Eray_ConfigLockKey',code,cluster('SchM_Enter_Fr_17_Eray_ConfigLockKey')
+	.sect	'.text.SchM_Fr_17_Eray.SchM_Enter_Fr_17_Eray_ConfigLockKey'
+	.align	2
+	
+	.global	SchM_Enter_Fr_17_Eray_ConfigLockKey
+; Function SchM_Enter_Fr_17_Eray_ConfigLockKey
+.L3:
+SchM_Enter_Fr_17_Eray_ConfigLockKey:	.type	func
+	call	SuspendAllInterrupts
+.L30:
+	ret
+.L20:
+	
+__SchM_Enter_Fr_17_Eray_ConfigLockKey_function_end:
+	.size	SchM_Enter_Fr_17_Eray_ConfigLockKey,__SchM_Enter_Fr_17_Eray_ConfigLockKey_function_end-SchM_Enter_Fr_17_Eray_ConfigLockKey
+.L14:
+	; End of function
+	
+	.sdecl	'.text.SchM_Fr_17_Eray.SchM_Exit_Fr_17_Eray_ConfigLockKey',code,cluster('SchM_Exit_Fr_17_Eray_ConfigLockKey')
+	.sect	'.text.SchM_Fr_17_Eray.SchM_Exit_Fr_17_Eray_ConfigLockKey'
+	.align	2
+	
+	.global	SchM_Exit_Fr_17_Eray_ConfigLockKey
+; Function SchM_Exit_Fr_17_Eray_ConfigLockKey
+.L5:
+SchM_Exit_Fr_17_Eray_ConfigLockKey:	.type	func
+	call	ResumeAllInterrupts
+.L35:
+	ret
+.L21:
+	
+__SchM_Exit_Fr_17_Eray_ConfigLockKey_function_end:
+	.size	SchM_Exit_Fr_17_Eray_ConfigLockKey,__SchM_Exit_Fr_17_Eray_ConfigLockKey_function_end-SchM_Exit_Fr_17_Eray_ConfigLockKey
+.L19:
+	; End of function
+	
+	.calls	'SchM_Enter_Fr_17_Eray_ConfigLockKey','SuspendAllInterrupts'
+	.calls	'SchM_Exit_Fr_17_Eray_ConfigLockKey','ResumeAllInterrupts'
+	.calls	'SchM_Enter_Fr_17_Eray_ConfigLockKey','',0
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
+	.calls	'SchM_Exit_Fr_17_Eray_ConfigLockKey','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	343
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'../BSW/Infra/Integration/SchM_Fr_17_Eray.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L9
+	.byte	2
+	.byte	'SuspendAllInterrupts',0,1,49,6,1,1,1,1,2
+	.byte	'ResumeAllInterrupts',0,1,50,6,1,1,1,1,3,1,4
+	.word	253
+	.byte	5
+	.byte	'__codeptr',0,2,1,1
+	.word	255
+	.byte	6
+	.byte	'unsigned char',0,1,8,5
+	.byte	'uint8',0,3,105,29
+	.word	278
+	.byte	6
+	.byte	'unsigned short int',0,2,7,5
+	.byte	'uint16',0,3,109,29
+	.word	309
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
+	.byte	3,21,0,54,15,0,0,4,15,0,73,19,0,0,5,22,0,3,8,58,15,59,15,57,15,73,19,0,0,6,36,0,3,8,11,15,62,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L23-.L22
+.L22:
+	.half	3
+	.word	.L25-.L24
+.L24:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform',0,0
+	.byte	'..\\BSW\\Infra\\Integration\\IFX_Os.h',0,0,0,0
+	.byte	'../BSW/Infra/Integration/SchM_Fr_17_Eray.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L25:
+.L23:
+	.sdecl	'.debug_info',debug,cluster('SchM_Enter_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_info'
+.L10:
+	.word	267
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'../BSW/Infra/Integration/SchM_Fr_17_Eray.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'SchM_Enter_Fr_17_Eray_ConfigLockKey',0,1,80,6,1,1,1
+	.word	.L3,.L20,.L2
+	.byte	4
+	.word	.L3,.L20
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Enter_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Enter_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_line'
+.L12:
+	.word	.L27-.L26
+.L26:
+	.half	3
+	.word	.L29-.L28
+.L28:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Infra/Integration/SchM_Fr_17_Eray.c',0,0,0,0,0
+.L29:
+	.byte	5,23,7,0,5,2
+	.word	.L3
+	.byte	3,209,0,1,5,1,9
+	.half	.L30-.L3
+	.byte	3,6,1,7,9
+	.half	.L14-.L30
+	.byte	0,1,1
+.L27:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Enter_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L3,0,.L14-.L3,0,0
+	.sdecl	'.debug_info',debug,cluster('SchM_Exit_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_info'
+.L15:
+	.word	266
+	.half	3
+	.word	.L16
+	.byte	4,1
+	.byte	'../BSW/Infra/Integration/SchM_Fr_17_Eray.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L18,.L17
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'SchM_Exit_Fr_17_Eray_ConfigLockKey',0,1,111,6,1,1,1
+	.word	.L5,.L21,.L4
+	.byte	4
+	.word	.L5,.L21
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SchM_Exit_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_abbrev'
+.L16:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SchM_Exit_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_line'
+.L17:
+	.word	.L32-.L31
+.L31:
+	.half	3
+	.word	.L34-.L33
+.L33:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Infra/Integration/SchM_Fr_17_Eray.c',0,0,0,0,0
+.L34:
+	.byte	5,22,7,0,5,2
+	.word	.L5
+	.byte	3,245,0,1,5,1,9
+	.half	.L35-.L5
+	.byte	3,1,1,7,9
+	.half	.L19-.L35
+	.byte	0,1,1
+.L32:
+	.sdecl	'.debug_ranges',debug,cluster('SchM_Exit_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_ranges'
+.L18:
+	.word	-1,.L5,0,.L19-.L5,0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Enter_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L20-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SchM_Exit_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L21-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L36:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('SchM_Enter_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L36,.L3,.L20-.L3
+	.sdecl	'.debug_frame',debug,cluster('SchM_Exit_Fr_17_Eray_ConfigLockKey')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L36,.L5,.L21-.L5
+	; Module end

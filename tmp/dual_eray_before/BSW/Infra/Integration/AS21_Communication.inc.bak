@@ -1,0 +1,164 @@
+/* Included once by IFX_Os.c, following the existing ADS integration convention. */
+#include "AS21_Communication.h"
+#include "AS21_ComPlatform.h"
+#include "FrIf.h"
+#include "PduR.h"
+#include "Com.h"
+#include "APPS/main/AS21_FlexRayLab.h"
+#include "IfxScuCcu.h"
+#include "IfxStm_reg.h"
+
+extern void IrqFr_17_Eray_Init(void);
+volatile AS21_CommunicationDiagType g_AS21_Communication;
+static uint32 AS21_CommTicksPerMs;
+static uint32 AS21_CommLastTick;
+static uint8 AS21_CommRetryMs;
+static boolean AS21_CommControllerReady;
+
+static void AS21_CommControllerInit(void)
+{
+    g_AS21_Communication.ControllerInitCount++;
+    g_AS21_Communication.ControllerInitResult = FrIf_ControllerInit(0U);
+    AS21_CommControllerReady = (g_AS21_Communication.ControllerInitResult == E_OK);
+    AS21_CommRetryMs = 100U;
+    if (AS21_CommControllerReady) {
+        IrqFr_17_Eray_Init();
+        AS21_CommRetryMs = 0U;
+    }
+}
+
+static void AS21_CommOffline(void)
+{
+    if (g_AS21_Communication.Online != 0U) {
+        AS21_FlexRayLab_SetOnline(FALSE);
+        g_AS21_Communication.StateResult = FrIf_SetState(0U, FRIF_GOTO_OFFLINE);
+        g_AS21_Communication.Online = 0U;
+        /* This integration owns the only FrIf cluster. Reset its software
+         * requests/confirmations so a queued pre-offline request cannot be
+         * replayed after a fresh receive. The MCAL configuration is unchanged. */
+        FrIf_Init(&FrIf_Config);
+    }
+}
+
+void AS21_Communication_Init(void)
+{
+    g_AS21_Communication.Initialized = 0U;
+    g_AS21_Communication.Online = 0U;
+    g_AS21_Communication.ControllerInitResult = E_NOT_OK;
+    g_AS21_Communication.StartResult = E_NOT_OK;
+    g_AS21_Communication.PocResult = E_NOT_OK;
+    g_AS21_Communication.StateResult = E_NOT_OK;
+    AS21_CommControllerReady = FALSE;
+    AS21_CommRetryMs = 0U;
+    AS21_CommTicksPerMs = (uint32)(IfxScuCcu_getStmFrequency() / 1000.0F);
+    AS21_CommLastTick = MODULE_STM0.TIM0.U;
+    if (AS21_CommTicksPerMs == 0U) return;
+    PduR_Init(&AS21_PduR_Config);
+    Com_Init(&AS21_Com_Config);
+    if ((PduRState != PDUR_ONLINE) || (Com_GetStatus() != COM_INIT)) return;
+    AS21_FlexRayLab_Init();
+    FrIf_Init(&FrIf_Config);
+    AS21_CommControllerInit();
+    g_AS21_Communication.Initialized = 1U;
+}
+
+void AS21_Communication_Process(void)
+{
+    uint32 now;
+    Fr_POCStatusType poc;
+    if (g_AS21_Communication.Initialized == 0U) return;
+    now = MODULE_STM0.TIM0.U;
+    /* Unsigned subtraction also handles TIM0's 32-bit wrap. */
+    if ((uint32)(now - AS21_CommLastTick) < AS21_CommTicksPerMs) return;
+    AS21_CommLastTick = now;
+    g_AS21_Communication.SupervisorCount++;
+
+    /* Serialize main-context MCAL/state operations with the E-Ray Job ISR. */
+    AS21_ComPlatform_Enter();
+    if (AS21_CommRetryMs != 0U) AS21_CommRetryMs--;
+    if (!AS21_CommControllerReady) {
+        if (AS21_CommRetryMs == 0U) AS21_CommControllerInit();
+    } else {
+        g_AS21_Communication.PocResult = FrIf_GetPOCStatus(0U, &poc);
+        if (g_AS21_Communication.PocResult != E_OK) {
+            g_AS21_Communication.PocErrorCount++;
+            AS21_CommOffline();
+        } else {
+            g_AS21_Communication.PocState = (uint8)poc.State;
+            if (poc.State == FR_POCSTATE_NORMAL_ACTIVE) {
+                if (g_AS21_Communication.Online == 0U) {
+                    g_AS21_Communication.StateResult = FrIf_SetState(0U, FRIF_GOTO_ONLINE);
+                    if (g_AS21_Communication.StateResult == E_OK) {
+                        AS21_FlexRayLab_SetOnline(TRUE);
+                        g_AS21_Communication.Online = 1U;
+                    }
+                }
+                if (g_AS21_Communication.Online != 0U) {
+                    Com_MainFunctionRx();
+                    AS21_FlexRayLab_Process();
+                    Com_MainFunctionTx();
+                    FrIf_MainFunction(0U);
+                }
+            } else {
+                AS21_CommOffline();
+                if ((poc.State == FR_POCSTATE_READY) && (AS21_CommRetryMs == 0U)) {
+                    g_AS21_Communication.StartAttemptCount++;
+                    g_AS21_Communication.StartResult = FrIf_StartCommunication(0U);
+                    AS21_CommRetryMs = 100U;
+                } else if (((poc.State == FR_POCSTATE_HALT) ||
+                            (poc.State == FR_POCSTATE_DEFAULT_CONFIG)) &&
+                           (AS21_CommRetryMs == 0U)) {
+                    AS21_CommControllerInit();
+                    AS21_CommRetryMs = 100U;
+                }
+                /* STARTUP/WAKEUP/CONFIG/PASSIVE: wait, never force coldstart. */
+            }
+        }
+    }
+    AS21_ComPlatform_Exit();
+}
+
+void AS21_Communication_TimerIsr(void)
+{
+    g_AS21_Communication.TimerIrqCount++;
+    if ((g_AS21_Communication.Initialized != 0U) &&
+        (g_AS21_Communication.Online != 0U)) {
+        g_AS21_Communication.JobCallCount++;
+        FrIf_JobListExec(0U);
+    }
+}
+
+void AS21_Communication_RxIndication(PduIdType pduId, PduInfoType *pduInfo)
+{
+    uint8 i;
+    if ((g_AS21_Communication.Online == 0U) ||
+        (pduId != AS21_PDUR_REQUEST_ROUTE) || (pduInfo == NULL_PTR) ||
+        (pduInfo->SduDataPtr == NULL_PTR) || (pduInfo->SduLength != 64U)) {
+        g_AS21_Communication.RxRejectedCount++;
+        return;
+    }
+    for (i = 0U; i < 64U; i++)
+        g_AS21_Communication.LastRxData[i] = pduInfo->SduDataPtr[i];
+    g_AS21_Communication.RxCount++;
+    PduR_FrIfRxIndication(pduId, pduInfo);
+}
+
+Std_ReturnType AS21_Communication_TriggerTransmit(PduIdType pduId, PduInfoType *pduInfo)
+{
+    Std_ReturnType result;
+    if ((g_AS21_Communication.Online == 0U) || (g_AS21_FlexRayLab.TxReady == 0U) ||
+        (pduId != AS21_PDUR_ECHO_ROUTE) || (pduInfo == NULL_PTR) ||
+        (pduInfo->SduDataPtr == NULL_PTR) || (pduInfo->SduLength < 64U)) return E_NOT_OK;
+    g_AS21_Communication.TxTriggerCount++;
+    result = PduR_FrIfTriggerTransmit(pduId, pduInfo);
+    if (result != E_OK) g_AS21_Communication.TxTriggerErrorCount++;
+    return result;
+}
+
+void AS21_Communication_TxConfirmation(PduIdType pduId)
+{
+    if (pduId == AS21_PDUR_ECHO_ROUTE) {
+        g_AS21_Communication.TxConfirmationCount++;
+        PduR_FrIfTxConfirmation(pduId);
+    }
+}

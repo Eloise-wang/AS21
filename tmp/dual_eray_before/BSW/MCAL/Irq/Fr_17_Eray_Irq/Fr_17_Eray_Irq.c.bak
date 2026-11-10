@@ -1,0 +1,43 @@
+/* CPU0 E-Ray absolute timer0 -> FrIf JobList. No gateway NDAT/MBSC pump. */
+#include "Std_Types.h"
+#include "Irq.h"
+#include "AS21_Communication.h"
+#include "IfxEray_reg.h"
+#include "IfxSrc_reg.h"
+
+#if (IRQ_FLEXRAY_EXIST == STD_ON)
+#if ((IRQ_FLEXRAY0_INT0_PRIO == 0) || (IRQ_FLEXRAY0_INT0_CAT != IRQ_CAT1))
+#error AS21_FrIf_requires_CPU0_INT0_category1_interrupt
+#endif
+#define AS21_FR_TI0_MASK ((uint32)1U << 8U)
+
+/* Called after ControllerInit; MCAL routes timer0 to interrupt line0.
+ * NDAT/MBSC notifications are unused: the FrIf job polls the configured LPDUs.
+ */
+void IrqFr_17_Eray_Init(void)
+{
+    SRC_ERAY_ERAY0_INT0.B.SRE = 0U;
+    SRC_ERAY_ERAY0_INT1.B.SRE = 0U;
+    SRC_ERAY_ERAY0_NDAT0.B.SRE = 0U;
+    SRC_ERAY_ERAY0_NDAT1.B.SRE = 0U;
+    SRC_ERAY_ERAY0_MBSC0.B.SRE = 0U;
+    SRC_ERAY_ERAY0_MBSC1.B.SRE = 0U;
+    SRC_ERAY_ERAY0_TINT0.B.SRE = 0U;
+    SRC_ERAY_ERAY0_TINT1.B.SRE = 0U;
+    MODULE_ERAY0.SIER.U = AS21_FR_TI0_MASK;
+    MODULE_ERAY0.SIR.U = AS21_FR_TI0_MASK;
+    MODULE_ERAY0.SILS.U &= ~AS21_FR_TI0_MASK;
+    MODULE_ERAY0.ILE.B.EINT0 = 1U;
+    SRC_ERAY_ERAY0_INT0.U = (uint32)IRQ_FLEXRAY0_INT0_PRIO |
+                           (uint32)IRQ_FLEXRAY0_INT0_TOS | ((uint32)1U << 10U);
+}
+
+IFX_INTERRUPT(ERAY0_INT0_ISR, 0, IRQ_FLEXRAY0_INT0_PRIO)
+{
+    if ((MODULE_ERAY0.SIR.U & AS21_FR_TI0_MASK) != 0U) {
+        /* Always acknowledge, including offline/sync-loss early-return paths. */
+        MODULE_ERAY0.SIR.U = AS21_FR_TI0_MASK;
+        AS21_Communication_TimerIsr();
+    }
+}
+#endif

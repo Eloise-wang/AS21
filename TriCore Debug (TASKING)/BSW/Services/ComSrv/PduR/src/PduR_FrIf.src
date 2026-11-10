@@ -1,0 +1,629 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc20888a --dep-file=BSW/Services/ComSrv/PduR/src/PduR_FrIf.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc38x -D__CPU_TC38X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc38x -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21 -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS\\\\main -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Autosar_Srv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Integration -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA\\\\_Reg -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Configurations -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC38x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o BSW/Services/ComSrv/PduR/src/PduR_FrIf.src ../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c"
+	.compiler_name		"ctc"
+	;source	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.PduR_FrIf.PduR_FrIfRxIndication',code,cluster('PduR_FrIfRxIndication')
+	.sect	'.text.PduR_FrIf.PduR_FrIfRxIndication'
+	.align	2
+	
+	.global	PduR_FrIfRxIndication
+; Function PduR_FrIfRxIndication
+.L4:
+PduR_FrIfRxIndication:	.type	func
+	mov	d5,#49
+	call	PduR_LoIfRxIndication
+.L39:
+	ret
+.L28:
+	
+__PduR_FrIfRxIndication_function_end:
+	.size	PduR_FrIfRxIndication,__PduR_FrIfRxIndication_function_end-PduR_FrIfRxIndication
+.L17:
+	; End of function
+	
+	.sdecl	'.text.PduR_FrIf.PduR_FrIfTxConfirmation',code,cluster('PduR_FrIfTxConfirmation')
+	.sect	'.text.PduR_FrIf.PduR_FrIfTxConfirmation'
+	.align	2
+	
+	.global	PduR_FrIfTxConfirmation
+; Function PduR_FrIfTxConfirmation
+.L6:
+PduR_FrIfTxConfirmation:	.type	func
+	mov	d5,#50
+	call	PduR_LoIfTxConfirmation
+.L40:
+	ret
+.L33:
+	
+__PduR_FrIfTxConfirmation_function_end:
+	.size	PduR_FrIfTxConfirmation,__PduR_FrIfTxConfirmation_function_end-PduR_FrIfTxConfirmation
+.L22:
+	; End of function
+	
+	.sdecl	'.text.PduR_FrIf.PduR_FrIfTriggerTransmit',code,cluster('PduR_FrIfTriggerTransmit')
+	.sect	'.text.PduR_FrIf.PduR_FrIfTriggerTransmit'
+	.align	2
+	
+	.global	PduR_FrIfTriggerTransmit
+; Function PduR_FrIfTriggerTransmit
+.L8:
+PduR_FrIfTriggerTransmit:	.type	func
+	mov	d5,#51
+	call	PduR_LoIfTriggerTransmit
+.L41:
+	j	.L2
+.L2:
+	ret
+.L36:
+	
+__PduR_FrIfTriggerTransmit_function_end:
+	.size	PduR_FrIfTriggerTransmit,__PduR_FrIfTriggerTransmit_function_end-PduR_FrIfTriggerTransmit
+.L27:
+	; End of function
+	
+	.calls	'PduR_FrIfRxIndication','PduR_LoIfRxIndication'
+	.calls	'PduR_FrIfTxConfirmation','PduR_LoIfTxConfirmation'
+	.calls	'PduR_FrIfTriggerTransmit','PduR_LoIfTriggerTransmit'
+	.calls	'PduR_FrIfRxIndication','',0
+	.calls	'PduR_FrIfTxConfirmation','',0
+	.extern	PduR_LoIfRxIndication
+	.extern	PduR_LoIfTxConfirmation
+	.extern	PduR_LoIfTriggerTransmit
+	.calls	'PduR_FrIfTriggerTransmit','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L10:
+	.word	2786
+	.half	3
+	.word	.L11
+	.byte	4
+.L9:
+	.byte	1
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L12
+.L29:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L35:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.word	219
+	.byte	4,2,43,9,8,5
+	.byte	'SduDataPtr',0
+	.word	236
+	.byte	4,2,35,0,5
+	.byte	'SduLength',0
+	.word	197
+	.byte	2,2,35,4,0
+.L31:
+	.byte	3
+	.word	241
+	.byte	6
+	.byte	'PduR_LoIfRxIndication',0,1,40,6,1,1,1,1,7
+	.byte	'pduId',0,1,40,38
+	.word	197
+	.byte	7
+	.byte	'pduInfoPtr',0,1,40,58
+	.word	286
+	.byte	7
+	.byte	'serviceId',0,1,40,76
+	.word	219
+	.byte	0,6
+	.byte	'PduR_LoIfTxConfirmation',0,1,41,6,1,1,1,1,7
+	.byte	'pduId',0,1,41,40
+	.word	197
+	.byte	7
+	.byte	'serviceId',0,1,41,53
+	.word	219
+	.byte	0,8
+	.byte	'PduR_LoIfTriggerTransmit',0,1,42,16
+	.word	219
+	.byte	1,1,1,1,7
+	.byte	'pduId',0,1,42,51
+	.word	197
+	.byte	7
+	.byte	'pduInfoPtr',0,1,42,71
+	.word	286
+	.byte	7
+	.byte	'serviceId',0,1,42,89
+	.word	219
+	.byte	0,2
+	.byte	'short int',0,2,5,9
+	.byte	'__wchar_t',0,3,1,1
+	.word	527
+	.byte	2
+	.byte	'unsigned int',0,4,7,9
+	.byte	'__size_t',0,3,1,1
+	.word	558
+	.byte	2
+	.byte	'int',0,4,5,9
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	591
+	.byte	10,1,3
+	.word	618
+	.byte	9
+	.byte	'__codeptr',0,3,1,1
+	.word	620
+	.byte	9
+	.byte	'boolean',0,4,101,29
+	.word	219
+	.byte	9
+	.byte	'uint8',0,4,105,29
+	.word	219
+	.byte	9
+	.byte	'uint16',0,4,109,29
+	.word	197
+	.byte	2
+	.byte	'unsigned long int',0,4,7,9
+	.byte	'uint32',0,4,113,29
+	.word	688
+	.byte	9
+	.byte	'Std_ReturnType',0,5,97,16
+	.word	219
+	.byte	9
+	.byte	'PduIdType',0,2,41,16
+	.word	197
+	.byte	9
+	.byte	'PduLengthType',0,2,42,16
+	.word	197
+	.byte	9
+	.byte	'PduInfoType',0,2,46,3
+	.word	241
+	.byte	11,2,54,9,1,12
+	.byte	'TP_DATACONF',0,0,12
+	.byte	'TP_DATARETRY',0,1,12
+	.byte	'TP_CONFPENDING',0,2,12
+	.byte	'TP_NORETRY',0,3,0,9
+	.byte	'TpDataStateType',0,2,59,3
+	.word	807
+	.byte	11,6,29,9,1,12
+	.byte	'ARC_PDUR_UP_MODULES',0,0,12
+	.byte	'ARC_PDUR_COM',0,1,12
+	.byte	'ARC_PDUR_DCM',0,2,12
+	.byte	'ARC_PDUR_IPDUM',0,3,12
+	.byte	'ARC_PDUR_SECOC',0,4,12
+	.byte	'ARC_PDUR_CDDPDUR',0,5,12
+	.byte	'ARC_PDUR_LDCOM',0,6,12
+	.byte	'ARC_PDUR_LOIF_MODULES',0,7,12
+	.byte	'ARC_PDUR_CANIF',0,8,12
+	.byte	'ARC_PDUR_CANNM',0,9,12
+	.byte	'ARC_PDUR_LINIF',0,10,12
+	.byte	'ARC_PDUR_SOADIF',0,11,12
+	.byte	'ARC_PDUR_DOIPIF',0,12,12
+	.byte	'ARC_PDUR_UDPNM',0,13,12
+	.byte	'ARC_PDUR_FRIF',0,14,12
+	.byte	'ARC_PDUR_FRNM',0,15,12
+	.byte	'ARC_PDUR_CDD_LINSLVIF',0,16,12
+	.byte	'ARC_PDUR_LOTP_MODULES',0,17,12
+	.byte	'ARC_PDUR_CANTP',0,18,12
+	.byte	'ARC_PDUR_LINTP',0,19,12
+	.byte	'ARC_PDUR_SOADTP',0,20,12
+	.byte	'ARC_PDUR_DOIPTP',0,21,12
+	.byte	'ARC_PDUR_SOAD',0,22,12
+	.byte	'ARC_PDUR_DOIP',0,23,12
+	.byte	'ARC_PDUR_J1939TP',0,24,12
+	.byte	'ARC_PDUR_FRTP',0,25,12
+	.byte	'ARC_PDUR_END_OF_MODULES',0,26,0,9
+	.byte	'ARC_PduR_ModuleType',0,6,61,3
+	.word	896
+	.byte	9
+	.byte	'PduR_RoutingPathGroupIdType',0,6,65,16
+	.word	197
+	.byte	11,6,84,9,1,12
+	.byte	'PDUR_NO_PROVISION',0,0,12
+	.byte	'PDUR_TRIGGER_TRANSMIT',0,1,12
+	.byte	'PDUR_DIRECT',0,2,0,9
+	.byte	'PduR_DataProvisionType',0,6,88,3
+	.word	1459
+	.byte	4,6,110,9,8,5
+	.byte	'BufSize',0
+	.word	688
+	.byte	4,2,35,0,5
+	.byte	'DataPtr',0
+	.word	236
+	.byte	4,2,35,4,0,9
+	.byte	'PduRTxBuffer_type',0,6,113,2
+	.word	1554
+	.byte	11,6,115,9,1,12
+	.byte	'PDUR_BUFFER_FREE',0,0,12
+	.byte	'PDUR_BUFFER_RX_READY',0,1,12
+	.byte	'PDUR_BUFFER_RX_BUSY',0,2,12
+	.byte	'PDUR_BUFFER_TX_READY',0,3,12
+	.byte	'PDUR_BUFFER_TX_BUSY',0,4,12
+	.byte	'PDUR_BUFFER_NOT_ALLOCATED_FROM_UP_MODULE',0,5,12
+	.byte	'PDUR_BUFFER_ALLOCATED_FROM_UP_MODULE',0,6,0,9
+	.byte	'PduRTpBufferStatus_type',0,6,123,3
+	.word	1620
+	.byte	13,16
+	.word	197
+	.byte	14,7,0,4,6,126,9,28,5
+	.byte	'pduInfoPtr',0
+	.word	286
+	.byte	4,2,35,0,5
+	.byte	'status',0
+	.word	1620
+	.byte	1,2,35,4,5
+	.byte	'bufferSize',0
+	.word	197
+	.byte	2,2,35,6,5
+	.byte	'rxByteCount',0
+	.word	197
+	.byte	2,2,35,8,5
+	.byte	'txByteCount',0
+	.word	1849
+	.byte	16,2,35,10,5
+	.byte	'nAcc',0
+	.word	219
+	.byte	1,2,35,26,0,9
+	.byte	'PduRTpBufferInfo_type',0,6,133,1,3
+	.word	1858
+	.byte	15
+	.word	1459
+	.byte	15
+	.word	197
+	.byte	15
+	.word	197
+	.byte	15
+	.word	896
+	.byte	15
+	.word	197
+	.byte	15
+	.word	197
+	.byte	3
+	.word	2032
+	.byte	4,6,135,1,9,16,5
+	.byte	'DataProvision',0
+	.word	2007
+	.byte	1,2,35,0,5
+	.byte	'DestPduId',0
+	.word	2012
+	.byte	2,2,35,2,5
+	.byte	'TxBufferId',0
+	.word	2017
+	.byte	2,2,35,4,5
+	.byte	'DestModule',0
+	.word	2022
+	.byte	1,2,35,6,5
+	.byte	'NofGroupRefs',0
+	.word	2027
+	.byte	2,2,35,8,5
+	.byte	'RoutingPathGroupRefs',0
+	.word	2037
+	.byte	4,2,35,12,0,9
+	.byte	'PduRDestPdu_type',0,6,161,1,3
+	.word	2042
+	.byte	16
+	.word	219
+	.byte	17,0,4,6,163,1,9,1,5
+	.byte	'ElementBytePosition',0
+	.word	219
+	.byte	1,2,35,0,5
+	.byte	'DefaultValueElement',0
+	.word	2209
+	.byte	0,2,35,1,0,9
+	.byte	'PduRDefaultValueElement_type',0,6,166,1,3
+	.word	2216
+	.byte	3
+	.word	2216
+	.byte	4,6,169,1,9,8,5
+	.byte	'PduR_Arc_Dummy',0
+	.word	219
+	.byte	1,2,35,0,5
+	.byte	'PduRDefaultValueElement',0
+	.word	2319
+	.byte	4,2,35,4,0,9
+	.byte	'PduRDefaultValue_type',0,6,172,1,3
+	.word	2324
+	.byte	15
+	.word	197
+	.byte	15
+	.word	896
+	.byte	15
+	.word	2042
+	.byte	3
+	.word	2429
+	.byte	15
+	.word	2434
+	.byte	3
+	.word	2439
+	.byte	4,6,174,1,9,24,5
+	.byte	'PduRTpThreshld',0
+	.word	197
+	.byte	2,2,35,0,5
+	.byte	'PduRDefaultValue',0
+	.word	2324
+	.byte	8,2,35,4,5
+	.byte	'SrcPduId',0
+	.word	2419
+	.byte	2,2,35,12,5
+	.byte	'SrcModule',0
+	.word	2424
+	.byte	1,2,35,14,5
+	.byte	'PduRDestPdus',0
+	.word	2444
+	.byte	4,2,35,16,5
+	.byte	'PduRDestinatnNum',0
+	.word	219
+	.byte	1,2,35,20,5
+	.byte	'PduRDirectGateway',0
+	.word	219
+	.byte	1,2,35,21,0,9
+	.byte	'PduRRoutingPath_type',0,6,211,1,3
+	.word	2449
+	.byte	9
+	.byte	'PduR_PBConfigIdType',0,6,214,1,15
+	.word	219
+	.byte	4,6,216,1,9,12,5
+	.byte	'Destinations',0
+	.word	2444
+	.byte	4,2,35,0,5
+	.byte	'NofDestinations',0
+	.word	688
+	.byte	4,2,35,4,5
+	.byte	'EnabledAtInit',0
+	.word	219
+	.byte	1,2,35,8,0,9
+	.byte	'PduR_RoutingPathGroupType',0,6,220,1,2
+	.word	2677
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,15,0,73,19,0,0,4,19,1,58,15
+	.byte	59,15,57,15,11,15,0,0,5,13,0,3,8,73,19,11,15,56,9,0,0,6,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60
+	.byte	12,0,0,7,5,0,3,8,58,15,59,15,57,15,73,19,0,0,8,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12
+	.byte	0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,10,21,0,54,15,0,0,11,4,1,58,15,59,15,57,15,11,15,0,0,12,40
+	.byte	0,3,8,28,13,0,0,13,1,1,11,15,73,19,0,0,14,33,0,47,15,0,0,15,38,0,73,19,0,0,16,1,1,73,19,0,0,17,33,0,0
+	.byte	0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L12:
+	.word	.L43-.L42
+.L42:
+	.half	3
+	.word	.L45-.L44
+.L44:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR\\\\inc',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform',0,0
+	.byte	'PduR_If.h',0,1,0,0
+	.byte	'ComStack_Types.h',0,2,0,0
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Std_Types.h',0,2,0,0
+	.byte	'PduR_Types.h',0,1,0,0,0
+.L45:
+.L43:
+	.sdecl	'.debug_info',debug,cluster('PduR_FrIfRxIndication')
+	.sect	'.debug_info'
+.L13:
+	.word	295
+	.half	3
+	.word	.L14
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L16,.L15
+	.byte	2
+	.word	.L9
+	.byte	3
+	.byte	'PduR_FrIfRxIndication',0,1,24,6,1,1,1
+	.word	.L4,.L28,.L3
+	.byte	4
+	.byte	'pduId',0,1,24,38
+	.word	.L29,.L30
+	.byte	4
+	.byte	'pduInfoPtr',0,1,24,58
+	.word	.L31,.L32
+	.byte	5
+	.word	.L4,.L28
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('PduR_FrIfRxIndication')
+	.sect	'.debug_abbrev'
+.L14:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('PduR_FrIfRxIndication')
+	.sect	'.debug_line'
+.L15:
+	.word	.L47-.L46
+.L46:
+	.half	3
+	.word	.L49-.L48
+.L48:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0,0,0,0,0
+.L49:
+	.byte	5,46,7,0,5,2
+	.word	.L4
+	.byte	3,24,1,5,1,9
+	.half	.L39-.L4
+	.byte	3,1,1,7,9
+	.half	.L17-.L39
+	.byte	0,1,1
+.L47:
+	.sdecl	'.debug_ranges',debug,cluster('PduR_FrIfRxIndication')
+	.sect	'.debug_ranges'
+.L16:
+	.word	-1,.L4,0,.L17-.L4,0,0
+	.sdecl	'.debug_info',debug,cluster('PduR_FrIfTxConfirmation')
+	.sect	'.debug_info'
+.L18:
+	.word	274
+	.half	3
+	.word	.L19
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L21,.L20
+	.byte	2
+	.word	.L9
+	.byte	3
+	.byte	'PduR_FrIfTxConfirmation',0,1,28,6,1,1,1
+	.word	.L6,.L33,.L5
+	.byte	4
+	.byte	'pduId',0,1,28,40
+	.word	.L29,.L34
+	.byte	5
+	.word	.L6,.L33
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('PduR_FrIfTxConfirmation')
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('PduR_FrIfTxConfirmation')
+	.sect	'.debug_line'
+.L20:
+	.word	.L51-.L50
+.L50:
+	.half	3
+	.word	.L53-.L52
+.L52:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0,0,0,0,0
+.L53:
+	.byte	5,36,7,0,5,2
+	.word	.L6
+	.byte	3,28,1,5,1,9
+	.half	.L40-.L6
+	.byte	3,1,1,7,9
+	.half	.L22-.L40
+	.byte	0,1,1
+.L51:
+	.sdecl	'.debug_ranges',debug,cluster('PduR_FrIfTxConfirmation')
+	.sect	'.debug_ranges'
+.L21:
+	.word	-1,.L6,0,.L22-.L6,0,0
+	.sdecl	'.debug_info',debug,cluster('PduR_FrIfTriggerTransmit')
+	.sect	'.debug_info'
+.L23:
+	.word	302
+	.half	3
+	.word	.L24
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L26,.L25
+	.byte	2
+	.word	.L9
+	.byte	3
+	.byte	'PduR_FrIfTriggerTransmit',0,1,32,16
+	.word	.L35
+	.byte	1,1,1
+	.word	.L8,.L36,.L7
+	.byte	4
+	.byte	'pduId',0,1,32,51
+	.word	.L29,.L37
+	.byte	4
+	.byte	'pduInfoPtr',0,1,32,71
+	.word	.L31,.L38
+	.byte	5
+	.word	.L8,.L36
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('PduR_FrIfTriggerTransmit')
+	.sect	'.debug_abbrev'
+.L24:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('PduR_FrIfTriggerTransmit')
+	.sect	'.debug_line'
+.L25:
+	.word	.L55-.L54
+.L54:
+	.half	3
+	.word	.L57-.L56
+.L56:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/PduR/src/PduR_FrIf.c',0,0,0,0,0
+.L57:
+	.byte	5,56,7,0,5,2
+	.word	.L8
+	.byte	3,32,1,5,5,9
+	.half	.L41-.L8
+	.byte	1,5,1,9
+	.half	.L2-.L41
+	.byte	3,1,1,7,9
+	.half	.L27-.L2
+	.byte	0,1,1
+.L55:
+	.sdecl	'.debug_ranges',debug,cluster('PduR_FrIfTriggerTransmit')
+	.sect	'.debug_ranges'
+.L26:
+	.word	-1,.L8,0,.L27-.L8,0,0
+	.sdecl	'.debug_loc',debug,cluster('PduR_FrIfRxIndication')
+	.sect	'.debug_loc'
+.L3:
+	.word	-1,.L4,0,.L28-.L4
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L30:
+	.word	-1,.L4,0,.L39-.L4
+	.half	1
+	.byte	84
+	.word	0,0
+.L32:
+	.word	-1,.L4,0,.L39-.L4
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('PduR_FrIfTriggerTransmit')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L36-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L37:
+	.word	-1,.L8,0,.L41-.L8
+	.half	1
+	.byte	84
+	.word	0,0
+.L38:
+	.word	-1,.L8,0,.L41-.L8
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('PduR_FrIfTxConfirmation')
+	.sect	'.debug_loc'
+.L5:
+	.word	-1,.L6,0,.L33-.L6
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L34:
+	.word	-1,.L6,0,.L40-.L6
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L58:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('PduR_FrIfRxIndication')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L58,.L4,.L28-.L4
+	.sdecl	'.debug_frame',debug,cluster('PduR_FrIfTxConfirmation')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L58,.L6,.L33-.L6
+	.sdecl	'.debug_frame',debug,cluster('PduR_FrIfTriggerTransmit')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L58,.L8,.L36-.L8
+	; Module end

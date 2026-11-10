@@ -1,0 +1,3427 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc15028a --dep-file=BSW/Services/ComSrv/Com/src/Com_Sched.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc38x -D__CPU_TC38X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc38x -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21 -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS\\\\main -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Autosar_Srv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Integration -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA\\\\_Reg -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Configurations -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC38x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o BSW/Services/ComSrv/Com/src/Com_Sched.src ../BSW/Services/ComSrv/Com/src/Com_Sched.c"
+	.compiler_name		"ctc"
+	;source	'../BSW/Services/ComSrv/Com/src/Com_Sched.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Com_Sched.Com_ProcessMixedOrPeriodicTxMode',code,cluster('Com_ProcessMixedOrPeriodicTxMode')
+	.sect	'.text.Com_Sched.Com_ProcessMixedOrPeriodicTxMode'
+	.align	2
+	
+; Function Com_ProcessMixedOrPeriodicTxMode
+.L87:
+Com_ProcessMixedOrPeriodicTxMode:	.type	func
+	mov	d8,d4
+.L187:
+	mul	d15,d8,#88
+.L416:
+	movh.a	a15,#@his(ComConfig)
+	lea	a15,[a15]@los(ComConfig)
+	ld.a	a15,[a15]
+.L417:
+	ld.a	a15,[a15]12
+.L418:
+	addsc.a	a2,a15,d15,#0
+.L176:
+	mul	d15,d8,#40
+	movh.a	a15,#@his(Com_Arc_Config)
+	lea	a15,[a15]@los(Com_Arc_Config)
+	ld.a	a15,[a15]
+	addsc.a	a15,a15,d15,#0
+.L188:
+	ld.bu	d15,[a15]36
+.L419:
+	jne	d15,#1,.L2
+.L420:
+	lea	a12,[a2]32
+.L189:
+	j	.L3
+.L2:
+	lea	a12,[a2]48
+.L3:
+	ld.w	d15,[a15]16
+	jlt.u	d15,#1,.L4
+	ld.w	d15,[a15]16
+	add	d15,#-1
+	st.w	[a15]16,d15
+.L4:
+	ld.bu	d15,[a12]
+.L421:
+	jne	d15,#1,.L5
+.L422:
+	ld.bu	d15,[a15]24
+.L423:
+	jlt.u	d15,#1,.L6
+.L424:
+	ld.w	d15,[a15]8
+	jlt.u	d15,#1,.L7
+	ld.w	d15,[a15]8
+	add	d15,#-1
+	st.w	[a15]8,d15
+.L7:
+	jne	d5,#0,.L8
+.L425:
+	ld.w	d15,[a15]8
+.L426:
+	jne	d15,#0,.L9
+.L427:
+	ld.w	d15,[a15]12
+.L428:
+	jne	d15,#0,.L10
+.L429:
+	mov	d4,d8
+	call	Com_TriggerIPDUSend
+.L186:
+	ld.w	d15,[a12]2
+.L430:
+	st.w	[a15]8,d15
+.L431:
+	ld.bu	d15,[a15]24
+.L432:
+	add	d15,#-1
+	st.b	[a15]24,d15
+.L10:
+.L9:
+	j	.L11
+.L8:
+	mov	d15,#0
+.L433:
+	st.b	[a15]24,d15
+.L434:
+	mov	d15,#0
+.L435:
+	st.b	[a15]25,d15
+.L11:
+.L6:
+.L5:
+	ld.w	d15,[a15]16
+.L436:
+	jne	d15,#0,.L12
+.L437:
+	ld.w	d15,[a15]12
+.L438:
+	jne	d15,#0,.L13
+.L439:
+	mov	d4,d8
+.L190:
+	call	Com_TriggerIPDUSend
+.L191:
+	ld.w	d15,[a12]10
+.L440:
+	st.w	[a15]16,d15
+.L441:
+	ld.w	d15,[a15]28
+.L442:
+	jlt.u	d15,#1,.L14
+.L443:
+	ld.w	d15,[a15]20
+.L444:
+	jne	d15,#0,.L15
+.L445:
+	ld.w	d15,[a15]28
+.L446:
+	st.w	[a15]20,d15
+.L15:
+.L14:
+.L13:
+.L12:
+	ret
+.L172:
+	
+__Com_ProcessMixedOrPeriodicTxMode_function_end:
+	.size	Com_ProcessMixedOrPeriodicTxMode,__Com_ProcessMixedOrPeriodicTxMode_function_end-Com_ProcessMixedOrPeriodicTxMode
+.L119:
+	; End of function
+	
+	.sdecl	'.text.Com_Sched.Com_ProcessDirectTxMode',code,cluster('Com_ProcessDirectTxMode')
+	.sect	'.text.Com_Sched.Com_ProcessDirectTxMode'
+	.align	2
+	
+; Function Com_ProcessDirectTxMode
+.L89:
+Com_ProcessDirectTxMode:	.type	func
+	mul	d15,d4,#88
+.L451:
+	movh.a	a15,#@his(ComConfig)
+	lea	a15,[a15]@los(ComConfig)
+	ld.a	a15,[a15]
+.L452:
+	ld.a	a15,[a15]12
+.L453:
+	addsc.a	a2,a15,d15,#0
+.L183:
+	mul	d15,d4,#40
+	movh.a	a15,#@his(Com_Arc_Config)
+	lea	a15,[a15]@los(Com_Arc_Config)
+	ld.a	a15,[a15]
+	addsc.a	a15,a15,d15,#0
+.L193:
+	ld.bu	d15,[a15]36
+.L454:
+	jne	d15,#1,.L16
+.L455:
+	lea	a12,[a2]32
+.L194:
+	j	.L17
+.L16:
+	lea	a12,[a2]48
+.L17:
+	ld.bu	d15,[a15]24
+.L456:
+	jlt.u	d15,#1,.L18
+.L457:
+	ld.w	d15,[a15]8
+	jlt.u	d15,#1,.L19
+	ld.w	d15,[a15]8
+	add	d15,#-1
+	st.w	[a15]8,d15
+.L19:
+	jne	d5,#0,.L20
+.L458:
+	ld.w	d15,[a15]8
+.L459:
+	jne	d15,#0,.L21
+.L460:
+	ld.w	d15,[a15]12
+.L461:
+	jne	d15,#0,.L22
+.L462:
+	call	Com_TriggerIPDUSend
+.L192:
+	ld.w	d15,[a12]2
+.L463:
+	st.w	[a15]8,d15
+.L464:
+	ld.bu	d15,[a15]24
+.L465:
+	add	d15,#-1
+	st.b	[a15]24,d15
+.L22:
+.L21:
+	j	.L23
+.L20:
+	mov	d15,#0
+.L466:
+	st.b	[a15]24,d15
+.L467:
+	mov	d15,#0
+.L468:
+	st.b	[a15]25,d15
+.L23:
+.L18:
+	ret
+.L179:
+	
+__Com_ProcessDirectTxMode_function_end:
+	.size	Com_ProcessDirectTxMode,__Com_ProcessDirectTxMode_function_end-Com_ProcessDirectTxMode
+.L124:
+	; End of function
+	
+	.sdecl	'.text.Com_Sched.Com_MainFunctionRx',code,cluster('Com_MainFunctionRx')
+	.sect	'.text.Com_Sched.Com_MainFunctionRx'
+	.align	2
+	
+	.global	Com_MainFunctionRx
+; Function Com_MainFunctionRx
+.L91:
+Com_MainFunctionRx:	.type	func
+	sub.a	a10,#8
+.L195:
+	call	Com_GetStatus
+.L236:
+	jeq	d2,#1,.L24
+.L237:
+	mov	d4,#50
+	mov	d5,#0
+	mov	d6,#24
+	mov	d7,#2
+	call	Det_ReportError
+.L238:
+	j	.L25
+.L24:
+	mov	d8,#0
+.L196:
+	j	.L26
+.L27:
+	mul	d15,d8,#88
+	movh.a	a15,#@his(ComConfig)
+	lea	a15,[a15]@los(ComConfig)
+	ld.a	a15,[a15]
+	ld.a	a15,[a15]12
+	addsc.a	a12,a15,d15,#0
+.L198:
+	mul	d15,d8,#40
+	movh.a	a2,#@his(Com_Arc_Config)
+	lea	a2,[a2]@los(Com_Arc_Config)
+	ld.a	a2,[a2]
+	addsc.a	a13,a2,d15,#0
+.L199:
+	ld.bu	d15,[a12]18
+.L239:
+	jne	d15,#0,.L28
+.L240:
+	ld.bu	d15,[a13]34
+.L241:
+	jne	d15,#1,.L29
+.L132:
+	mov	d10,#0
+.L200:
+	call	AS21_ComPlatform_Enter
+.L135:
+	mov	d9,#0
+.L201:
+	j	.L30
+.L31:
+	mul	d15,d9,#4
+.L242:
+	ld.a	a2,[a12]64
+.L243:
+	addsc.a	a2,a2,d15,#0
+	ld.a	a14,[a2]
+.L203:
+	ld.hu	d15,[a14]14
+	mul	d15,d15,#12
+	movh.a	a15,#@his(Com_Arc_Config)
+	lea	a15,[a15]@los(Com_Arc_Config)
+	ld.a	a15,[a15]4
+	addsc.a	a15,a15,d15,#0
+.L204:
+	st.a	[a10]4,a15
+.L205:
+	ld.bu	d15,[a13]35
+.L244:
+	jne	d15,#1,.L32
+.L245:
+	ld.w	d15,[a14]30
+.L246:
+	jlt.u	d15,#1,.L33
+.L247:
+	ld.w	d15,[a15]4
+.L248:
+	jeq	d15,#0,.L34
+.L249:
+	ld.w	d15,[a15]4
+	jlt.u	d15,#1,.L35
+	ld.w	d15,[a15]4
+	add	d15,#-1
+	st.w	[a15]4,d15
+.L35:
+	ld.w	d15,[a15]4
+.L250:
+	jne	d15,#0,.L36
+.L141:
+	mov	d15,#0
+.L251:
+	st.b	[a10],d15
+.L252:
+	ld.bu	d15,[a14]43
+.L253:
+	jeq	d15,#0,.L37
+.L254:
+	ld.bu	d15,[a14]20
+.L255:
+	jne	d15,#1,.L38
+.L143:
+	mov	d11,#0
+.L206:
+	j	.L39
+.L40:
+	ld.a	a15,[a14]44
+.L256:
+	mul	d15,d11,#4
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L257:
+	ld.a	a4,[a15]8
+.L258:
+	ld.a	a15,[a14]44
+.L259:
+	mul	d15,d11,#4
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L260:
+	ld.bu	d4,[a15]12
+.L261:
+	ld.a	a5,[a13]
+.L262:
+	ld.a	a15,[a14]44
+.L263:
+	mul	d15,d11,#4
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L264:
+	ld.hu	d5,[a15]0
+.L265:
+	ld.a	a15,[a14]44
+.L266:
+	mul	d15,d11,#4
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L267:
+	ld.hu	d6,[a15]2
+.L268:
+	ld.a	a15,[a14]44
+.L269:
+	mul	d15,d11,#4
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L270:
+	ld.bu	d7,[a15]6
+.L271:
+	lea	a6,[a10]0
+	call	Com_Misc_WriteSignalDataToPdu
+.L272:
+	add	d11,#1
+.L39:
+	ld.a	a15,[a14]44
+.L273:
+	mul	d15,d11,#4
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L274:
+	jne	d15,#0,.L40
+.L144:
+	mov	d15,#1
+.L275:
+	ld.a	a15,[a10]4
+.L207:
+	st.b	[a15]8,d15
+.L38:
+	j	.L41
+.L37:
+	ld.bu	d15,[a14]20
+.L276:
+	jne	d15,#1,.L42
+.L277:
+	mov	d15,#1
+.L278:
+	st.b	[a15]8,d15
+.L279:
+	ld.a	a4,[a14]24
+.L280:
+	ld.bu	d4,[a14]28
+.L281:
+	ld.a	a5,[a13]
+.L282:
+	ld.hu	d5,[a14]0
+.L283:
+	ld.hu	d6,[a14]4
+.L284:
+	ld.bu	d7,[a14]21
+.L285:
+	lea	a6,[a10]0
+	call	Com_Misc_WriteSignalDataToPdu
+.L286:
+	j	.L43
+.L42:
+.L43:
+.L41:
+	ld.w	d15,[a14]34
+.L287:
+	jeq	d15,#-1,.L44
+.L288:
+	ld.w	d15,[a14]34
+.L289:
+	mul	d15,d15,#4
+.L290:
+	movh.a	a15,#@his(ComNotificationCallouts)
+	lea	a15,[a15]@los(ComNotificationCallouts)
+.L291:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L292:
+	jeq	d15,#0,.L45
+.L293:
+	ld.w	d15,[a14]34
+.L294:
+	mul	d15,d15,#4
+.L295:
+	movh.a	a15,#@his(ComNotificationCallouts)
+	lea	a15,[a15]@los(ComNotificationCallouts)
+.L296:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L297:
+	calli	a15
+.L45:
+.L44:
+	ld.w	d15,[a14]30
+.L298:
+	ld.a	a15,[a10]4
+.L208:
+	st.w	[a15]4,d15
+.L36:
+.L34:
+.L33:
+.L32:
+	ld.bu	d15,[a15]8
+.L209:
+	jne	d15,#1,.L46
+.L299:
+	mov	d10,#1
+.L46:
+	add	d9,#1
+.L202:
+	extr.u	d9,d9,#0,#16
+.L30:
+	ld.w	d15,[a12]64
+.L300:
+	jeq	d15,#0,.L47
+.L301:
+	mul	d15,d9,#4
+.L302:
+	ld.a	a15,[a12]64
+.L303:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L304:
+	jne	d15,#0,.L31
+.L47:
+	jne	d10,#1,.L48
+.L305:
+	ld.bu	d15,[a12]14
+.L306:
+	jne	d15,#1,.L49
+.L148:
+	movh.a	a15,#@his(ComConfig)
+	lea	a15,[a15]@los(ComConfig)
+	ld.a	a15,[a15]
+.L307:
+	ld.a	a15,[a15]12
+.L308:
+	sub.a	a15,a12,a15
+	mov.d	d0,a15
+	mov	d15,#88
+	div	e0,d0,d15
+.L309:
+	extr.u	d4,d0,#0,#16
+.L310:
+	j	.L50
+.L50:
+	call	Com_Misc_UnlockTpBuffer
+.L311:
+	ld.a	a4,[a13]4
+.L312:
+	ld.a	a5,[a13]
+.L313:
+	ld.hu	d4,[a12]16
+	call	memcpy
+.L152:
+	mov	d9,#0
+.L210:
+	j	.L51
+.L52:
+	mul	d15,d9,#4
+.L314:
+	ld.a	a15,[a12]64
+.L315:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a2,[a15]
+.L212:
+	ld.hu	d15,[a2]14
+	mul	d15,d15,#12
+	movh.a	a15,#@his(Com_Arc_Config)
+	lea	a15,[a15]@los(Com_Arc_Config)
+	ld.a	a15,[a15]4
+	addsc.a	a15,a15,d15,#0
+.L214:
+	ld.bu	d15,[a15]8
+.L316:
+	jne	d15,#1,.L53
+.L317:
+	ld.w	d15,[a2]16
+.L318:
+	jeq	d15,#-1,.L54
+.L319:
+	ld.w	d15,[a2]16
+.L320:
+	mul	d15,d15,#4
+.L321:
+	movh.a	a4,#@his(ComNotificationCallouts)
+	lea	a4,[a4]@los(ComNotificationCallouts)
+.L322:
+	addsc.a	a4,a4,d15,#0
+	ld.w	d15,[a4]
+.L323:
+	jeq	d15,#0,.L55
+.L324:
+	ld.w	d15,[a2]16
+.L325:
+	mul	d15,d15,#4
+.L326:
+	movh.a	a2,#@his(ComNotificationCallouts)
+.L213:
+	lea	a2,[a2]@los(ComNotificationCallouts)
+.L327:
+	addsc.a	a2,a2,d15,#0
+	ld.a	a2,[a2]
+.L328:
+	calli	a2
+.L55:
+.L54:
+	mov	d15,#0
+.L329:
+	st.b	[a15]8,d15
+.L53:
+	add	d9,#1
+.L211:
+	extr.u	d9,d9,#0,#16
+.L51:
+	ld.w	d15,[a12]64
+.L330:
+	jeq	d15,#0,.L56
+.L331:
+	mul	d15,d9,#4
+.L332:
+	ld.a	a15,[a12]64
+.L333:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L334:
+	jne	d15,#0,.L52
+.L56:
+.L49:
+.L48:
+	call	AS21_ComPlatform_Exit
+.L29:
+.L28:
+	add	d8,#1
+.L197:
+	extr.u	d8,d8,#0,#16
+.L26:
+	mul	d15,d8,#88
+.L335:
+	movh.a	a15,#@his(ComConfig)
+	lea	a15,[a15]@los(ComConfig)
+	ld.a	a15,[a15]
+.L336:
+	ld.a	a15,[a15]12
+.L337:
+	addsc.a	a15,a15,d15,#0
+.L338:
+	ld.bu	d15,[a15]84
+.L339:
+	jeq	d15,#0,.L27
+.L25:
+	ret
+.L125:
+	
+__Com_MainFunctionRx_function_end:
+	.size	Com_MainFunctionRx,__Com_MainFunctionRx_function_end-Com_MainFunctionRx
+.L104:
+	; End of function
+	
+	.sdecl	'.text.Com_Sched.Com_MainFunctionTx',code,cluster('Com_MainFunctionTx')
+	.sect	'.text.Com_Sched.Com_MainFunctionTx'
+	.align	2
+	
+	.global	Com_MainFunctionTx
+; Function Com_MainFunctionTx
+.L93:
+Com_MainFunctionTx:	.type	func
+	call	Com_GetStatus
+.L344:
+	jeq	d2,#1,.L57
+.L345:
+	mov	d4,#50
+	mov	d5,#0
+	mov	d6,#25
+	mov	d7,#2
+	call	Det_ReportError
+.L346:
+	j	.L58
+.L57:
+	mov	d8,#0
+.L215:
+	j	.L59
+.L60:
+	mul	d15,d8,#88
+.L347:
+	movh.a	a15,#@his(ComConfig)
+	lea	a15,[a15]@los(ComConfig)
+	ld.a	a15,[a15]
+.L348:
+	ld.a	a15,[a15]12
+.L349:
+	addsc.a	a12,a15,d15,#0
+.L160:
+	mul	d15,d8,#40
+	movh.a	a15,#@his(Com_Arc_Config)
+	lea	a15,[a15]@los(Com_Arc_Config)
+	ld.a	a15,[a15]
+	addsc.a	a15,a15,d15,#0
+.L217:
+	mov	d9,#0
+.L218:
+	ld.bu	d0,[a12]18
+.L350:
+	jne	d0,#1,.L61
+.L351:
+	ld.bu	d0,[a15]34
+.L352:
+	jne	d0,#1,.L62
+.L163:
+	ld.bu	d15,[a15]36
+.L353:
+	jne	d15,#1,.L63
+.L354:
+	lea	a13,[a12]32
+.L219:
+	j	.L64
+.L63:
+	lea	a13,[a12]48
+.L64:
+	call	AS21_ComPlatform_Enter
+.L355:
+	ld.w	d15,[a15]12
+	jlt.u	d15,#1,.L65
+	ld.w	d15,[a15]12
+	add	d15,#-1
+	st.w	[a15]12,d15
+.L65:
+	ld.w	d15,[a15]28
+.L356:
+	jlt.u	d15,#1,.L66
+.L357:
+	ld.w	d15,[a15]20
+.L358:
+	jlt.u	d15,#1,.L67
+.L359:
+	ld.w	d15,[a15]20
+	jlt.u	d15,#1,.L68
+	ld.w	d15,[a15]20
+	add	d15,#-1
+	st.w	[a15]20,d15
+.L68:
+	ld.w	d15,[a15]20
+.L360:
+	jne	d15,#0,.L69
+.L361:
+	mov	d9,#1
+.L69:
+.L67:
+.L66:
+	ld.bu	d15,[a13]
+.L362:
+	jeq	d15,#3,.L70
+.L363:
+	ld.bu	d15,[a13]
+.L364:
+	jne	d15,#1,.L71
+.L70:
+	mov	e4,d9,d8
+	call	Com_ProcessMixedOrPeriodicTxMode
+.L365:
+	j	.L72
+.L71:
+	ld.bu	d15,[a13]
+.L366:
+	jne	d15,#0,.L73
+.L367:
+	mov	e4,d9,d8
+	call	Com_ProcessDirectTxMode
+.L368:
+	j	.L74
+.L73:
+.L74:
+.L72:
+	call	AS21_ComPlatform_Exit
+.L166:
+	mov.aa	a4,a12
+.L220:
+	call	Com_Misc_GetTxConfirmationStatus
+.L221:
+	mov	d10,d2
+.L222:
+	mov	d4,#0
+	mov.aa	a4,a12
+.L223:
+	call	Com_Misc_SetTxConfirmationStatus
+.L168:
+	mov	d11,#0
+.L224:
+	j	.L75
+.L76:
+	mul	d15,d11,#4
+.L369:
+	ld.a	a15,[a12]64
+.L370:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L226:
+	jne	d10,#1,.L77
+.L371:
+	ld.w	d15,[a15]16
+.L372:
+	jeq	d15,#-1,.L78
+.L373:
+	ld.w	d15,[a15]16
+.L374:
+	mul	d15,d15,#4
+.L375:
+	movh.a	a2,#@his(ComNotificationCallouts)
+	lea	a2,[a2]@los(ComNotificationCallouts)
+.L376:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L377:
+	jeq	d15,#0,.L79
+.L378:
+	ld.w	d15,[a15]16
+.L379:
+	mul	d15,d15,#4
+.L380:
+	movh.a	a2,#@his(ComNotificationCallouts)
+	lea	a2,[a2]@los(ComNotificationCallouts)
+.L381:
+	addsc.a	a2,a2,d15,#0
+	ld.a	a2,[a2]
+.L382:
+	calli	a2
+.L79:
+.L78:
+.L77:
+	jne	d9,#1,.L80
+.L383:
+	ld.w	d15,[a15]34
+.L384:
+	jeq	d15,#-1,.L81
+.L385:
+	ld.w	d15,[a15]34
+.L386:
+	mul	d15,d15,#4
+.L387:
+	movh.a	a2,#@his(ComNotificationCallouts)
+	lea	a2,[a2]@los(ComNotificationCallouts)
+.L388:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L389:
+	jeq	d15,#0,.L82
+.L390:
+	ld.w	d15,[a15]34
+.L391:
+	mul	d15,d15,#4
+.L392:
+	movh.a	a15,#@his(ComNotificationCallouts)
+.L227:
+	lea	a15,[a15]@los(ComNotificationCallouts)
+.L393:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L394:
+	calli	a15
+.L82:
+.L81:
+.L80:
+	add	d11,#1
+.L225:
+	extr.u	d11,d11,#0,#16
+.L75:
+	ld.w	d15,[a12]64
+.L395:
+	jeq	d15,#0,.L83
+.L396:
+	mul	d15,d11,#4
+.L397:
+	ld.a	a15,[a12]64
+.L398:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L399:
+	jne	d15,#0,.L76
+.L83:
+.L62:
+.L61:
+	add	d8,#1
+.L216:
+	extr.u	d8,d8,#0,#16
+.L59:
+	mul	d15,d8,#88
+.L400:
+	movh.a	a15,#@his(ComConfig)
+	lea	a15,[a15]@los(ComConfig)
+	ld.a	a15,[a15]
+.L401:
+	ld.a	a15,[a15]12
+.L402:
+	addsc.a	a15,a15,d15,#0
+.L403:
+	ld.bu	d15,[a15]84
+.L404:
+	jeq	d15,#0,.L60
+.L58:
+	ret
+.L156:
+	
+__Com_MainFunctionTx_function_end:
+	.size	Com_MainFunctionTx,__Com_MainFunctionTx_function_end-Com_MainFunctionTx
+.L109:
+	; End of function
+	
+	.sdecl	'.text.Com_Sched.Com_MainFunctionRouteSignals',code,cluster('Com_MainFunctionRouteSignals')
+	.sect	'.text.Com_Sched.Com_MainFunctionRouteSignals'
+	.align	2
+	
+	.global	Com_MainFunctionRouteSignals
+; Function Com_MainFunctionRouteSignals
+.L95:
+Com_MainFunctionRouteSignals:	.type	func
+	call	Com_GetStatus
+.L409:
+	jeq	d2,#1,.L84
+.L410:
+	mov	d4,#50
+	mov	d5,#0
+	mov	d6,#26
+	mov	d7,#2
+	call	Det_ReportError
+.L411:
+	j	.L85
+.L84:
+.L85:
+	ret
+.L171:
+	
+__Com_MainFunctionRouteSignals_function_end:
+	.size	Com_MainFunctionRouteSignals,__Com_MainFunctionRouteSignals_function_end-Com_MainFunctionRouteSignals
+.L114:
+	; End of function
+	
+	.calls	'Com_ProcessMixedOrPeriodicTxMode','Com_TriggerIPDUSend'
+	.calls	'Com_ProcessDirectTxMode','Com_TriggerIPDUSend'
+	.calls	'Com_MainFunctionRx','Com_GetStatus'
+	.calls	'Com_MainFunctionRx','Det_ReportError'
+	.calls	'Com_MainFunctionRx','AS21_ComPlatform_Enter'
+	.calls	'Com_MainFunctionRx','Com_Misc_WriteSignalDataToPdu'
+	.calls	'Com_MainFunctionRx','__INDIRECT__'
+	.calls	'Com_MainFunctionRx','Com_Misc_UnlockTpBuffer'
+	.calls	'Com_MainFunctionRx','memcpy'
+	.calls	'Com_MainFunctionRx','AS21_ComPlatform_Exit'
+	.calls	'Com_MainFunctionTx','Com_GetStatus'
+	.calls	'Com_MainFunctionTx','Det_ReportError'
+	.calls	'Com_MainFunctionTx','AS21_ComPlatform_Enter'
+	.calls	'Com_MainFunctionTx','Com_ProcessMixedOrPeriodicTxMode'
+	.calls	'Com_MainFunctionTx','Com_ProcessDirectTxMode'
+	.calls	'Com_MainFunctionTx','AS21_ComPlatform_Exit'
+	.calls	'Com_MainFunctionTx','Com_Misc_GetTxConfirmationStatus'
+	.calls	'Com_MainFunctionTx','Com_Misc_SetTxConfirmationStatus'
+	.calls	'Com_MainFunctionTx','__INDIRECT__'
+	.calls	'Com_MainFunctionRouteSignals','Com_GetStatus'
+	.calls	'Com_MainFunctionRouteSignals','Det_ReportError'
+	.calls	'Com_ProcessMixedOrPeriodicTxMode','',0
+	.calls	'Com_ProcessDirectTxMode','',0
+	.calls	'Com_MainFunctionRx','',8
+	.calls	'Com_MainFunctionTx','',0
+	.extern	Com_TriggerIPDUSend
+	.extern	Com_GetStatus
+	.extern	ComConfig
+	.extern	Com_Arc_Config
+	.extern	Det_ReportError
+	.extern	Com_Misc_WriteSignalDataToPdu
+	.extern	Com_Misc_UnlockTpBuffer
+	.extern	Com_Misc_SetTxConfirmationStatus
+	.extern	Com_Misc_GetTxConfirmationStatus
+	.extern	memcpy
+	.extern	AS21_ComPlatform_Enter
+	.extern	AS21_ComPlatform_Exit
+	.extern	ComNotificationCallouts
+	.extern	__INDIRECT__
+	.calls	'Com_MainFunctionRouteSignals','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L97:
+	.word	9539
+	.half	3
+	.word	.L98
+	.byte	4
+.L96:
+	.byte	1
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L99
+.L126:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L145:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,3
+	.word	196
+	.byte	4,2,58,9,1,5
+	.byte	'COM_IMMEDIATE',0,0,5
+	.byte	'COM_DEFERRED',0,1,0,3
+	.word	244
+	.byte	3
+	.word	196
+	.byte	4,2,63,9,1,5
+	.byte	'COM_RECEIVE',0,0,5
+	.byte	'COM_SEND',0,1,0,3
+	.word	291
+	.byte	3
+	.word	196
+.L133:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.word	332
+	.byte	6,2,166,3,9,4,7
+	.byte	'ComIPduGroupHandleId',0
+	.word	327
+	.byte	2,2,35,0,7
+	.byte	'Com_Arc_EOL',0
+	.word	349
+	.byte	1,2,35,2,0,3
+	.word	354
+	.byte	8
+	.word	412
+	.byte	3
+	.word	417
+	.byte	3
+	.word	218
+	.byte	4,2,47,9,1,5
+	.byte	'CONFIRMATION',0,0,5
+	.byte	'TRANSMIT',0,1,5
+	.byte	'TRIGGERTRANSMIT',0,2,0,3
+	.word	432
+	.byte	3
+	.word	332
+	.byte	4,2,93,9,1,5
+	.byte	'COM_DIRECT',0,0,5
+	.byte	'COM_MIXED',0,1,5
+	.byte	'COM_NONE',0,2,5
+	.byte	'COM_PERIODIC',0,3,0,3
+	.word	492
+	.byte	3
+	.word	332
+	.byte	3
+	.word	218
+	.byte	3
+	.word	218
+	.byte	3
+	.word	218
+	.byte	6,2,232,2,9,16,7
+	.byte	'ComTxModeMode',0
+	.word	549
+	.byte	1,2,35,0,7
+	.byte	'ComTxModeNumberOfRepetitions',0
+	.word	554
+	.byte	1,2,35,1,7
+	.byte	'ComTxModeRepetitionPeriodFactor',0
+	.word	559
+	.byte	4,2,35,2,7
+	.byte	'ComTxModeTimeOffsetFactor',0
+	.word	564
+	.byte	4,2,35,6,7
+	.byte	'ComTxModeTimePeriodFactor',0
+	.word	569
+	.byte	4,2,35,10,0,3
+	.word	574
+	.byte	3
+	.word	574
+	.byte	6,2,253,2,9,40,7
+	.byte	'ComTxIPduMinimumDelayFactor',0
+	.word	427
+	.byte	4,2,35,0,7
+	.byte	'ComTxIPduClearUpdateBit',0
+	.word	482
+	.byte	1,2,35,4,7
+	.byte	'ComTxIPduUnusedAreasDefault',0
+	.word	487
+	.byte	1,2,35,5,7
+	.byte	'ComTxModeTrue',0
+	.word	753
+	.byte	16,2,35,8,7
+	.byte	'ComTxModeFalse',0
+	.word	758
+	.byte	16,2,35,24,0,3
+	.word	763
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	218
+	.byte	3
+	.word	218
+	.byte	3
+	.word	196
+	.byte	3
+	.word	218
+	.byte	4,2,118,9,1,5
+	.byte	'COM_TIMEOUT_DATA_ACTION_NONE',0,0,5
+	.byte	'COM_TIMEOUT_DATA_ACTION_REPLACE',0,1,0,3
+	.word	964
+	.byte	4,2,112,9,1,5
+	.byte	'COM_BIG_ENDIAN',0,0,5
+	.byte	'COM_LITTLE_ENDIAN',0,1,5
+	.byte	'COM_OPAQUE',0,2,0,3
+	.word	1040
+	.byte	9
+	.byte	'void',0,3
+	.word	1101
+	.byte	8
+	.word	1107
+	.byte	4,2,68,9,1,5
+	.byte	'COM_BOOLEAN',0,0,5
+	.byte	'COM_UINT8',0,1,5
+	.byte	'COM_UINT16',0,2,5
+	.byte	'COM_UINT32',0,3,5
+	.byte	'COM_UINT64',0,4,5
+	.byte	'COM_UINT8_N',0,5,5
+	.byte	'COM_UINT8_DYN',0,6,5
+	.byte	'COM_SINT8',0,7,5
+	.byte	'COM_SINT16',0,8,5
+	.byte	'COM_SINT32',0,9,5
+	.byte	'COM_SINT64',0,10,0,3
+	.word	1117
+	.byte	3
+	.word	218
+	.byte	3
+	.word	218
+	.byte	4,2,85,9,1,5
+	.byte	'COM_PENDING',0,0,5
+	.byte	'COM_TRIGGERED',0,1,5
+	.byte	'COM_TRIGGERED_WITHOUT_REPETITION',0,2,5
+	.byte	'COM_TRIGGERED_ON_CHANGE_WITHOUT_REPETITION',0,3,5
+	.byte	'COM_TRIGGERED_ON_CHANGE',0,4,0,3
+	.word	1284
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	3
+	.word	332
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	1040
+	.byte	3
+	.word	1117
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	6,2,179,1,9,20,7
+	.byte	'ComBitPosition',0
+	.word	1446
+	.byte	2,2,35,0,7
+	.byte	'ComBitSize',0
+	.word	1451
+	.byte	2,2,35,2,7
+	.byte	'ComHandleId',0
+	.word	1456
+	.byte	2,2,35,4,7
+	.byte	'ComSignalEndianess',0
+	.word	1461
+	.byte	1,2,35,6,7
+	.byte	'ComSignalInitValue',0
+	.word	1112
+	.byte	4,2,35,8,7
+	.byte	'ComSignalType',0
+	.word	1466
+	.byte	1,2,35,12,7
+	.byte	'ComSigGrpHandleId',0
+	.word	1471
+	.byte	2,2,35,14,7
+	.byte	'Com_Arc_EOL',0
+	.word	1476
+	.byte	1,2,35,16,0,3
+	.word	1481
+	.byte	8
+	.word	1680
+	.byte	3
+	.word	1685
+	.byte	8
+	.word	1690
+	.byte	3
+	.word	332
+	.byte	8
+	.word	1700
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	3
+	.word	332
+	.byte	6,2,236,1,9,60,7
+	.byte	'ComBitPosition',0
+	.word	929
+	.byte	2,2,35,0,7
+	.byte	'ComEndBitPosition',0
+	.word	934
+	.byte	2,2,35,2,7
+	.byte	'ComBitSize',0
+	.word	939
+	.byte	2,2,35,4,7
+	.byte	'ComErrorNotification',0
+	.word	944
+	.byte	4,2,35,6,7
+	.byte	'ComFirstTimeoutFactor',0
+	.word	949
+	.byte	4,2,35,10,7
+	.byte	'ComHandleId',0
+	.word	954
+	.byte	2,2,35,14,7
+	.byte	'ComNotification',0
+	.word	959
+	.byte	4,2,35,16,7
+	.byte	'ComRxDataTimeoutAction',0
+	.word	1035
+	.byte	1,2,35,20,7
+	.byte	'ComSignalEndianess',0
+	.word	1096
+	.byte	1,2,35,21,7
+	.byte	'ComSignalInitValue',0
+	.word	1112
+	.byte	4,2,35,24,7
+	.byte	'ComSignalType',0
+	.word	1269
+	.byte	1,2,35,28,7
+	.byte	'ComTimeoutFactor',0
+	.word	1274
+	.byte	4,2,35,30,7
+	.byte	'ComTimeoutNotification',0
+	.word	1279
+	.byte	4,2,35,34,7
+	.byte	'ComTransferProperty',0
+	.word	1426
+	.byte	1,2,35,38,7
+	.byte	'ComUpdateBitPosition',0
+	.word	1431
+	.byte	2,2,35,40,7
+	.byte	'ComSignalArcUseUpdateBit',0
+	.word	1436
+	.byte	1,2,35,42,7
+	.byte	'Com_Arc_IsSignalGroup',0
+	.word	1441
+	.byte	1,2,35,43,7
+	.byte	'ComGroupSignal',0
+	.word	1695
+	.byte	4,2,35,44,7
+	.byte	'Com_Arc_ShadowBuffer_Mask',0
+	.word	1705
+	.byte	4,2,35,48,7
+	.byte	'ComIPduHandleId',0
+	.word	1710
+	.byte	2,2,35,52,7
+	.byte	'ComOsekNmNetId',0
+	.word	332
+	.byte	1,2,35,54,7
+	.byte	'ComOsekNmNodeId',0
+	.word	332
+	.byte	1,2,35,55,7
+	.byte	'ComSigGwRoutingReq',0
+	.word	1715
+	.byte	1,2,35,56,7
+	.byte	'Com_Arc_EOL',0
+	.word	1720
+	.byte	1,2,35,57,0,3
+	.word	1725
+.L137:
+	.byte	8
+	.word	2385
+	.byte	3
+	.word	2390
+	.byte	8
+	.word	2395
+	.byte	3
+	.word	2390
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	3
+	.word	218
+	.byte	3
+	.word	196
+	.byte	6,2,146,3,9,12,7
+	.byte	'ComIPduCntrRange',0
+	.word	2410
+	.byte	2,2,35,0,7
+	.byte	'ComIPduCntrStartPos',0
+	.word	2415
+	.byte	2,2,35,2,7
+	.byte	'ComIPduCntrThrshldStep',0
+	.word	2420
+	.byte	1,2,35,4,7
+	.byte	'ComIPduCntErrNotification',0
+	.word	2425
+	.byte	4,2,35,6,7
+	.byte	'ComIPduCntrIndex',0
+	.word	2430
+	.byte	2,2,35,10,0,3
+	.word	2435
+	.byte	8
+	.word	2590
+	.byte	3
+	.word	2595
+	.byte	3
+	.word	332
+	.byte	3
+	.word	196
+	.byte	8
+	.word	2610
+	.byte	3
+	.word	332
+	.byte	6,2,177,3,9,88,7
+	.byte	'ComRxIPduCallout',0
+	.word	218
+	.byte	4,2,35,0,7
+	.byte	'ComTxIPduCallout',0
+	.word	218
+	.byte	4,2,35,4,7
+	.byte	'ComTriggerTransmitIPduCallout',0
+	.word	218
+	.byte	4,2,35,8,7
+	.byte	'ArcIPduOutgoingId',0
+	.word	239
+	.byte	2,2,35,12,7
+	.byte	'ComIPduSignalProcessing',0
+	.word	281
+	.byte	1,2,35,14,7
+	.byte	'ComIPduSize',0
+	.word	286
+	.byte	2,2,35,16,7
+	.byte	'ComIPduDirection',0
+	.word	322
+	.byte	1,2,35,18,7
+	.byte	'ComIPduGroupRefs',0
+	.word	422
+	.byte	4,2,35,20,7
+	.byte	'ComTxIPdu',0
+	.word	924
+	.byte	40,2,35,24,7
+	.byte	'ComIPduSignalRef',0
+	.word	2400
+	.byte	4,2,35,64,7
+	.byte	'ComIPduDynSignalRef',0
+	.word	2405
+	.byte	4,2,35,68,7
+	.byte	'ComIpduCounterRef',0
+	.word	2600
+	.byte	4,2,35,72,7
+	.byte	'ComIPduGwRoutingReq',0
+	.word	2605
+	.byte	1,2,35,76,7
+	.byte	'ComIPduGwMapSigDescHandle',0
+	.word	2615
+	.byte	4,2,35,80,7
+	.byte	'Com_Arc_EOL',0
+	.word	2620
+	.byte	1,2,35,84,0,3
+	.word	2625
+.L128:
+	.byte	8
+	.word	3042
+.L147:
+	.byte	10
+	.byte	'getPduId',0,3,1,79,25
+	.word	196
+	.byte	1,1
+.L149:
+	.byte	11
+	.byte	'IPdu',0,1,79,54
+	.word	3047
+.L151:
+	.byte	12,0,13
+	.byte	'Com_TriggerIPDUSend',0,3,32,6,1,1,1,1,11
+	.byte	'PduId',0,3,32,36
+	.word	196
+	.byte	0,8
+	.word	1101
+	.byte	6,4,44,9,20,7
+	.byte	'ComTxModeRepetitionPeriodTimer',0
+	.word	218
+	.byte	4,2,35,0,7
+	.byte	'ComTxIPduMinimumDelayTimer',0
+	.word	218
+	.byte	4,2,35,4,7
+	.byte	'ComTxModeTimePeriodTimer',0
+	.word	218
+	.byte	4,2,35,8,7
+	.byte	'ComTxDMTimer',0
+	.word	218
+	.byte	4,2,35,12,7
+	.byte	'ComTxIPduNumberOfRepetitionsLeft',0
+	.word	332
+	.byte	1,2,35,16,7
+	.byte	'ComTxIPduNumberOfTxConfirmations',0
+	.word	332
+	.byte	1,2,35,17,0,6,4,53,9,40,7
+	.byte	'ComIPduDataPtr',0
+	.word	3130
+	.byte	4,2,35,0,7
+	.byte	'ComIPduDeferredDataPtr',0
+	.word	3130
+	.byte	4,2,35,4,7
+	.byte	'Com_Arc_TxIPduTimers',0
+	.word	3135
+	.byte	20,2,35,8,7
+	.byte	'Com_Arc_TxDeadlineCounter',0
+	.word	218
+	.byte	4,2,35,28,7
+	.byte	'Com_Arc_DynSignalLength',0
+	.word	196
+	.byte	2,2,35,32,7
+	.byte	'Com_Arc_IpduStarted',0
+	.word	332
+	.byte	1,2,35,34,7
+	.byte	'Com_Arc_IpduRxDMControl',0
+	.word	332
+	.byte	1,2,35,35,7
+	.byte	'Com_Arc_IpduTxMode',0
+	.word	332
+	.byte	1,2,35,36,0,3
+	.word	3357
+.L130:
+	.byte	8
+	.word	3607
+	.byte	6,4,29,9,12,7
+	.byte	'Com_Arc_ShadowBuffer',0
+	.word	1112
+	.byte	4,2,35,0,7
+	.byte	'Com_Arc_DeadlineCounter',0
+	.word	218
+	.byte	4,2,35,4,7
+	.byte	'ComSignalUpdated',0
+	.word	332
+	.byte	1,2,35,8,7
+	.byte	'ComSignalUpdatedGwRouting',0
+	.word	332
+	.byte	1,2,35,9,7
+	.byte	'ComSignalRoutingReq',0
+	.word	332
+	.byte	1,2,35,10,0
+.L139:
+	.byte	8
+	.word	3617
+.L161:
+	.byte	8
+	.word	3357
+	.byte	3
+	.word	574
+.L164:
+	.byte	8
+	.word	3786
+	.byte	4,2,53,9,1,5
+	.byte	'COM_UNINIT',0,0,5
+	.byte	'COM_INIT',0,1,0,14
+	.byte	'Com_GetStatus',0,5,83,16
+	.word	3796
+	.byte	1,1,1,1,13
+	.byte	'Det_ReportError',0,6,66,13,1,1,1,1,11
+	.byte	'ModuleId',0,6,66,36
+	.word	196
+	.byte	11
+	.byte	'InstanceId',0,6,66,52
+	.word	332
+	.byte	11
+	.byte	'ApiId',0,6,67,35
+	.word	332
+	.byte	11
+	.byte	'ErrorId',0,6,67,48
+	.word	332
+	.byte	0,8
+	.word	332
+	.byte	8
+	.word	332
+	.byte	13
+	.byte	'Com_Misc_WriteSignalDataToPdu',0,1,56,6,1,1,1,1,11
+	.byte	'SignalDataPtr',0,1,57,22
+	.word	1705
+	.byte	11
+	.byte	'signalType',0,1,58,24
+	.word	1117
+	.byte	11
+	.byte	'comIPduDataPtr',0,1,59,16
+	.word	3943
+	.byte	11
+	.byte	'bitPosition',0,1,60,29
+	.word	196
+	.byte	11
+	.byte	'bitSize',0,1,61,16
+	.word	196
+	.byte	11
+	.byte	'endian',0,1,62,33
+	.word	1040
+	.byte	11
+	.byte	'dataChanged',0,1,63,18
+	.word	3948
+	.byte	0,15
+	.word	3052
+	.byte	16
+	.word	3072
+	.byte	12,0,13
+	.byte	'Com_Misc_UnlockTpBuffer',0,1,87,6,1,1,1,1,11
+	.byte	'PduId',0,1,87,40
+	.word	196
+	.byte	0,13
+	.byte	'Com_Misc_SetTxConfirmationStatus',0,1,92,6,1,1,1,1,11
+	.byte	'IPdu',0,1,92,59
+	.word	3047
+	.byte	11
+	.byte	'value',0,1,92,73
+	.word	332
+	.byte	0,17
+	.byte	'Com_Misc_GetTxConfirmationStatus',0,1,93,9
+	.word	332
+	.byte	1,1,1,1,11
+	.byte	'IPdu',0,1,93,62
+	.word	3047
+	.byte	0,18
+	.word	3130
+	.byte	18
+	.word	1112
+	.byte	2
+	.byte	'unsigned int',0,4,7,17
+	.byte	'memcpy',0,7,53,17
+	.word	3130
+	.byte	1,1,1,1,19,7,53,33
+	.word	4314
+	.byte	19,7,53,56
+	.word	4319
+	.byte	19,7,53,68
+	.word	4324
+	.byte	0,20
+	.byte	'AS21_ComPlatform_Enter',0,8,10,6,1,1,1,1,20
+	.byte	'AS21_ComPlatform_Exit',0,8,11,6,1,1,1,1,21
+	.byte	'__INDIRECT__',0,9,1,1,1,1,1,2
+	.byte	'short int',0,2,5,22
+	.byte	'__wchar_t',0,9,1,1
+	.word	4465
+	.byte	22
+	.byte	'__size_t',0,9,1,1
+	.word	4324
+	.byte	2
+	.byte	'int',0,4,5,22
+	.byte	'__ptrdiff_t',0,9,1,1
+	.word	4513
+	.byte	23,1,8
+	.word	4540
+	.byte	22
+	.byte	'__codeptr',0,9,1,1
+	.word	4542
+	.byte	22
+	.byte	'boolean',0,10,101,29
+	.word	332
+	.byte	22
+	.byte	'uint8',0,10,105,29
+	.word	332
+	.byte	22
+	.byte	'uint16',0,10,109,29
+	.word	196
+	.byte	22
+	.byte	'uint32',0,10,113,29
+	.word	218
+	.byte	22
+	.byte	'PduIdType',0,11,41,16
+	.word	196
+	.byte	22
+	.byte	'PduLengthType',0,11,42,16
+	.word	196
+	.byte	6,11,43,9,8,7
+	.byte	'SduDataPtr',0
+	.word	3943
+	.byte	4,2,35,0,7
+	.byte	'SduLength',0
+	.word	196
+	.byte	2,2,35,4,0,22
+	.byte	'PduInfoType',0,11,46,3
+	.word	4665
+	.byte	4,11,54,9,1,5
+	.byte	'TP_DATACONF',0,0,5
+	.byte	'TP_DATARETRY',0,1,5
+	.byte	'TP_CONFPENDING',0,2,5
+	.byte	'TP_NORETRY',0,3,0,22
+	.byte	'TpDataStateType',0,11,59,3
+	.word	4730
+	.byte	22
+	.byte	'Com_IpduGroupIdType',0,2,29,16
+	.word	196
+	.byte	22
+	.byte	'Com_BitPositionType',0,2,32,16
+	.word	196
+	.byte	24,1,1,8
+	.word	4875
+	.byte	22
+	.byte	'ComNotificationCalloutType',0,2,41,16
+	.word	4878
+	.byte	22
+	.byte	'ComTxIPduClearUpdateBitType',0,2,51,2
+	.word	432
+	.byte	22
+	.byte	'Com_StatusType',0,2,56,2
+	.word	3796
+	.byte	22
+	.byte	'Com_IPduSignalProcessingMode',0,2,61,3
+	.word	244
+	.byte	22
+	.byte	'Com_IPduDirection',0,2,66,3
+	.word	291
+	.byte	22
+	.byte	'Com_SignalType',0,2,80,3
+	.word	1117
+	.byte	22
+	.byte	'ComTransferPropertyType',0,2,91,3
+	.word	1284
+	.byte	22
+	.byte	'ComTxModeModeType',0,2,98,3
+	.word	492
+	.byte	4,2,101,9,1,5
+	.byte	'COM_ALWAYS',0,0,5
+	.byte	'COM_MASKED_NEW_DIFFERS_MASKED_OLD',0,1,5
+	.byte	'COM_MASKED_NEW_DIFFERS_X',0,2,5
+	.byte	'COM_MASKED_NEW_EQUALS_X',0,3,5
+	.byte	'COM_NEVER',0,4,5
+	.byte	'COM_NEW_IS_OUTSIDE',0,5,5
+	.byte	'COM_NEW_IS_WITHIN',0,6,5
+	.byte	'COM_ONE_EVERY_N',0,7,0,22
+	.byte	'ComFilterAlgorithmType',0,2,110,3
+	.word	5121
+	.byte	22
+	.byte	'ComSignalEndianess_type',0,2,116,3
+	.word	1040
+	.byte	22
+	.byte	'ComRxDataTimeoutAction_type',0,2,121,3
+	.word	964
+	.byte	22
+	.byte	'ComGroupSignal_type',0,2,232,1,3
+	.word	1481
+	.byte	22
+	.byte	'ComSignal_type',0,2,227,2,3
+	.word	1725
+	.byte	22
+	.byte	'ComTxMode_type',0,2,250,2,3
+	.word	574
+	.byte	22
+	.byte	'ComTxIPdu_type',0,2,143,3,3
+	.word	763
+	.byte	22
+	.byte	'ComIPduCounter_type',0,2,162,3,3
+	.word	2435
+	.byte	22
+	.byte	'ComIPduGroup_type',0,2,173,3,3
+	.word	354
+	.byte	22
+	.byte	'ComIPdu_type',0,2,238,3,3
+	.word	2625
+	.byte	4,2,241,3,9,1,5
+	.byte	'COM_SIGNAL_REFERENCE',0,0,5
+	.byte	'COM_GROUP_SIGNAL_REFERENCE',0,1,5
+	.byte	'COM_SIGNAL_GROUP_REFERENCE',0,2,5
+	.byte	'GATEWAY_SIGNAL_DESCRIPTION',0,3,0,22
+	.byte	'ComGwSignalRef_type',0,2,246,3,3
+	.word	5578
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	1040
+	.byte	3
+	.word	1117
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	6,2,250,3,9,24,7
+	.byte	'ComBitPosition',0
+	.word	5724
+	.byte	2,2,35,0,7
+	.byte	'ComBitSize',0
+	.word	5729
+	.byte	2,2,35,2,7
+	.byte	'ComSignalEndianess',0
+	.word	5734
+	.byte	1,2,35,4,7
+	.byte	'ComSignalInitValue',0
+	.word	1112
+	.byte	4,2,35,8,7
+	.byte	'ComSignalType',0
+	.word	5739
+	.byte	1,2,35,12,7
+	.byte	'ComUpdateBitPosition',0
+	.word	5744
+	.byte	2,2,35,14,7
+	.byte	'ComSignalArcUseUpdateBit',0
+	.word	5749
+	.byte	1,2,35,16,7
+	.byte	'ComIPduHandleId',0
+	.word	5754
+	.byte	2,2,35,18,7
+	.byte	'Com_Arc_EOL',0
+	.word	5759
+	.byte	1,2,35,20,0,22
+	.byte	'ComGwSrcDesc_type',0,2,160,4,2
+	.word	5764
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	1117
+	.byte	3
+	.word	1040
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	3
+	.word	1284
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	6,2,164,4,9,20,7
+	.byte	'ComBitSize',0
+	.word	6031
+	.byte	2,2,35,0,7
+	.byte	'ComSignalInitValue',0
+	.word	1112
+	.byte	4,2,35,4,7
+	.byte	'ComBitPosition',0
+	.word	6036
+	.byte	2,2,35,8,7
+	.byte	'ComSignalType',0
+	.word	6041
+	.byte	1,2,35,10,7
+	.byte	'ComSignalEndianess',0
+	.word	6046
+	.byte	1,2,35,11,7
+	.byte	'ComUpdateBitPosition',0
+	.word	6051
+	.byte	2,2,35,12,7
+	.byte	'ComSignalArcUseUpdateBit',0
+	.word	6056
+	.byte	1,2,35,14,7
+	.byte	'ComTransferProperty',0
+	.word	6061
+	.byte	1,2,35,15,7
+	.byte	'ComIPduHandleId',0
+	.word	6066
+	.byte	2,2,35,16,7
+	.byte	'Com_Arc_EOL',0
+	.word	6071
+	.byte	1,2,35,18,0,22
+	.byte	'ComGwDestnDesc_type',0,2,204,4,2
+	.word	6076
+	.byte	3
+	.word	5578
+	.byte	3
+	.word	196
+	.byte	3
+	.word	332
+	.byte	6,2,206,4,9,6,7
+	.byte	'ComGwDestinationSignalRef',0
+	.word	6374
+	.byte	1,2,35,0,7
+	.byte	'ComGwDestinationSignalHandle',0
+	.word	6379
+	.byte	2,2,35,2,7
+	.byte	'Com_Arc_EOL',0
+	.word	6384
+	.byte	1,2,35,4,0,22
+	.byte	'ComGwDestn_type',0,2,212,4,3
+	.word	6389
+	.byte	3
+	.word	5578
+	.byte	3
+	.word	196
+	.byte	3
+	.word	6389
+	.byte	8
+	.word	6525
+	.byte	3
+	.word	332
+	.byte	3
+	.word	332
+	.byte	6,2,215,4,9,12,7
+	.byte	'ComGwSourceSignalRef',0
+	.word	6515
+	.byte	1,2,35,0,7
+	.byte	'ComGwSourceSignalHandle',0
+	.word	6520
+	.byte	2,2,35,2,7
+	.byte	'ComGwDestinationRef',0
+	.word	6530
+	.byte	4,2,35,4,7
+	.byte	'ComGwNoOfDesitnationRoutes',0
+	.word	6535
+	.byte	1,2,35,8,7
+	.byte	'Com_Arc_EOL',0
+	.word	6540
+	.byte	1,2,35,9,0,22
+	.byte	'ComGwMapping_type',0,2,225,4,2
+	.word	6545
+	.byte	3
+	.word	332
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	6545
+	.byte	8
+	.word	6748
+	.byte	3
+	.word	3047
+	.byte	3
+	.word	417
+	.byte	3
+	.word	2390
+	.byte	3
+	.word	1685
+	.byte	3
+	.word	5764
+	.byte	8
+	.word	6778
+	.byte	3
+	.word	6076
+	.byte	8
+	.word	6788
+	.byte	6,2,229,4,9,36,7
+	.byte	'ComConfigurationId',0
+	.word	6728
+	.byte	1,2,35,0,7
+	.byte	'ComNofIPdus',0
+	.word	6733
+	.byte	2,2,35,2,7
+	.byte	'ComNofSignals',0
+	.word	6738
+	.byte	2,2,35,4,7
+	.byte	'ComNofGroupSignals',0
+	.word	6743
+	.byte	2,2,35,6,7
+	.byte	'ComGwMappingRef',0
+	.word	6753
+	.byte	4,2,35,8,7
+	.byte	'ComIPdu',0
+	.word	6758
+	.byte	4,2,35,12,7
+	.byte	'ComIPduGroup',0
+	.word	6763
+	.byte	4,2,35,16,7
+	.byte	'ComSignal',0
+	.word	6768
+	.byte	4,2,35,20,7
+	.byte	'ComGroupSignal',0
+	.word	6773
+	.byte	4,2,35,24,7
+	.byte	'ComGwSrcDesc',0
+	.word	6783
+	.byte	4,2,35,28,7
+	.byte	'ComGwDestnDesc',0
+	.word	6793
+	.byte	4,2,35,32,0,22
+	.byte	'Com_ConfigType',0,2,142,5,3
+	.word	6798
+	.byte	22
+	.byte	'Com_Arc_Signal_type',0,4,35,3
+	.word	3617
+	.byte	6,4,38,9,8,7
+	.byte	'Com_Arc_ShadowBuffer',0
+	.word	3130
+	.byte	4,2,35,0,7
+	.byte	'ComSignalUpdated',0
+	.word	332
+	.byte	1,2,35,4,7
+	.byte	'Com_Arc_EOL',0
+	.word	332
+	.byte	1,2,35,5,0,22
+	.byte	'Com_Arc_GroupSignal_type',0,4,42,3
+	.word	7110
+	.byte	22
+	.byte	'Com_Arc_TxIPduTimer_type',0,4,51,3
+	.word	3135
+	.byte	22
+	.byte	'Com_Arc_IPdu_type',0,4,66,3
+	.word	3357
+	.byte	6,4,68,9,2,7
+	.byte	'ComSignalUpdatedGwRouting',0
+	.word	332
+	.byte	1,2,35,0,7
+	.byte	'ComSignalRoutingReq',0
+	.word	332
+	.byte	1,2,35,1,0,22
+	.byte	'Com_Arc_GwSrcDesc_type',0,4,71,2
+	.word	7285
+	.byte	8
+	.word	7110
+	.byte	8
+	.word	7285
+	.byte	6,4,73,9,16,7
+	.byte	'ComIPdu',0
+	.word	3781
+	.byte	4,2,35,0,7
+	.byte	'ComSignal',0
+	.word	3776
+	.byte	4,2,35,4,7
+	.byte	'ComGroupSignal',0
+	.word	7386
+	.byte	4,2,35,8,7
+	.byte	'ComGwSrcDescSignal',0
+	.word	7391
+	.byte	4,2,35,12,0,22
+	.byte	'Com_Arc_Config_type',0,4,78,3
+	.word	7396
+	.byte	22
+	.byte	'size_t',0,12,24,25
+	.word	4324
+	.byte	4,13,29,9,1,5
+	.byte	'ARC_PDUR_UP_MODULES',0,0,5
+	.byte	'ARC_PDUR_COM',0,1,5
+	.byte	'ARC_PDUR_DCM',0,2,5
+	.byte	'ARC_PDUR_IPDUM',0,3,5
+	.byte	'ARC_PDUR_SECOC',0,4,5
+	.byte	'ARC_PDUR_CDDPDUR',0,5,5
+	.byte	'ARC_PDUR_LDCOM',0,6,5
+	.byte	'ARC_PDUR_LOIF_MODULES',0,7,5
+	.byte	'ARC_PDUR_CANIF',0,8,5
+	.byte	'ARC_PDUR_CANNM',0,9,5
+	.byte	'ARC_PDUR_LINIF',0,10,5
+	.byte	'ARC_PDUR_SOADIF',0,11,5
+	.byte	'ARC_PDUR_DOIPIF',0,12,5
+	.byte	'ARC_PDUR_UDPNM',0,13,5
+	.byte	'ARC_PDUR_FRIF',0,14,5
+	.byte	'ARC_PDUR_FRNM',0,15,5
+	.byte	'ARC_PDUR_CDD_LINSLVIF',0,16,5
+	.byte	'ARC_PDUR_LOTP_MODULES',0,17,5
+	.byte	'ARC_PDUR_CANTP',0,18,5
+	.byte	'ARC_PDUR_LINTP',0,19,5
+	.byte	'ARC_PDUR_SOADTP',0,20,5
+	.byte	'ARC_PDUR_DOIPTP',0,21,5
+	.byte	'ARC_PDUR_SOAD',0,22,5
+	.byte	'ARC_PDUR_DOIP',0,23,5
+	.byte	'ARC_PDUR_J1939TP',0,24,5
+	.byte	'ARC_PDUR_FRTP',0,25,5
+	.byte	'ARC_PDUR_END_OF_MODULES',0,26,0,22
+	.byte	'ARC_PduR_ModuleType',0,13,61,3
+	.word	7533
+	.byte	22
+	.byte	'PduR_RoutingPathGroupIdType',0,13,65,16
+	.word	196
+	.byte	4,13,84,9,1,5
+	.byte	'PDUR_NO_PROVISION',0,0,5
+	.byte	'PDUR_TRIGGER_TRANSMIT',0,1,5
+	.byte	'PDUR_DIRECT',0,2,0,22
+	.byte	'PduR_DataProvisionType',0,13,88,3
+	.word	8096
+	.byte	6,13,110,9,8,7
+	.byte	'BufSize',0
+	.word	218
+	.byte	4,2,35,0,7
+	.byte	'DataPtr',0
+	.word	3943
+	.byte	4,2,35,4,0,22
+	.byte	'PduRTxBuffer_type',0,13,113,2
+	.word	8191
+	.byte	4,13,115,9,1,5
+	.byte	'PDUR_BUFFER_FREE',0,0,5
+	.byte	'PDUR_BUFFER_RX_READY',0,1,5
+	.byte	'PDUR_BUFFER_RX_BUSY',0,2,5
+	.byte	'PDUR_BUFFER_TX_READY',0,3,5
+	.byte	'PDUR_BUFFER_TX_BUSY',0,4,5
+	.byte	'PDUR_BUFFER_NOT_ALLOCATED_FROM_UP_MODULE',0,5,5
+	.byte	'PDUR_BUFFER_ALLOCATED_FROM_UP_MODULE',0,6,0,22
+	.byte	'PduRTpBufferStatus_type',0,13,123,3
+	.word	8257
+	.byte	8
+	.word	4665
+	.byte	25,16
+	.word	196
+	.byte	26,7,0,6,13,126,9,28,7
+	.byte	'pduInfoPtr',0
+	.word	8486
+	.byte	4,2,35,0,7
+	.byte	'status',0
+	.word	8257
+	.byte	1,2,35,4,7
+	.byte	'bufferSize',0
+	.word	196
+	.byte	2,2,35,6,7
+	.byte	'rxByteCount',0
+	.word	196
+	.byte	2,2,35,8,7
+	.byte	'txByteCount',0
+	.word	8491
+	.byte	16,2,35,10,7
+	.byte	'nAcc',0
+	.word	332
+	.byte	1,2,35,26,0,22
+	.byte	'PduRTpBufferInfo_type',0,13,133,1,3
+	.word	8500
+	.byte	3
+	.word	8096
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	3
+	.word	7533
+	.byte	3
+	.word	196
+	.byte	3
+	.word	196
+	.byte	8
+	.word	8674
+	.byte	6,13,135,1,9,16,7
+	.byte	'DataProvision',0
+	.word	8649
+	.byte	1,2,35,0,7
+	.byte	'DestPduId',0
+	.word	8654
+	.byte	2,2,35,2,7
+	.byte	'TxBufferId',0
+	.word	8659
+	.byte	2,2,35,4,7
+	.byte	'DestModule',0
+	.word	8664
+	.byte	1,2,35,6,7
+	.byte	'NofGroupRefs',0
+	.word	8669
+	.byte	2,2,35,8,7
+	.byte	'RoutingPathGroupRefs',0
+	.word	8679
+	.byte	4,2,35,12,0,22
+	.byte	'PduRDestPdu_type',0,13,161,1,3
+	.word	8684
+	.byte	27
+	.word	332
+	.byte	28,0,6,13,163,1,9,1,7
+	.byte	'ElementBytePosition',0
+	.word	332
+	.byte	1,2,35,0,7
+	.byte	'DefaultValueElement',0
+	.word	8851
+	.byte	0,2,35,1,0,22
+	.byte	'PduRDefaultValueElement_type',0,13,166,1,3
+	.word	8858
+	.byte	8
+	.word	8858
+	.byte	6,13,169,1,9,8,7
+	.byte	'PduR_Arc_Dummy',0
+	.word	332
+	.byte	1,2,35,0,7
+	.byte	'PduRDefaultValueElement',0
+	.word	8961
+	.byte	4,2,35,4,0,22
+	.byte	'PduRDefaultValue_type',0,13,172,1,3
+	.word	8966
+	.byte	3
+	.word	196
+	.byte	3
+	.word	7533
+	.byte	3
+	.word	8684
+	.byte	8
+	.word	9071
+	.byte	3
+	.word	9076
+	.byte	8
+	.word	9081
+	.byte	6,13,174,1,9,24,7
+	.byte	'PduRTpThreshld',0
+	.word	196
+	.byte	2,2,35,0,7
+	.byte	'PduRDefaultValue',0
+	.word	8966
+	.byte	8,2,35,4,7
+	.byte	'SrcPduId',0
+	.word	9061
+	.byte	2,2,35,12,7
+	.byte	'SrcModule',0
+	.word	9066
+	.byte	1,2,35,14,7
+	.byte	'PduRDestPdus',0
+	.word	9086
+	.byte	4,2,35,16,7
+	.byte	'PduRDestinatnNum',0
+	.word	332
+	.byte	1,2,35,20,7
+	.byte	'PduRDirectGateway',0
+	.word	332
+	.byte	1,2,35,21,0,22
+	.byte	'PduRRoutingPath_type',0,13,211,1,3
+	.word	9091
+	.byte	22
+	.byte	'PduR_PBConfigIdType',0,13,214,1,15
+	.word	332
+	.byte	6,13,216,1,9,12,7
+	.byte	'Destinations',0
+	.word	9086
+	.byte	4,2,35,0,7
+	.byte	'NofDestinations',0
+	.word	218
+	.byte	4,2,35,4,7
+	.byte	'EnabledAtInit',0
+	.word	332
+	.byte	1,2,35,8,0,22
+	.byte	'PduR_RoutingPathGroupType',0,13,220,1,2
+	.word	9319
+	.byte	3
+	.word	6798
+	.byte	8
+	.word	9431
+	.byte	29
+	.byte	'ComConfig',0,14,40,30
+	.word	9436
+	.byte	1,1,3
+	.word	7396
+	.byte	29
+	.byte	'Com_Arc_Config',0,14,41,34
+	.word	9461
+	.byte	1,1,27
+	.word	4883
+	.byte	28,0,3
+	.word	9491
+	.byte	29
+	.byte	'ComNotificationCallouts',0,9,33,41
+	.word	9498
+	.byte	1,1,8
+	.word	4875
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L98:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,4,1,58,15
+	.byte	59,15,57,15,11,15,0,0,5,40,0,3,8,28,13,0,0,6,19,1,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,73,19,11,15,56
+	.byte	9,0,0,8,15,0,73,19,0,0,9,59,0,3,8,0,0,10,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,11,5,0
+	.byte	3,8,58,15,59,15,57,15,73,19,0,0,12,11,0,0,0,13,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
+	.byte	14,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,15,46,1,49,19,0,0,16,5,0,49,19,0,0,17
+	.byte	46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,18,55,0,73,19,0,0,19,5,0,58,15,59,15,57,15
+	.byte	73,19,0,0,20,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,21,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	63,12,60,12,0,0,22,22,0,3,8,58,15,59,15,57,15,73,19,0,0,23,21,0,54,15,0,0,24,21,0,54,15,39,12,0,0,25,1
+	.byte	1,11,15,73,19,0,0,26,33,0,47,15,0,0,27,1,1,73,19,0,0,28,33,0,0,0,29,52,0,3,8,58,15,59,15,57,15,73,19,63
+	.byte	12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L99:
+	.word	.L229-.L228
+.L228:
+	.half	3
+	.word	.L231-.L230
+.L230:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\inc',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Autosar_Srv',0
+	.byte	'D:\\GreenTool\\Infineon\\AURIX-Studio-1.10.40\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Integration',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR\\\\inc',0,0
+	.byte	'..\\BSW\\Services\\ComSrv\\Com\\src\\Com_misc.h',0,0,0,0
+	.byte	'Com_Types.h',0,1,0,0
+	.byte	'Com_Com.h',0,1,0,0
+	.byte	'..\\BSW\\Services\\ComSrv\\Com\\src\\Com_Arc_Types.h',0,0,0,0
+	.byte	'Com.h',0,1,0,0
+	.byte	'Det.h',0,2,0,0
+	.byte	'string.h',0,3,0,0
+	.byte	'AS21_ComPlatform.h',0,4,0,0
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0,0,0,0
+	.byte	'Platform_Types.h',0,5,0,0
+	.byte	'ComStack_Types.h',0,5,0,0
+	.byte	'stddef.h',0,3,0,0
+	.byte	'PduR_Types.h',0,6,0,0
+	.byte	'..\\BSW\\Services\\ComSrv\\Com\\src\\Com_Internal.h',0,0,0,0,0
+.L231:
+.L229:
+	.sdecl	'.debug_info',debug,cluster('Com_MainFunctionRx')
+	.sect	'.debug_info'
+.L100:
+	.word	623
+	.half	3
+	.word	.L101
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L103,.L102
+	.byte	2
+	.word	.L96
+	.byte	3
+	.byte	'Com_MainFunctionRx',0,1,161,1,6,1,1,1
+	.word	.L91,.L125,.L90
+	.byte	4
+	.word	.L91,.L125
+	.byte	4
+	.word	.L24,.L25
+	.byte	5
+	.byte	'pduId',0,1,171,1,17
+	.word	.L126,.L127
+	.byte	4
+	.word	.L27,.L28
+	.byte	5
+	.byte	'IPdu',0,1,172,1,29
+	.word	.L128,.L129
+	.byte	5
+	.byte	'Arc_IPdu',0,1,173,1,34
+	.word	.L130,.L131
+	.byte	4
+	.word	.L132,.L28
+	.byte	5
+	.byte	'pduUpdated',0,1,175,1,21
+	.word	.L133,.L134
+	.byte	4
+	.word	.L135,.L47
+	.byte	5
+	.byte	'sri',0,1,177,1,25
+	.word	.L126,.L136
+	.byte	4
+	.word	.L31,.L46
+	.byte	5
+	.byte	'signal',0,1,178,1,39
+	.word	.L137,.L138
+	.byte	5
+	.byte	'Arc_Signal',0,1,179,1,39
+	.word	.L139,.L140
+	.byte	4
+	.word	.L141,.L32
+	.byte	5
+	.byte	'signalChanged',0,1,197,1,37
+	.word	.L133,.L142
+	.byte	4
+	.word	.L143,.L144
+	.byte	5
+	.byte	'i',0,1,201,1,49
+	.word	.L145,.L146
+	.byte	0,0,0,0,6
+	.word	.L147,.L148,.L50
+	.byte	7
+	.word	.L149,.L150
+	.byte	8
+	.word	.L151,.L148,.L50
+	.byte	0,4
+	.word	.L152,.L48
+	.byte	5
+	.byte	'i',0,1,132,2,29
+	.word	.L126,.L153
+	.byte	4
+	.word	.L52,.L53
+	.byte	5
+	.byte	'signal',0,1,133,2,43
+	.word	.L137,.L154
+	.byte	5
+	.byte	'Arc_Signal',0,1,134,2,43
+	.word	.L139,.L155
+	.byte	0,0,0,0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_MainFunctionRx')
+	.sect	'.debug_abbrev'
+.L101:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
+	.byte	49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Com_MainFunctionRx')
+	.sect	'.debug_line'
+.L102:
+	.word	.L233-.L232
+.L232:
+	.half	3
+	.word	.L235-.L234
+.L234:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0,0,0,0
+	.byte	'..\\BSW\\Services\\ComSrv\\Com\\src\\Com_misc.h',0,0,0,0,0
+.L235:
+	.byte	5,6,7,0,5,2
+	.word	.L91
+	.byte	3,160,1,1,5,34,9
+	.half	.L195-.L91
+	.byte	3,5,1,5,5,9
+	.half	.L236-.L195
+	.byte	1,5,9,7,9
+	.half	.L237-.L236
+	.byte	3,1,1,9
+	.half	.L238-.L237
+	.byte	3,2,1,5,23,9
+	.half	.L24-.L238
+	.byte	3,2,1,5,70,9
+	.half	.L196-.L24
+	.byte	1,5,36,9
+	.half	.L27-.L196
+	.byte	3,1,1,5,45,9
+	.half	.L198-.L27
+	.byte	3,1,1,5,17,9
+	.half	.L199-.L198
+	.byte	3,1,1,5,12,9
+	.half	.L239-.L199
+	.byte	1,5,72,7,9
+	.half	.L240-.L239
+	.byte	1,5,61,9
+	.half	.L241-.L240
+	.byte	1,5,32,7,9
+	.half	.L132-.L241
+	.byte	3,1,1,5,13,9
+	.half	.L200-.L132
+	.byte	3,1,1,5,29,9
+	.half	.L135-.L200
+	.byte	3,1,1,5,107,9
+	.half	.L201-.L135
+	.byte	1,5,70,9
+	.half	.L31-.L201
+	.byte	3,1,1,5,52,9
+	.half	.L242-.L31
+	.byte	1,5,70,9
+	.half	.L243-.L242
+	.byte	1,5,52,9
+	.half	.L203-.L243
+	.byte	3,1,1,5,39,9
+	.half	.L205-.L203
+	.byte	3,7,1,5,22,9
+	.half	.L244-.L205
+	.byte	1,5,29,7,9
+	.half	.L245-.L244
+	.byte	3,1,1,5,48,9
+	.half	.L246-.L245
+	.byte	1,5,34,7,9
+	.half	.L247-.L246
+	.byte	3,3,1,5,21,9
+	.half	.L248-.L247
+	.byte	1,5,25,7,9
+	.half	.L249-.L248
+	.byte	3,2,1,5,39,9
+	.half	.L35-.L249
+	.byte	3,2,1,5,25,9
+	.half	.L250-.L35
+	.byte	1,5,53,7,9
+	.half	.L141-.L250
+	.byte	3,3,1,5,51,9
+	.half	.L251-.L141
+	.byte	1,5,39,9
+	.half	.L252-.L251
+	.byte	3,1,1,5,29,9
+	.half	.L253-.L252
+	.byte	1,5,43,7,9
+	.half	.L254-.L253
+	.byte	3,1,1,5,33,9
+	.half	.L255-.L254
+	.byte	1,5,50,7,9
+	.half	.L143-.L255
+	.byte	3,2,1,5,84,9
+	.half	.L206-.L143
+	.byte	1,5,51,9
+	.half	.L40-.L206
+	.byte	3,3,1,5,67,9
+	.half	.L256-.L40
+	.byte	1,5,70,9
+	.half	.L257-.L256
+	.byte	1,5,51,9
+	.half	.L258-.L257
+	.byte	3,1,1,5,67,9
+	.half	.L259-.L258
+	.byte	1,5,70,9
+	.half	.L260-.L259
+	.byte	1,5,53,9
+	.half	.L261-.L260
+	.byte	3,1,1,5,51,9
+	.half	.L262-.L261
+	.byte	3,1,1,5,67,9
+	.half	.L263-.L262
+	.byte	1,5,70,9
+	.half	.L264-.L263
+	.byte	1,5,51,9
+	.half	.L265-.L264
+	.byte	3,1,1,5,67,9
+	.half	.L266-.L265
+	.byte	1,5,70,9
+	.half	.L267-.L266
+	.byte	1,5,51,9
+	.half	.L268-.L267
+	.byte	3,1,1,5,67,9
+	.half	.L269-.L268
+	.byte	1,5,70,9
+	.half	.L270-.L269
+	.byte	1,5,46,9
+	.half	.L271-.L270
+	.byte	3,1,1,5,87,9
+	.half	.L272-.L271
+	.byte	3,119,1,5,59,9
+	.half	.L39-.L272
+	.byte	1,5,75,9
+	.half	.L273-.L39
+	.byte	1,5,84,9
+	.half	.L274-.L273
+	.byte	1,5,68,7,9
+	.half	.L144-.L274
+	.byte	3,11,1,5,66,9
+	.half	.L275-.L144
+	.byte	1,5,33,9
+	.half	.L38-.L275
+	.byte	3,115,1,5,44,9
+	.half	.L37-.L38
+	.byte	3,16,1,5,34,9
+	.half	.L276-.L37
+	.byte	1,5,64,7,9
+	.half	.L277-.L276
+	.byte	3,3,1,5,62,9
+	.half	.L278-.L277
+	.byte	1,5,43,9
+	.half	.L279-.L278
+	.byte	3,2,1,9
+	.half	.L280-.L279
+	.byte	3,1,1,5,45,9
+	.half	.L281-.L280
+	.byte	3,1,1,5,43,9
+	.half	.L282-.L281
+	.byte	3,1,1,9
+	.half	.L283-.L282
+	.byte	3,1,1,9
+	.half	.L284-.L283
+	.byte	3,1,1,5,38,9
+	.half	.L285-.L284
+	.byte	3,1,1,5,68,9
+	.half	.L286-.L285
+	.byte	3,120,1,5,40,9
+	.half	.L41-.L286
+	.byte	3,16,1,5,33,9
+	.half	.L287-.L41
+	.byte	1,5,127,7,9
+	.half	.L288-.L287
+	.byte	1,5,120,9
+	.half	.L289-.L288
+	.byte	1,5,97,9
+	.half	.L290-.L289
+	.byte	1,5,120,9
+	.half	.L291-.L290
+	.byte	1,5,153,1,9
+	.half	.L292-.L291
+	.byte	1,5,63,7,9
+	.half	.L293-.L292
+	.byte	3,1,1,5,56,9
+	.half	.L294-.L293
+	.byte	1,5,33,9
+	.half	.L295-.L294
+	.byte	1,5,56,9
+	.half	.L296-.L295
+	.byte	1,5,88,9
+	.half	.L297-.L296
+	.byte	1,5,73,9
+	.half	.L44-.L297
+	.byte	3,8,1,5,65,9
+	.half	.L298-.L44
+	.byte	1,5,39,9
+	.half	.L32-.L298
+	.byte	3,4,1,5,17,9
+	.half	.L209-.L32
+	.byte	1,5,32,7,9
+	.half	.L299-.L209
+	.byte	3,1,1,5,112,9
+	.half	.L46-.L299
+	.byte	3,185,127,1,5,39,9
+	.half	.L30-.L46
+	.byte	1,5,34,9
+	.half	.L300-.L30
+	.byte	1,5,93,7,9
+	.half	.L301-.L300
+	.byte	1,5,75,9
+	.half	.L302-.L301
+	.byte	1,5,93,9
+	.half	.L303-.L302
+	.byte	1,5,99,9
+	.half	.L304-.L303
+	.byte	1,5,17,7,9
+	.half	.L47-.L304
+	.byte	3,208,0,1,5,46,7,9
+	.half	.L305-.L47
+	.byte	1,5,72,9
+	.half	.L306-.L305
+	.byte	1,4,2,5,31,7,9
+	.half	.L148-.L306
+	.byte	3,211,126,1,5,40,9
+	.half	.L307-.L148
+	.byte	1,5,29,9
+	.half	.L308-.L307
+	.byte	1,5,12,9
+	.half	.L309-.L308
+	.byte	1,5,5,9
+	.half	.L310-.L309
+	.byte	1,4,1,5,49,9
+	.half	.L50-.L310
+	.byte	3,174,1,1,5,32,9
+	.half	.L311-.L50
+	.byte	3,1,1,5,65,9
+	.half	.L312-.L311
+	.byte	1,5,86,9
+	.half	.L313-.L312
+	.byte	1,5,31,9
+	.half	.L152-.L313
+	.byte	3,1,1,5,107,9
+	.half	.L210-.L152
+	.byte	1,5,74,9
+	.half	.L52-.L210
+	.byte	3,1,1,5,56,9
+	.half	.L314-.L52
+	.byte	1,5,74,9
+	.half	.L315-.L314
+	.byte	1,5,56,9
+	.half	.L212-.L315
+	.byte	3,1,1,5,43,9
+	.half	.L214-.L212
+	.byte	3,1,1,5,21,9
+	.half	.L316-.L214
+	.byte	1,5,36,7,9
+	.half	.L317-.L316
+	.byte	3,2,1,5,29,9
+	.half	.L318-.L317
+	.byte	1,5,116,7,9
+	.half	.L319-.L318
+	.byte	1,5,109,9
+	.half	.L320-.L319
+	.byte	1,5,86,9
+	.half	.L321-.L320
+	.byte	1,5,109,9
+	.half	.L322-.L321
+	.byte	1,5,135,1,9
+	.half	.L323-.L322
+	.byte	1,5,59,7,9
+	.half	.L324-.L323
+	.byte	3,1,1,5,52,9
+	.half	.L325-.L324
+	.byte	1,5,29,9
+	.half	.L326-.L325
+	.byte	1,5,52,9
+	.half	.L327-.L326
+	.byte	1,5,77,9
+	.half	.L328-.L327
+	.byte	1,5,56,9
+	.half	.L54-.L328
+	.byte	3,2,1,5,54,9
+	.half	.L329-.L54
+	.byte	1,5,110,9
+	.half	.L53-.L329
+	.byte	3,120,1,5,41,9
+	.half	.L51-.L53
+	.byte	1,5,36,9
+	.half	.L330-.L51
+	.byte	1,5,95,7,9
+	.half	.L331-.L330
+	.byte	1,5,77,9
+	.half	.L332-.L331
+	.byte	1,5,95,9
+	.half	.L333-.L332
+	.byte	1,5,99,9
+	.half	.L334-.L333
+	.byte	1,5,13,7,9
+	.half	.L48-.L334
+	.byte	3,28,1,5,77,9
+	.half	.L28-.L48
+	.byte	3,139,127,1,5,51,9
+	.half	.L26-.L28
+	.byte	1,5,33,9
+	.half	.L335-.L26
+	.byte	1,5,42,9
+	.half	.L336-.L335
+	.byte	1,5,51,9
+	.half	.L337-.L336
+	.byte	1,5,58,9
+	.half	.L338-.L337
+	.byte	1,5,70,9
+	.half	.L339-.L338
+	.byte	1,5,1,7,9
+	.half	.L25-.L339
+	.byte	3,248,0,1,7,9
+	.half	.L104-.L25
+	.byte	0,1,1
+.L233:
+	.sdecl	'.debug_ranges',debug,cluster('Com_MainFunctionRx')
+	.sect	'.debug_ranges'
+.L103:
+	.word	-1,.L91,0,.L104-.L91,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_MainFunctionTx')
+	.sect	'.debug_info'
+.L105:
+	.word	500
+	.half	3
+	.word	.L106
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L108,.L107
+	.byte	2
+	.word	.L96
+	.byte	3
+	.byte	'Com_MainFunctionTx',0,1,171,2,6,1,1,1
+	.word	.L93,.L156,.L92
+	.byte	4
+	.word	.L93,.L156
+	.byte	5
+	.byte	'dmTimeOut',0,1,173,2,13
+	.word	.L133,.L157
+	.byte	4
+	.word	.L57,.L156
+	.byte	5
+	.byte	'IPdu',0,1,180,2,25
+	.word	.L128,.L158
+	.byte	4
+	.word	.L57,.L58
+	.byte	5
+	.byte	'i',0,1,181,2,17
+	.word	.L126,.L159
+	.byte	4
+	.word	.L160,.L61
+	.byte	5
+	.byte	'Arc_IPdu',0,1,183,2,28
+	.word	.L161,.L162
+	.byte	4
+	.word	.L163,.L61
+	.byte	5
+	.byte	'txModePtr',0,1,187,2,35
+	.word	.L164,.L165
+	.byte	4
+	.word	.L166,.L61
+	.byte	5
+	.byte	'confirmationStatus',0,1,231,2,21
+	.word	.L133,.L167
+	.byte	4
+	.word	.L168,.L61
+	.byte	5
+	.byte	'signalIndex',0,1,235,2,25
+	.word	.L126,.L169
+	.byte	4
+	.word	.L76,.L80
+	.byte	5
+	.byte	'signal',0,1,238,2,39
+	.word	.L137,.L170
+	.byte	0,0,0,0,0,0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_MainFunctionTx')
+	.sect	'.debug_abbrev'
+.L106:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Com_MainFunctionTx')
+	.sect	'.debug_line'
+.L107:
+	.word	.L341-.L340
+.L340:
+	.half	3
+	.word	.L343-.L342
+.L342:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0,0,0,0,0
+.L343:
+	.byte	5,34,7,0,5,2
+	.word	.L93
+	.byte	3,174,2,1,5,5,9
+	.half	.L344-.L93
+	.byte	1,5,9,7,9
+	.half	.L345-.L344
+	.byte	3,1,1,9
+	.half	.L346-.L345
+	.byte	3,2,1,5,19,9
+	.half	.L57-.L346
+	.byte	3,3,1,5,62,9
+	.half	.L215-.L57
+	.byte	1,5,35,9
+	.half	.L60-.L215
+	.byte	3,1,1,5,17,9
+	.half	.L347-.L60
+	.byte	1,5,26,9
+	.half	.L348-.L347
+	.byte	1,5,35,9
+	.half	.L349-.L348
+	.byte	1,5,39,9
+	.half	.L160-.L349
+	.byte	3,1,1,5,20,9
+	.half	.L217-.L160
+	.byte	3,1,1,5,19,9
+	.half	.L218-.L217
+	.byte	3,2,1,5,14,9
+	.half	.L350-.L218
+	.byte	1,5,71,7,9
+	.half	.L351-.L350
+	.byte	1,5,60,9
+	.half	.L352-.L351
+	.byte	1,5,33,7,9
+	.half	.L163-.L352
+	.byte	3,2,1,5,13,9
+	.half	.L353-.L163
+	.byte	1,5,45,7,9
+	.half	.L354-.L353
+	.byte	3,1,1,5,59,9
+	.half	.L219-.L354
+	.byte	1,5,45,9
+	.half	.L63-.L219
+	.byte	3,3,1,5,13,9
+	.half	.L64-.L63
+	.byte	3,2,1,9
+	.half	.L355-.L64
+	.byte	3,2,1,5,29,9
+	.half	.L65-.L355
+	.byte	3,2,1,5,14,9
+	.half	.L356-.L65
+	.byte	1,5,55,7,9
+	.half	.L357-.L356
+	.byte	3,3,1,5,18,9
+	.half	.L358-.L357
+	.byte	1,5,22,7,9
+	.half	.L359-.L358
+	.byte	3,1,1,5,55,9
+	.half	.L68-.L359
+	.byte	3,1,1,5,22,9
+	.half	.L360-.L68
+	.byte	1,5,36,7,9
+	.half	.L361-.L360
+	.byte	3,1,1,5,28,9
+	.half	.L66-.L361
+	.byte	3,9,1,5,18,9
+	.half	.L362-.L66
+	.byte	1,5,30,7,9
+	.half	.L363-.L362
+	.byte	3,1,1,5,46,9
+	.half	.L364-.L363
+	.byte	1,5,52,7,9
+	.half	.L70-.L364
+	.byte	3,1,1,5,62,9
+	.half	.L365-.L70
+	.byte	1,5,33,9
+	.half	.L71-.L365
+	.byte	3,3,1,5,20,9
+	.half	.L366-.L71
+	.byte	1,5,43,7,9
+	.half	.L367-.L366
+	.byte	3,1,1,5,53,9
+	.half	.L368-.L367
+	.byte	1,5,13,9
+	.half	.L72-.L368
+	.byte	3,9,1,5,75,9
+	.half	.L166-.L72
+	.byte	3,3,1,5,40,9
+	.half	.L221-.L166
+	.byte	1,5,52,9
+	.half	.L222-.L221
+	.byte	3,1,1,5,37,9
+	.half	.L168-.L222
+	.byte	3,3,1,5,62,9
+	.half	.L224-.L168
+	.byte	3,1,1,5,70,9
+	.half	.L76-.L224
+	.byte	3,2,1,5,52,9
+	.half	.L369-.L76
+	.byte	1,5,70,9
+	.half	.L370-.L369
+	.byte	1,5,17,9
+	.half	.L226-.L370
+	.byte	3,1,1,5,32,7,9
+	.half	.L371-.L226
+	.byte	3,2,1,5,25,9
+	.half	.L372-.L371
+	.byte	1,5,56,7,9
+	.half	.L373-.L372
+	.byte	3,1,1,5,49,9
+	.half	.L374-.L373
+	.byte	1,5,26,9
+	.half	.L375-.L374
+	.byte	1,5,49,9
+	.half	.L376-.L375
+	.byte	1,5,75,9
+	.half	.L377-.L376
+	.byte	1,5,56,7,9
+	.half	.L378-.L377
+	.byte	3,1,1,5,49,9
+	.half	.L379-.L378
+	.byte	1,5,26,9
+	.half	.L380-.L379
+	.byte	1,5,49,9
+	.half	.L381-.L380
+	.byte	1,5,74,9
+	.half	.L382-.L381
+	.byte	1,5,17,9
+	.half	.L77-.L382
+	.byte	3,6,1,5,32,7,9
+	.half	.L383-.L77
+	.byte	3,1,1,5,25,9
+	.half	.L384-.L383
+	.byte	1,5,56,7,9
+	.half	.L385-.L384
+	.byte	3,1,1,5,49,9
+	.half	.L386-.L385
+	.byte	1,5,26,9
+	.half	.L387-.L386
+	.byte	1,5,49,9
+	.half	.L388-.L387
+	.byte	1,5,82,9
+	.half	.L389-.L388
+	.byte	1,5,56,7,9
+	.half	.L390-.L389
+	.byte	3,1,1,5,49,9
+	.half	.L391-.L390
+	.byte	1,5,26,9
+	.half	.L392-.L391
+	.byte	1,5,49,9
+	.half	.L393-.L392
+	.byte	1,5,81,9
+	.half	.L394-.L393
+	.byte	1,5,75,9
+	.half	.L80-.L394
+	.byte	3,112,1,5,48,9
+	.half	.L75-.L80
+	.byte	3,127,1,5,43,9
+	.half	.L395-.L75
+	.byte	1,5,40,7,9
+	.half	.L396-.L395
+	.byte	3,1,1,5,22,9
+	.half	.L397-.L396
+	.byte	1,5,40,9
+	.half	.L398-.L397
+	.byte	1,5,54,9
+	.half	.L399-.L398
+	.byte	1,5,65,7,9
+	.half	.L61-.L399
+	.byte	3,73,1,5,47,9
+	.half	.L59-.L61
+	.byte	1,5,29,9
+	.half	.L400-.L59
+	.byte	1,5,38,9
+	.half	.L401-.L400
+	.byte	1,5,47,9
+	.half	.L402-.L401
+	.byte	1,5,50,9
+	.half	.L403-.L402
+	.byte	1,5,62,9
+	.half	.L404-.L403
+	.byte	1,5,1,7,9
+	.half	.L58-.L404
+	.byte	3,210,0,1,7,9
+	.half	.L109-.L58
+	.byte	0,1,1
+.L341:
+	.sdecl	'.debug_ranges',debug,cluster('Com_MainFunctionTx')
+	.sect	'.debug_ranges'
+.L108:
+	.word	-1,.L93,0,.L109-.L93,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_MainFunctionRouteSignals')
+	.sect	'.debug_info'
+.L110:
+	.word	261
+	.half	3
+	.word	.L111
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L113,.L112
+	.byte	2
+	.word	.L96
+	.byte	3
+	.byte	'Com_MainFunctionRouteSignals',0,1,149,3,6,1,1,1
+	.word	.L95,.L171,.L94
+	.byte	4
+	.word	.L95,.L171
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_MainFunctionRouteSignals')
+	.sect	'.debug_abbrev'
+.L111:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Com_MainFunctionRouteSignals')
+	.sect	'.debug_line'
+.L112:
+	.word	.L406-.L405
+.L405:
+	.half	3
+	.word	.L408-.L407
+.L407:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0,0,0,0,0
+.L408:
+	.byte	5,34,7,0,5,2
+	.word	.L95
+	.byte	3,150,3,1,5,5,9
+	.half	.L409-.L95
+	.byte	1,5,9,7,9
+	.half	.L410-.L409
+	.byte	3,1,1,9
+	.half	.L411-.L410
+	.byte	3,2,1,5,1,9
+	.half	.L85-.L411
+	.byte	3,131,1,1,7,9
+	.half	.L114-.L85
+	.byte	0,1,1
+.L406:
+	.sdecl	'.debug_ranges',debug,cluster('Com_MainFunctionRouteSignals')
+	.sect	'.debug_ranges'
+.L113:
+	.word	-1,.L95,0,.L114-.L95,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_ProcessMixedOrPeriodicTxMode')
+	.sect	'.debug_info'
+.L115:
+	.word	375
+	.half	3
+	.word	.L116
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L118,.L117
+	.byte	2
+	.word	.L96
+	.byte	3
+	.byte	'Com_ProcessMixedOrPeriodicTxMode',0,1,43,13,1,1
+	.word	.L87,.L172,.L86
+	.byte	4
+	.byte	'IPduId',0,1,43,53
+	.word	.L126,.L173
+	.byte	4
+	.byte	'dmTimeOut',0,1,43,68
+	.word	.L133,.L174
+	.byte	5
+	.word	.L87,.L172
+	.byte	6
+	.byte	'IPdu',0,1,44,25
+	.word	.L128,.L175
+	.byte	5
+	.word	.L176,.L172
+	.byte	6
+	.byte	'Arc_IPdu',0,1,46,24
+	.word	.L161,.L177
+	.byte	6
+	.byte	'txModePtr',0,1,47,27
+	.word	.L164,.L178
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_ProcessMixedOrPeriodicTxMode')
+	.sect	'.debug_abbrev'
+.L116:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Com_ProcessMixedOrPeriodicTxMode')
+	.sect	'.debug_line'
+.L117:
+	.word	.L413-.L412
+.L412:
+	.half	3
+	.word	.L415-.L414
+.L414:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0,0,0,0,0
+.L415:
+	.byte	5,13,7,0,5,2
+	.word	.L87
+	.byte	3,42,1,5,31,9
+	.half	.L187-.L87
+	.byte	3,2,1,5,13,9
+	.half	.L416-.L187
+	.byte	1,5,22,9
+	.half	.L417-.L416
+	.byte	1,5,31,9
+	.half	.L418-.L417
+	.byte	1,5,35,9
+	.half	.L176-.L418
+	.byte	3,1,1,5,25,9
+	.half	.L188-.L176
+	.byte	3,2,1,5,5,9
+	.half	.L419-.L188
+	.byte	1,5,37,7,9
+	.half	.L420-.L419
+	.byte	3,1,1,5,51,9
+	.half	.L189-.L420
+	.byte	1,5,37,9
+	.half	.L2-.L189
+	.byte	3,3,1,5,5,9
+	.half	.L3-.L2
+	.byte	3,2,1,5,20,9
+	.half	.L4-.L3
+	.byte	3,2,1,5,10,9
+	.half	.L421-.L4
+	.byte	1,5,43,7,9
+	.half	.L422-.L421
+	.byte	3,1,1,5,77,9
+	.half	.L423-.L422
+	.byte	1,5,9,7,9
+	.half	.L424-.L423
+	.byte	3,2,1,9
+	.half	.L7-.L424
+	.byte	3,2,1,5,49,7,9
+	.half	.L425-.L7
+	.byte	3,3,1,5,18,9
+	.half	.L426-.L425
+	.byte	1,5,51,7,9
+	.half	.L427-.L426
+	.byte	3,1,1,5,79,9
+	.half	.L428-.L427
+	.byte	1,5,37,7,9
+	.half	.L429-.L428
+	.byte	3,2,1,5,90,9
+	.half	.L186-.L429
+	.byte	3,3,1,5,79,9
+	.half	.L430-.L186
+	.byte	1,5,47,9
+	.half	.L431-.L430
+	.byte	3,4,1,5,80,9
+	.half	.L432-.L431
+	.byte	1,5,85,9
+	.half	.L9-.L432
+	.byte	3,119,1,5,79,9
+	.half	.L8-.L9
+	.byte	3,17,1,5,77,9
+	.half	.L433-.L8
+	.byte	1,5,79,9
+	.half	.L434-.L433
+	.byte	3,2,1,5,77,9
+	.half	.L435-.L434
+	.byte	1,5,41,9
+	.half	.L5-.L435
+	.byte	3,6,1,5,10,9
+	.half	.L436-.L5
+	.byte	1,5,107,7,9
+	.half	.L437-.L436
+	.byte	1,5,135,1,9
+	.half	.L438-.L437
+	.byte	1,5,29,7,9
+	.half	.L439-.L438
+	.byte	3,2,1,5,76,9
+	.half	.L191-.L439
+	.byte	3,3,1,5,65,9
+	.half	.L440-.L191
+	.byte	1,5,25,9
+	.half	.L441-.L440
+	.byte	3,3,1,5,12,9
+	.half	.L442-.L441
+	.byte	1,5,43,7,9
+	.half	.L443-.L442
+	.byte	3,1,1,5,57,9
+	.half	.L444-.L443
+	.byte	1,5,67,7,9
+	.half	.L445-.L444
+	.byte	3,1,1,5,57,9
+	.half	.L446-.L445
+	.byte	1,5,1,9
+	.half	.L12-.L446
+	.byte	3,4,1,7,9
+	.half	.L119-.L12
+	.byte	0,1,1
+.L413:
+	.sdecl	'.debug_ranges',debug,cluster('Com_ProcessMixedOrPeriodicTxMode')
+	.sect	'.debug_ranges'
+.L118:
+	.word	-1,.L87,0,.L119-.L87,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_ProcessDirectTxMode')
+	.sect	'.debug_info'
+.L120:
+	.word	366
+	.half	3
+	.word	.L121
+	.byte	4,1
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L123,.L122
+	.byte	2
+	.word	.L96
+	.byte	3
+	.byte	'Com_ProcessDirectTxMode',0,1,114,13,1,1
+	.word	.L89,.L179,.L88
+	.byte	4
+	.byte	'IPduId',0,1,114,44
+	.word	.L126,.L180
+	.byte	4
+	.byte	'dmTimeOut',0,1,114,59
+	.word	.L133,.L181
+	.byte	5
+	.word	.L89,.L179
+	.byte	6
+	.byte	'IPdu',0,1,115,25
+	.word	.L128,.L182
+	.byte	5
+	.word	.L183,.L179
+	.byte	6
+	.byte	'Arc_IPdu',0,1,117,24
+	.word	.L161,.L184
+	.byte	6
+	.byte	'txModePtr',0,1,118,27
+	.word	.L164,.L185
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_ProcessDirectTxMode')
+	.sect	'.debug_abbrev'
+.L121:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Com_ProcessDirectTxMode')
+	.sect	'.debug_line'
+.L122:
+	.word	.L448-.L447
+.L447:
+	.half	3
+	.word	.L450-.L449
+.L449:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/Services/ComSrv/Com/src/Com_Sched.c',0,0,0,0,0
+.L450:
+	.byte	5,31,7,0,5,2
+	.word	.L89
+	.byte	3,243,0,1,5,13,9
+	.half	.L451-.L89
+	.byte	1,5,22,9
+	.half	.L452-.L451
+	.byte	1,5,31,9
+	.half	.L453-.L452
+	.byte	1,5,35,9
+	.half	.L183-.L453
+	.byte	3,1,1,5,25,9
+	.half	.L193-.L183
+	.byte	3,2,1,5,5,9
+	.half	.L454-.L193
+	.byte	1,5,37,7,9
+	.half	.L455-.L454
+	.byte	3,1,1,5,51,9
+	.half	.L194-.L455
+	.byte	1,5,37,9
+	.half	.L16-.L194
+	.byte	3,3,1,5,39,9
+	.half	.L17-.L16
+	.byte	3,3,1,5,5,9
+	.half	.L456-.L17
+	.byte	1,5,9,7,9
+	.half	.L457-.L456
+	.byte	3,1,1,9
+	.half	.L19-.L457
+	.byte	3,2,1,5,49,7,9
+	.half	.L458-.L19
+	.byte	3,3,1,5,18,9
+	.half	.L459-.L458
+	.byte	1,5,121,7,9
+	.half	.L460-.L459
+	.byte	1,5,149,1,9
+	.half	.L461-.L460
+	.byte	1,5,37,7,9
+	.half	.L462-.L461
+	.byte	3,1,1,5,90,9
+	.half	.L192-.L462
+	.byte	3,3,1,5,79,9
+	.half	.L463-.L192
+	.byte	1,5,47,9
+	.half	.L464-.L463
+	.byte	3,3,1,5,80,9
+	.half	.L465-.L464
+	.byte	1,5,155,1,9
+	.half	.L21-.L465
+	.byte	3,121,1,5,79,9
+	.half	.L20-.L21
+	.byte	3,14,1,5,77,9
+	.half	.L466-.L20
+	.byte	1,5,79,9
+	.half	.L467-.L466
+	.byte	3,2,1,5,77,9
+	.half	.L468-.L467
+	.byte	1,5,1,9
+	.half	.L18-.L468
+	.byte	3,3,1,7,9
+	.half	.L124-.L18
+	.byte	0,1,1
+.L448:
+	.sdecl	'.debug_ranges',debug,cluster('Com_ProcessDirectTxMode')
+	.sect	'.debug_ranges'
+.L123:
+	.word	-1,.L89,0,.L124-.L89,0,0
+	.sdecl	'.debug_loc',debug,cluster('Com_MainFunctionRouteSignals')
+	.sect	'.debug_loc'
+.L94:
+	.word	-1,.L95,0,.L171-.L95
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Com_MainFunctionRx')
+	.sect	'.debug_loc'
+.L131:
+	.word	-1,.L91,.L199-.L91,.L26-.L91
+	.half	1
+	.byte	109
+	.word	0,0
+.L140:
+	.word	-1,.L91,.L204-.L91,.L40-.L91
+	.half	1
+	.byte	111
+	.word	.L205-.L91,.L30-.L91
+	.half	2
+	.byte	145,124
+	.word	.L207-.L91,.L38-.L91
+	.half	1
+	.byte	111
+	.word	.L37-.L91,.L41-.L91
+	.half	1
+	.byte	111
+	.word	.L208-.L91,.L209-.L91
+	.half	1
+	.byte	111
+	.word	0,0
+.L155:
+	.word	-1,.L91,.L214-.L91,.L51-.L91
+	.half	1
+	.byte	111
+	.word	0,0
+.L90:
+	.word	-1,.L91,0,.L195-.L91
+	.half	2
+	.byte	138,0
+	.word	.L195-.L91,.L125-.L91
+	.half	2
+	.byte	138,8
+	.word	.L125-.L91,.L125-.L91
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L150:
+	.word	0,0
+.L129:
+	.word	-1,.L91,.L198-.L91,.L26-.L91
+	.half	1
+	.byte	108
+	.word	0,0
+.L146:
+	.word	-1,.L91,.L206-.L91,.L38-.L91
+	.half	1
+	.byte	91
+	.word	0,0
+.L153:
+	.word	-1,.L91,.L210-.L91,.L211-.L91
+	.half	1
+	.byte	89
+	.word	.L51-.L91,.L48-.L91
+	.half	1
+	.byte	89
+	.word	0,0
+.L127:
+	.word	-1,.L91,.L196-.L91,.L197-.L91
+	.half	1
+	.byte	88
+	.word	.L26-.L91,.L25-.L91
+	.half	1
+	.byte	88
+	.word	0,0
+.L134:
+	.word	-1,.L91,.L200-.L91,.L28-.L91
+	.half	1
+	.byte	90
+	.word	0,0
+.L138:
+	.word	-1,.L91,.L203-.L91,.L30-.L91
+	.half	1
+	.byte	110
+	.word	0,0
+.L154:
+	.word	-1,.L91,.L212-.L91,.L213-.L91
+	.half	1
+	.byte	98
+	.word	0,0
+.L142:
+	.word	-1,.L91,0,.L125-.L91
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L136:
+	.word	-1,.L91,.L201-.L91,.L202-.L91
+	.half	1
+	.byte	89
+	.word	.L30-.L91,.L210-.L91
+	.half	1
+	.byte	89
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Com_MainFunctionTx')
+	.sect	'.debug_loc'
+.L162:
+	.word	-1,.L93,.L217-.L93,.L76-.L93
+	.half	1
+	.byte	111
+	.word	0,0
+.L92:
+	.word	-1,.L93,0,.L156-.L93
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L158:
+	.word	-1,.L93,.L160-.L93,.L59-.L93
+	.half	1
+	.byte	108
+	.word	.L220-.L93,.L221-.L93
+	.half	1
+	.byte	100
+	.word	.L223-.L93,.L168-.L93
+	.half	1
+	.byte	100
+	.word	0,0
+.L167:
+	.word	-1,.L93,.L221-.L93,.L168-.L93
+	.half	1
+	.byte	82
+	.word	.L222-.L93,.L61-.L93
+	.half	1
+	.byte	90
+	.word	0,0
+.L157:
+	.word	-1,.L93,.L218-.L93,.L59-.L93
+	.half	1
+	.byte	89
+	.word	0,0
+.L159:
+	.word	-1,.L93,.L215-.L93,.L216-.L93
+	.half	1
+	.byte	88
+	.word	.L59-.L93,.L58-.L93
+	.half	1
+	.byte	88
+	.word	0,0
+.L170:
+	.word	-1,.L93,.L226-.L93,.L227-.L93
+	.half	1
+	.byte	111
+	.word	0,0
+.L169:
+	.word	-1,.L93,.L224-.L93,.L225-.L93
+	.half	1
+	.byte	91
+	.word	.L75-.L93,.L61-.L93
+	.half	1
+	.byte	91
+	.word	0,0
+.L165:
+	.word	-1,.L93,.L219-.L93,.L63-.L93
+	.half	1
+	.byte	109
+	.word	.L64-.L93,.L61-.L93
+	.half	1
+	.byte	109
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Com_ProcessDirectTxMode')
+	.sect	'.debug_loc'
+.L184:
+	.word	-1,.L89,.L193-.L89,.L179-.L89
+	.half	1
+	.byte	111
+	.word	0,0
+.L88:
+	.word	-1,.L89,0,.L179-.L89
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L182:
+	.word	-1,.L89,.L183-.L89,.L192-.L89
+	.half	1
+	.byte	98
+	.word	.L20-.L89,.L18-.L89
+	.half	1
+	.byte	98
+	.word	0,0
+.L180:
+	.word	-1,.L89,0,.L192-.L89
+	.half	1
+	.byte	84
+	.word	.L20-.L89,.L18-.L89
+	.half	1
+	.byte	84
+	.word	0,0
+.L181:
+	.word	-1,.L89,0,.L192-.L89
+	.half	1
+	.byte	85
+	.word	.L20-.L89,.L18-.L89
+	.half	1
+	.byte	85
+	.word	0,0
+.L185:
+	.word	-1,.L89,.L194-.L89,.L16-.L89
+	.half	1
+	.byte	108
+	.word	.L17-.L89,.L179-.L89
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Com_ProcessMixedOrPeriodicTxMode')
+	.sect	'.debug_loc'
+.L177:
+	.word	-1,.L87,.L188-.L87,.L172-.L87
+	.half	1
+	.byte	111
+	.word	0,0
+.L86:
+	.word	-1,.L87,0,.L172-.L87
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L175:
+	.word	-1,.L87,.L176-.L87,.L186-.L87
+	.half	1
+	.byte	98
+	.word	.L8-.L87,.L5-.L87
+	.half	1
+	.byte	98
+	.word	0,0
+.L173:
+	.word	-1,.L87,0,.L186-.L87
+	.half	1
+	.byte	84
+	.word	.L187-.L87,.L172-.L87
+	.half	1
+	.byte	88
+	.word	.L8-.L87,.L5-.L87
+	.half	1
+	.byte	84
+	.word	.L190-.L87,.L191-.L87
+	.half	1
+	.byte	84
+	.word	0,0
+.L174:
+	.word	-1,.L87,0,.L186-.L87
+	.half	1
+	.byte	85
+	.word	.L8-.L87,.L5-.L87
+	.half	1
+	.byte	85
+	.word	0,0
+.L178:
+	.word	-1,.L87,.L189-.L87,.L2-.L87
+	.half	1
+	.byte	108
+	.word	.L3-.L87,.L172-.L87
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L469:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Com_ProcessMixedOrPeriodicTxMode')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L469,.L87,.L172-.L87
+	.sdecl	'.debug_frame',debug,cluster('Com_ProcessDirectTxMode')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L469,.L89,.L179-.L89
+	.sdecl	'.debug_frame',debug,cluster('Com_MainFunctionRx')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L469,.L91,.L125-.L91
+	.byte	4
+	.word	(.L195-.L91)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L125-.L195)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('Com_MainFunctionTx')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L469,.L93,.L156-.L93
+	.sdecl	'.debug_frame',debug,cluster('Com_MainFunctionRouteSignals')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L469,.L95,.L171-.L95
+	; Module end

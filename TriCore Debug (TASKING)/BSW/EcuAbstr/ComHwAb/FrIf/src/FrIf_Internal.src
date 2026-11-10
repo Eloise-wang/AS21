@@ -1,0 +1,5244 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc31164a --dep-file=BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc38x -D__CPU_TC38X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc38x -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21 -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\APPS\\\\main -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\AS21_Mcal\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Autosar_Srv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Integration -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Irq\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Sfr\\\\TC38xA\\\\_Reg -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Dio\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Gpt\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\McalLib\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Mcu\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Port\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\Com\\\\src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Services\\\\ComSrv\\\\PduR\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Configurations -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Generated\\\\MCAL\\\\inc -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -ID:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC38x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.src ../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c"
+	.compiler_name		"ctc"
+	;source	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.FrIf_Internal.markUB',code,cluster('markUB')
+	.sect	'.text.FrIf_Internal.markUB'
+	.align	2
+	
+; Function markUB
+.L85:
+markUB:	.type	func
+	jlt	d4,#0,.L2
+.L803:
+	mov	d15,#8
+.L804:
+	div.u	e0,d4,d15
+.L805:
+	extr.u	d15,d0,#0,#8
+.L300:
+	mov	d0,#8
+.L806:
+	div.u	e2,d4,d0
+.L301:
+	addsc.a	a15,a4,d15,#0
+	ld.bu	d0,[a15]
+.L302:
+	jne	d5,#1,.L3
+.L807:
+	mov	d1,#1
+.L808:
+	sh	d1,d1,d3
+.L809:
+	extr.u	d1,d1,#0,#8
+.L810:
+	or	d0,d1
+.L811:
+	j	.L4
+.L3:
+	mov	d1,#1
+.L812:
+	sh	d1,d1,d3
+.L813:
+	mov	d2,#-1
+	xor	d1,d2
+.L814:
+	and	d0,d1
+.L303:
+	extr.u	d0,d0,#0,#8
+.L4:
+	addsc.a	a15,a4,d15,#0
+.L815:
+	st.b	[a15],d0
+.L2:
+	ret
+.L280:
+	
+__markUB_function_end:
+	.size	markUB,__markUB_function_end-markUB
+.L147:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.readUB',code,cluster('readUB')
+	.sect	'.text.FrIf_Internal.readUB'
+	.align	2
+	
+; Function readUB
+.L87:
+readUB:	.type	func
+	jlt	d4,#0,.L5
+.L820:
+	mov	d15,#8
+.L821:
+	div.u	e0,d4,d15
+.L822:
+	extr.u	d0,d0,#0,#8
+.L304:
+	mov	d15,#8
+.L823:
+	div.u	e2,d4,d15
+.L306:
+	addsc.a	a15,a4,d0,#0
+	ld.bu	d15,[a15]
+.L307:
+	mov	d0,#1
+.L305:
+	sh	d0,d0,d3
+.L824:
+	and	d15,d0
+.L308:
+	jlt.u	d15,#1,.L6
+.L825:
+	mov	d2,#1
+.L309:
+	j	.L7
+.L6:
+	mov	d2,#0
+.L7:
+	j	.L8
+.L5:
+	mov	d2,#1
+.L8:
+	j	.L9
+.L9:
+	ret
+.L287:
+	
+__readUB_function_end:
+	.size	readUB,__readUB_function_end-readUB
+.L152:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.getValidLength',code,cluster('getValidLength')
+	.sect	'.text.FrIf_Internal.getValidLength'
+	.align	2
+	
+	.global	getValidLength
+; Function getValidLength
+.L89:
+getValidLength:	.type	func
+	add	d15,d5,d4
+.L830:
+	jlt	d7,d15,.L10
+.L831:
+	j	.L11
+.L10:
+	jge.u	d5,d7,.L12
+.L832:
+	jge	d6,d5,.L13
+.L833:
+	sub	d7,d5
+.L310:
+	extr.u	d4,d7,#0,#8
+.L834:
+	j	.L14
+.L13:
+.L12:
+	mov	d4,#0
+.L14:
+.L11:
+	mov	d2,d4
+.L311:
+	j	.L15
+.L15:
+	ret
+.L294:
+	
+__getValidLength_function_end:
+	.size	getValidLength,__getValidLength_function_end-getValidLength
+.L157:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.FrIf_Internal_HandleDecoupledTransmission',code,cluster('FrIf_Internal_HandleDecoupledTransmission')
+	.sect	'.text.FrIf_Internal.FrIf_Internal_HandleDecoupledTransmission'
+	.align	2
+	
+	.global	FrIf_Internal_HandleDecoupledTransmission
+; Function FrIf_Internal_HandleDecoupledTransmission
+.L91:
+FrIf_Internal_HandleDecoupledTransmission:	.type	func
+	lea	a10,[a10]-264
+.L312:
+	mov	d8,d5
+.L313:
+	movh.a	a15,#@his(.1.ini)
+	lea	a15,[a15]@los(.1.ini)
+	lea	a15,[a15]0
+.L453:
+	lea	a2,[a10]8
+	lea	a4,253
+.L16:
+	ld.bu	d15,[a15+]
+	st.b	[a2+],d15
+	loop	a4,.L16
+.L454:
+	mov	d9,#0
+.L314:
+	mul	d15,d6,#16
+.L455:
+	mul	d0,d4,#12
+.L456:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L457:
+	ld.a	a15,[a15]4
+.L458:
+	addsc.a	a15,a15,d0,#0
+.L459:
+	ld.a	a15,[a15]4
+.L460:
+	addsc.a	a12,a15,d15,#0
+.L315:
+	ld.bu	d15,[a12]13
+.L316:
+	mul	d0,d4,#12
+.L461:
+	movh.a	a2,#@his(FrIf_ConfigCachePtr)
+	lea	a2,[a2]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a2]
+.L462:
+	ld.a	a2,[a15]4
+.L463:
+	addsc.a	a15,a2,d0,#0
+.L464:
+	ld.bu	d11,[a15]8
+.L318:
+	mul	d15,d15,#254
+.L317:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L465:
+	addsc.a	a13,a15,d15,#0
+.L319:
+	mov	d12,#0
+.L320:
+	mov	d13,#0
+.L321:
+	j	.L17
+.L18:
+	mov	d2,#0
+.L323:
+	mul	d15,d13,#8
+.L466:
+	ld.a	a15,[a12]
+.L467:
+	ld.a	a15,[a15]
+.L468:
+	addsc.a	a4,a15,d15,#0
+.L325:
+	ld.a	a2,[a4]
+.L469:
+	ld.hu	d0,[a2]4
+.L327:
+	ld.bu	d10,[a4]6
+.L329:
+	ld.h	d14,[a4]4
+.L330:
+	ld.a	a2,[a4]
+.L470:
+	ld.a	a2,[a2]
+.L471:
+	ld.a	a5,[a2]
+.L331:
+	addsc.a	a2,a13,d10,#0
+.L472:
+	st.a	[a10],a2
+.L473:
+	ld.a	a15,[a12]
+.L474:
+	ld.bu	d15,[a15]4
+.L475:
+	jne	d15,#0,.L19
+.L476:
+	lea	a2,[a10]8
+.L477:
+	st.a	[a10],a2
+.L478:
+	ld.bu	d15,[a5]2
+.L479:
+	add	d15,#-1
+	extr.u	d9,d15,#0,#8
+.L19:
+	ld.bu	d15,[a5]2
+.L480:
+	st.h	[a10]4,d15
+.L481:
+	mov	d1,#0
+.L332:
+	mul	d15,d0,#2
+.L482:
+	movh.a	a2,#@his(FrIf_Internal_Global)
+	lea	a2,[a2]@los(FrIf_Internal_Global)
+.L483:
+	addsc.a	a2,a2,d15,#0
+.L484:
+	ld.bu	d15,[a2]510
+.L485:
+	jge.u	d15,#1,.L20
+.L486:
+	ld.a	a2,[a4]
+.L487:
+	ld.a	a15,[a2]
+.L488:
+	ld.a	a15,[a15]
+.L489:
+	ld.bu	d15,[a15]7
+.L490:
+	jne	d15,#1,.L21
+.L20:
+	mov	d1,#1
+.L21:
+	jne	d1,#1,.L22
+.L491:
+	ld.bu	d0,[a5]
+.L328:
+	mov	d15,#255
+.L492:
+	jeq	d15,d0,.L23
+.L493:
+	mov.a	a2,#0
+.L494:
+	ld.bu	d15,[a5]
+.L495:
+	mul	d15,d15,#4
+.L496:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L497:
+	ld.a	a15,[a15]24
+.L498:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L499:
+	jeq.a	a2,a15,.L24
+.L500:
+	ld.bu	d15,[a5]
+.L501:
+	mul	d15,d15,#4
+.L502:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L503:
+	ld.a	a15,[a15]24
+.L504:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L505:
+	ld.a	a2,[a4]
+.L506:
+	ld.hu	d4,[a2]6
+.L507:
+	lea	a4,[a10]0
+.L326:
+	calli	a15
+.L24:
+.L23:
+	jeq	d2,#0,.L25
+.L508:
+	mov	d5,#0
+.L509:
+	mov	d4,d14
+.L333:
+	mov.aa	a4,a13
+.L334:
+	call	markUB
+.L324:
+	j	.L26
+.L25:
+	ld.a	a15,[a12]
+.L510:
+	ld.bu	d15,[a15]4
+.L511:
+	jne	d15,#0,.L27
+.L190:
+	mov	d0,#0
+.L335:
+	j	.L28
+.L29:
+	add	d15,d10,d0
+.L512:
+	addsc.a	a2,a13,d15,#0
+.L513:
+	sub	d15,d9,d0
+.L514:
+	addsc.a	a15,a10,d15,#0
+	ld.bu	d15,[a15]8
+.L515:
+	st.b	[a2],d15
+.L516:
+	add	d0,#1
+.L336:
+	extr.u	d0,d0,#0,#8
+.L28:
+	jge.u	d9,d0,.L29
+.L27:
+	mov	d12,#1
+.L517:
+	mov	d5,#1
+.L518:
+	mov	d4,d14
+.L337:
+	mov.aa	a4,a13
+.L338:
+	call	markUB
+.L26:
+	j	.L30
+.L22:
+	mov	d5,#0
+.L519:
+	mov	d4,d14
+.L340:
+	mov.aa	a4,a13
+.L339:
+	call	markUB
+.L30:
+	add	d13,#1
+.L322:
+	extr.u	d13,d13,#0,#8
+.L17:
+	ld.hu	d15,[a12]6
+.L520:
+	jlt.u	d13,d15,.L18
+.L521:
+	jeq	d12,#1,.L31
+.L522:
+	ld.bu	d15,[a12]15
+.L523:
+	jne	d15,#1,.L32
+.L31:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L524:
+	ld.a	a15,[a15]8
+.L525:
+	ld.a	a15,[a15]
+.L342:
+	ld.a	a15,[a15]12
+.L343:
+	ld.bu	d6,[a12]10
+	mov	e4,d8,d11
+	mov.aa	a4,a13
+.L344:
+	calli	a15
+.L345:
+	jne	d2,#0,.L33
+.L526:
+	mov	d2,#0
+.L341:
+	j	.L34
+.L35:
+	mul	d15,d2,#8
+.L527:
+	ld.a	a15,[a12]
+.L528:
+	ld.a	a15,[a15]
+.L529:
+	addsc.a	a4,a15,d15,#0
+.L347:
+	ld.a	a15,[a4]
+.L530:
+	ld.hu	d0,[a15]4
+.L348:
+	mul	d15,d0,#2
+.L531:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L532:
+	addsc.a	a15,a15,d15,#0
+.L533:
+	ld.bu	d15,[a15]510
+.L534:
+	jlt.u	d15,#1,.L36
+.L535:
+	mul	d15,d0,#2
+.L536:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L537:
+	addsc.a	a15,a15,d15,#0
+	mul	d15,d0,#2
+.L538:
+	movh.a	a2,#@his(FrIf_Internal_Global)
+	lea	a2,[a2]@los(FrIf_Internal_Global)
+.L539:
+	addsc.a	a2,a2,d15,#0
+.L540:
+	ld.bu	d15,[a2]510
+.L541:
+	add	d15,#-1
+	st.b	[a15]510,d15
+.L36:
+	mov	d1,#0
+.L349:
+	ld.a	a15,[a4]
+.L542:
+	ld.a	a15,[a15]
+.L543:
+	ld.a	a15,[a15]
+.L544:
+	ld.bu	d15,[a15]4
+.L545:
+	jne	d15,#1,.L37
+.L546:
+	mul	d15,d0,#2
+.L547:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L548:
+	addsc.a	a15,a15,d15,#0
+.L549:
+	ld.bu	d3,[a15]511
+.L550:
+	ld.a	a15,[a4]
+.L551:
+	ld.a	a15,[a15]
+.L552:
+	ld.a	a15,[a15]
+.L553:
+	ld.bu	d15,[a15]3
+.L554:
+	jge.u	d3,d15,.L38
+.L555:
+	mov	d1,#1
+.L38:
+.L37:
+	jne	d1,#1,.L39
+.L556:
+	mul	d15,d0,#2
+.L557:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L558:
+	addsc.a	a15,a15,d15,#0
+	mul	d15,d0,#2
+.L559:
+	movh.a	a2,#@his(FrIf_Internal_Global)
+	lea	a2,[a2]@los(FrIf_Internal_Global)
+.L560:
+	addsc.a	a2,a2,d15,#0
+.L561:
+	ld.bu	d15,[a2]511
+.L562:
+	add	d15,#1
+	st.b	[a15]511,d15
+.L39:
+	add	d2,#1
+.L346:
+	extr.u	d2,d2,#0,#8
+.L34:
+	ld.hu	d15,[a12]6
+.L563:
+	jlt.u	d2,d15,.L35
+.L33:
+.L32:
+	ret
+.L158:
+	
+__FrIf_Internal_HandleDecoupledTransmission_function_end:
+	.size	FrIf_Internal_HandleDecoupledTransmission,__FrIf_Internal_HandleDecoupledTransmission_function_end-FrIf_Internal_HandleDecoupledTransmission
+.L112:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.FrIf_Internal_ProvideTxConfirmation',code,cluster('FrIf_Internal_ProvideTxConfirmation')
+	.sect	'.text.FrIf_Internal.FrIf_Internal_ProvideTxConfirmation'
+	.align	2
+	
+	.global	FrIf_Internal_ProvideTxConfirmation
+; Function FrIf_Internal_ProvideTxConfirmation
+.L93:
+FrIf_Internal_ProvideTxConfirmation:	.type	func
+	sub.a	a10,#8
+.L350:
+	mul	d15,d6,#16
+.L568:
+	mul	d0,d4,#12
+.L569:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L570:
+	ld.a	a15,[a15]4
+.L571:
+	addsc.a	a15,a15,d0,#0
+.L572:
+	ld.a	a15,[a15]4
+.L573:
+	addsc.a	a12,a15,d15,#0
+.L353:
+	mul	d15,d4,#12
+.L574:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L575:
+	ld.a	a15,[a15]4
+.L576:
+	addsc.a	a15,a15,d15,#0
+.L577:
+	ld.bu	d4,[a15]8
+.L351:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L578:
+	ld.a	a15,[a15]8
+.L579:
+	ld.a	a15,[a15]
+.L354:
+	ld.a	a15,[a15]20
+.L355:
+	lea	a4,[a10]0
+	calli	a15
+.L352:
+	jne	d2,#0,.L40
+.L580:
+	ld.bu	d15,[a10]
+.L581:
+	jne	d15,#0,.L41
+.L582:
+	mov	d8,#0
+.L356:
+	j	.L42
+.L43:
+	mul	d15,d8,#8
+.L583:
+	ld.a	a15,[a12]
+.L584:
+	ld.a	a15,[a15]
+.L585:
+	addsc.a	a5,a15,d15,#0
+.L358:
+	ld.a	a15,[a5]
+.L586:
+	ld.hu	d9,[a15]4
+.L359:
+	mul	d15,d9,#2
+.L587:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L588:
+	addsc.a	a15,a15,d15,#0
+.L589:
+	ld.bu	d15,[a15]511
+.L590:
+	jne	d15,#0,.L44
+.L591:
+	j	.L45
+.L44:
+	ld.a	a15,[a5]
+.L592:
+	ld.a	a15,[a15]
+.L593:
+	ld.a	a15,[a15]
+.L360:
+	ld.bu	d15,[a15]4
+.L594:
+	jne	d15,#1,.L46
+.L595:
+	ld.bu	d15,[a15]1
+.L596:
+	mov	d0,#255
+.L597:
+	jeq	d15,d0,.L47
+.L598:
+	mov.a	a2,#0
+.L599:
+	ld.bu	d15,[a15]1
+.L600:
+	mul	d15,d15,#4
+.L601:
+	movh.a	a4,#@his(FrIf_ConfigCachePtr)
+	lea	a4,[a4]@los(FrIf_ConfigCachePtr)
+	ld.a	a4,[a4]
+.L602:
+	ld.a	a4,[a4]28
+.L603:
+	addsc.a	a4,a4,d15,#0
+	ld.a	a4,[a4]
+.L604:
+	jeq.a	a2,a4,.L48
+.L605:
+	ld.bu	d15,[a15]1
+.L606:
+	mul	d15,d15,#4
+.L607:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+.L361:
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L608:
+	ld.a	a15,[a15]28
+.L609:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L610:
+	ld.a	a2,[a5]
+.L611:
+	ld.hu	d4,[a2]6
+	calli	a15
+.L48:
+.L47:
+	mul	d15,d9,#2
+.L612:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L613:
+	addsc.a	a15,a15,d15,#0
+	mul	d15,d9,#2
+.L614:
+	movh.a	a2,#@his(FrIf_Internal_Global)
+	lea	a2,[a2]@los(FrIf_Internal_Global)
+.L615:
+	addsc.a	a2,a2,d15,#0
+.L616:
+	ld.bu	d15,[a2]511
+.L617:
+	add	d15,#-1
+	st.b	[a15]511,d15
+.L618:
+	j	.L49
+.L46:
+.L49:
+.L45:
+	add	d8,#1
+.L357:
+	extr.u	d8,d8,#0,#8
+.L42:
+	ld.hu	d15,[a12]6
+.L619:
+	jlt.u	d8,d15,.L43
+.L41:
+.L40:
+	ret
+.L192:
+	
+__FrIf_Internal_ProvideTxConfirmation_function_end:
+	.size	FrIf_Internal_ProvideTxConfirmation,__FrIf_Internal_ProvideTxConfirmation_function_end-FrIf_Internal_ProvideTxConfirmation
+.L117:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.FrIf_Internal_HandleReceiveAndStore',code,cluster('FrIf_Internal_HandleReceiveAndStore')
+	.sect	'.text.FrIf_Internal.FrIf_Internal_HandleReceiveAndStore'
+	.align	2
+	
+	.global	FrIf_Internal_HandleReceiveAndStore
+; Function FrIf_Internal_HandleReceiveAndStore
+.L95:
+FrIf_Internal_HandleReceiveAndStore:	.type	func
+	lea	a10,[a10]-256
+.L362:
+	mul	d15,d6,#16
+.L624:
+	mul	d0,d4,#12
+.L625:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L626:
+	ld.a	a15,[a15]4
+.L627:
+	addsc.a	a15,a15,d0,#0
+.L628:
+	ld.a	a15,[a15]4
+.L629:
+	addsc.a	a12,a15,d15,#0
+.L365:
+	ld.bu	d0,[a12]13
+.L366:
+	mul	d15,d4,#12
+.L630:
+	movh.a	a2,#@his(FrIf_ConfigCachePtr)
+	lea	a2,[a2]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a2]
+.L631:
+	ld.a	a2,[a15]4
+.L632:
+	addsc.a	a15,a2,d15,#0
+.L633:
+	ld.bu	d4,[a15]8
+.L363:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L634:
+	ld.a	a15,[a15]8
+.L635:
+	ld.a	a2,[a15]
+.L367:
+	mul	d15,d0,#254
+.L636:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L637:
+	addsc.a	a13,a15,d15,#0
+.L368:
+	mov.aa	a14,a13
+.L228:
+	ld.a	a15,[a12]
+.L638:
+	ld.bu	d15,[a15]4
+.L639:
+	jne	d15,#0,.L50
+.L640:
+	lea	a14,[a10]2
+.L50:
+	ld.a	a15,[a2]16
+.L641:
+	lea	a5,[a10]0
+.L642:
+	lea	a6,[a10]1
+	mov.aa	a4,a14
+.L369:
+	calli	a15
+.L364:
+	jne	d2,#0,.L51
+.L643:
+	ld.bu	d15,[a10]
+.L644:
+	jne	d15,#0,.L52
+.L645:
+	mov	d10,#0
+.L370:
+	j	.L53
+.L54:
+	mul	d15,d10,#8
+.L646:
+	ld.a	a15,[a12]
+.L647:
+	ld.a	a15,[a15]
+.L648:
+	addsc.a	a15,a15,d15,#0
+.L372:
+	ld.bu	d15,[a15]6
+.L374:
+	ld.a	a2,[a15]
+.L649:
+	ld.hu	d8,[a2]4
+.L376:
+	ld.h	d9,[a15]4
+.L377:
+	ld.a	a15,[a15]
+.L373:
+	ld.a	a15,[a15]
+.L650:
+	ld.a	a15,[a15]
+.L378:
+	ld.a	a2,[a12]
+.L651:
+	ld.bu	d0,[a2]4
+.L652:
+	jne	d0,#0,.L55
+.L653:
+	addsc.a	a4,a14,d15,#0
+.L654:
+	addsc.a	a5,a13,d15,#0
+.L655:
+	ld.bu	d4,[a15]1
+	call	FrIf_Internal_SwapToBigEndian
+.L55:
+	ld.bu	d4,[a15]1
+.L656:
+	ld.bu	d7,[a10]1
+	mov	d5,d15
+.L380:
+	mov	d6,d9
+.L382:
+	call	getValidLength
+.L381:
+	mov	d11,d2
+.L384:
+	mov	d4,d9
+.L385:
+	mov.aa	a4,a14
+.L386:
+	call	readUB
+.L383:
+	jne	d2,#1,.L56
+.L657:
+	jlt.u	d11,#1,.L57
+.L658:
+	mul	d15,d8,#2
+.L375:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+.L379:
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L659:
+	addsc.a	a15,a15,d15,#0
+.L660:
+	mov	d15,#1
+.L661:
+	st.b	[a15]508,d15
+.L662:
+	mul	d15,d8,#2
+.L663:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L664:
+	addsc.a	a15,a15,d15,#0
+.L665:
+	st.b	[a15]509,d11
+.L57:
+.L56:
+	add	d10,#1
+.L371:
+	extr.u	d10,d10,#0,#8
+.L53:
+	ld.hu	d15,[a12]6
+.L666:
+	jlt.u	d10,d15,.L54
+.L52:
+.L51:
+	ret
+.L206:
+	
+__FrIf_Internal_HandleReceiveAndStore_function_end:
+	.size	FrIf_Internal_HandleReceiveAndStore,__FrIf_Internal_HandleReceiveAndStore_function_end-FrIf_Internal_HandleReceiveAndStore
+.L122:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.FrIf_Internal_HandleReceiveAndIndicate',code,cluster('FrIf_Internal_HandleReceiveAndIndicate')
+	.sect	'.text.FrIf_Internal.FrIf_Internal_HandleReceiveAndIndicate'
+	.align	2
+	
+	.global	FrIf_Internal_HandleReceiveAndIndicate
+; Function FrIf_Internal_HandleReceiveAndIndicate
+.L97:
+FrIf_Internal_HandleReceiveAndIndicate:	.type	func
+	lea	a10,[a10]-280
+.L387:
+	mov	e8,d7,d5
+.L671:
+	mul	d15,d6,#16
+.L672:
+	mul	d0,d4,#12
+.L673:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L674:
+	ld.a	a15,[a15]4
+.L675:
+	addsc.a	a15,a15,d0,#0
+.L676:
+	ld.a	a15,[a15]4
+.L677:
+	addsc.a	a12,a15,d15,#0
+.L388:
+	ld.bu	d0,[a12]13
+.L389:
+	mul	d15,d4,#12
+.L678:
+	movh.a	a2,#@his(FrIf_ConfigCachePtr)
+	lea	a2,[a2]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a2]
+.L679:
+	ld.a	a2,[a15]4
+.L680:
+	addsc.a	a15,a2,d15,#0
+.L681:
+	ld.bu	d10,[a15]8
+.L390:
+	mul	d15,d0,#254
+.L682:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L683:
+	addsc.a	a13,a15,d15,#0
+.L391:
+	st.a	[a10]272,a13
+.L254:
+	ld.a	a15,[a12]
+.L684:
+	ld.bu	d15,[a15]4
+.L685:
+	jne	d15,#0,.L58
+.L686:
+	lea	a13,[a10]14
+.L58:
+	movh.a	a2,#@his(FrIf_ConfigCachePtr)
+	lea	a2,[a2]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a2]
+.L687:
+	ld.a	a15,[a15]8
+.L688:
+	ld.a	a15,[a15]
+.L392:
+	st.a	[a10]276,a15
+.L393:
+	mov	d12,#0
+.L59:
+	ld.a	a15,[a10]276
+.L395:
+	ld.a	a15,[a15]16
+.L396:
+	lea	a5,[a10]8
+.L689:
+	lea	a6,[a10]9
+.L397:
+	mov	e4,d8,d10
+.L398:
+	mov.aa	a4,a13
+.L399:
+	calli	a15
+.L400:
+	jne	d2,#0,.L60
+.L690:
+	ld.bu	d15,[a10]8
+.L691:
+	jeq	d15,#1,.L61
+.L692:
+	mov	d13,#0
+.L401:
+	j	.L62
+.L63:
+	mul	d15,d13,#8
+.L693:
+	ld.a	a15,[a12]
+.L694:
+	ld.a	a15,[a15]
+.L695:
+	addsc.a	a15,a15,d15,#0
+.L403:
+	st.a	[a10]268,a15
+.L405:
+	ld.bu	d11,[a15]6
+.L406:
+	ld.h	d14,[a15]4
+.L407:
+	ld.a	a15,[a15]
+.L404:
+	ld.a	a15,[a15]
+.L696:
+	ld.a	a14,[a15]
+.L408:
+	ld.a	a15,[a12]
+.L697:
+	ld.bu	d15,[a15]4
+.L698:
+	jne	d15,#0,.L64
+.L409:
+	addsc.a	a4,a13,d11,#0
+.L410:
+	ld.a	a15,[a10]272
+.L411:
+	addsc.a	a5,a15,d11,#0
+.L699:
+	ld.bu	d4,[a14]1
+	call	FrIf_Internal_SwapToBigEndian
+.L64:
+	ld.bu	d4,[a14]1
+.L700:
+	ld.bu	d7,[a10]9
+	mov	d5,d11
+.L412:
+	mov	d6,d14
+.L414:
+	call	getValidLength
+.L413:
+	mov	d15,d2
+.L416:
+	mov	d4,d14
+.L418:
+	mov.aa	a4,a13
+.L419:
+	call	readUB
+.L415:
+	jne	d2,#1,.L65
+.L701:
+	jlt.u	d15,#1,.L66
+.L702:
+	ld.a	a15,[a10]272
+.L420:
+	addsc.a	a15,a15,d11,#0
+.L421:
+	st.a	[a10],a15
+.L703:
+	st.h	[a10]4,d15
+.L704:
+	ld.bu	d0,[a14]
+.L705:
+	mov	d15,#255
+.L417:
+	jeq	d15,d0,.L67
+.L706:
+	mov.a	a2,#0
+.L707:
+	ld.bu	d15,[a14]
+.L708:
+	mul	d15,d15,#4
+.L709:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L710:
+	ld.a	a15,[a15]20
+.L711:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L712:
+	jeq.a	a2,a15,.L68
+.L713:
+	ld.bu	d15,[a14]
+.L714:
+	mul	d15,d15,#4
+.L715:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L716:
+	ld.a	a15,[a15]20
+.L717:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a2,[a15]
+.L718:
+	ld.a	a15,[a10]268
+.L422:
+	ld.a	a15,[a15]
+.L423:
+	ld.hu	d4,[a15]6
+.L719:
+	lea	a4,[a10]0
+	calli	a2
+.L68:
+.L67:
+.L66:
+.L65:
+	add	d13,#1
+.L402:
+	extr.u	d13,d13,#0,#8
+.L62:
+	ld.hu	d15,[a12]6
+.L720:
+	jlt.u	d13,d15,.L63
+.L721:
+	j	.L69
+.L61:
+.L60:
+	jne	d2,#1,.L70
+.L722:
+	lea	a4,[a10]10
+.L723:
+	lea	a5,[a10]12
+	mov	d4,d10
+.L424:
+	call	Fr_17_Eray_GetChannelStatus
+.L70:
+	j	.L71
+.L69:
+	ld.bu	d15,[a10]8
+.L724:
+	jne	d15,#2,.L72
+.L725:
+	add	d12,#1
+.L394:
+	extr.u	d12,d12,#0,#16
+.L425:
+	j	.L73
+.L72:
+	j	.L74
+.L73:
+	jlt.u	d12,d9,.L59
+.L74:
+.L71:
+	ret
+.L230:
+	
+__FrIf_Internal_HandleReceiveAndIndicate_function_end:
+	.size	FrIf_Internal_HandleReceiveAndIndicate,__FrIf_Internal_HandleReceiveAndIndicate_function_end-FrIf_Internal_HandleReceiveAndIndicate
+.L127:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.FrIf_Internal_ProvideRxIndication',code,cluster('FrIf_Internal_ProvideRxIndication')
+	.sect	'.text.FrIf_Internal.FrIf_Internal_ProvideRxIndication'
+	.align	2
+	
+	.global	FrIf_Internal_ProvideRxIndication
+; Function FrIf_Internal_ProvideRxIndication
+.L99:
+FrIf_Internal_ProvideRxIndication:	.type	func
+	sub.a	a10,#8
+.L426:
+	mul	d0,d6,#16
+.L730:
+	mul	d15,d4,#12
+.L731:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L732:
+	ld.a	a15,[a15]4
+.L733:
+	addsc.a	a15,a15,d15,#0
+.L734:
+	ld.a	a15,[a15]4
+.L735:
+	addsc.a	a12,a15,d0,#0
+.L427:
+	ld.bu	d15,[a12]13
+.L428:
+	mul	d15,d15,#254
+.L429:
+	movh.a	a2,#@his(FrIf_Internal_Global)
+	lea	a2,[a2]@los(FrIf_Internal_Global)
+.L736:
+	addsc.a	a13,a2,d15,#0
+.L430:
+	mov	d8,#0
+.L431:
+	j	.L75
+.L76:
+	mul	d15,d8,#8
+.L737:
+	ld.a	a2,[a12]
+.L738:
+	ld.a	a2,[a2]
+.L739:
+	addsc.a	a4,a2,d15,#0
+.L433:
+	ld.a	a2,[a4]
+.L740:
+	ld.hu	d9,[a2]4
+.L435:
+	mul	d15,d9,#2
+.L741:
+	movh.a	a2,#@his(FrIf_Internal_Global)
+	lea	a2,[a2]@los(FrIf_Internal_Global)
+.L742:
+	addsc.a	a2,a2,d15,#0
+.L743:
+	ld.bu	d15,[a2]508
+.L744:
+	jne	d15,#1,.L77
+.L745:
+	ld.bu	d15,[a4]6
+.L436:
+	ld.a	a2,[a4]
+.L746:
+	ld.a	a2,[a2]
+.L747:
+	ld.a	a5,[a2]
+.L438:
+	addsc.a	a2,a13,d15,#0
+.L748:
+	st.a	[a10],a2
+.L749:
+	mul	d15,d9,#2
+.L437:
+	movh.a	a2,#@his(FrIf_Internal_Global)
+	lea	a2,[a2]@los(FrIf_Internal_Global)
+.L750:
+	addsc.a	a15,a2,d15,#0
+.L751:
+	ld.bu	d15,[a15]509
+.L752:
+	st.h	[a10]4,d15
+.L753:
+	ld.bu	d0,[a5]
+.L754:
+	mov	d15,#255
+.L755:
+	jeq	d15,d0,.L78
+.L756:
+	mov.a	a2,#0
+.L757:
+	ld.bu	d15,[a5]
+.L758:
+	mul	d15,d15,#4
+.L759:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L760:
+	ld.a	a15,[a15]20
+.L761:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L762:
+	jeq.a	a2,a15,.L79
+.L763:
+	ld.bu	d15,[a5]
+.L764:
+	mul	d15,d15,#4
+.L765:
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L766:
+	ld.a	a15,[a15]20
+.L767:
+	addsc.a	a15,a15,d15,#0
+	ld.a	a15,[a15]
+.L768:
+	ld.a	a2,[a4]
+.L769:
+	ld.hu	d4,[a2]6
+.L770:
+	lea	a4,[a10]0
+.L434:
+	calli	a15
+.L439:
+	j	.L80
+.L79:
+.L78:
+.L80:
+	mul	d15,d9,#2
+.L771:
+	movh.a	a15,#@his(FrIf_Internal_Global)
+	lea	a15,[a15]@los(FrIf_Internal_Global)
+.L772:
+	addsc.a	a15,a15,d15,#0
+.L773:
+	mov	d15,#0
+.L774:
+	st.b	[a15]508,d15
+.L77:
+	add	d8,#1
+.L432:
+	extr.u	d8,d8,#0,#8
+.L75:
+	ld.hu	d15,[a12]6
+.L775:
+	jlt.u	d8,d15,.L76
+.L776:
+	ret
+.L256:
+	
+__FrIf_Internal_ProvideRxIndication_function_end:
+	.size	FrIf_Internal_ProvideRxIndication,__FrIf_Internal_ProvideRxIndication_function_end-FrIf_Internal_ProvideRxIndication
+.L132:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.FrIf_Internal_PrepareLPdu',code,cluster('FrIf_Internal_PrepareLPdu')
+	.sect	'.text.FrIf_Internal.FrIf_Internal_PrepareLPdu'
+	.align	2
+	
+	.global	FrIf_Internal_PrepareLPdu
+; Function FrIf_Internal_PrepareLPdu
+.L101:
+FrIf_Internal_PrepareLPdu:	.type	func
+	movh.a	a15,#@his(FrIf_ConfigCachePtr)
+	lea	a15,[a15]@los(FrIf_ConfigCachePtr)
+	ld.a	a15,[a15]
+.L781:
+	ld.a	a15,[a15]8
+.L782:
+	ld.a	a15,[a15]
+.L441:
+	mul	d15,d4,#12
+.L783:
+	movh.a	a2,#@his(FrIf_ConfigCachePtr)
+	lea	a2,[a2]@los(FrIf_ConfigCachePtr)
+	ld.a	a2,[a2]
+.L784:
+	ld.a	a2,[a2]4
+.L785:
+	addsc.a	a2,a2,d15,#0
+.L786:
+	ld.bu	d4,[a2]8
+.L440:
+	ld.w	d15,[a15]24
+.L787:
+	jeq	d15,#0,.L81
+.L788:
+	ld.a	a15,[a15]24
+.L442:
+	calli	a15
+.L81:
+	ret
+.L269:
+	
+__FrIf_Internal_PrepareLPdu_function_end:
+	.size	FrIf_Internal_PrepareLPdu,__FrIf_Internal_PrepareLPdu_function_end-FrIf_Internal_PrepareLPdu
+.L137:
+	; End of function
+	
+	.sdecl	'.text.FrIf_Internal.FrIf_Internal_SwapToBigEndian',code,cluster('FrIf_Internal_SwapToBigEndian')
+	.sect	'.text.FrIf_Internal.FrIf_Internal_SwapToBigEndian'
+	.align	2
+	
+	.global	FrIf_Internal_SwapToBigEndian
+; Function FrIf_Internal_SwapToBigEndian
+.L103:
+FrIf_Internal_SwapToBigEndian:	.type	func
+	mov	d0,#0
+.L443:
+	j	.L82
+.L83:
+	addsc.a	a15,a5,d0,#0
+.L793:
+	add	d15,d4,#-1
+.L794:
+	sub	d15,d0
+.L795:
+	addsc.a	a2,a4,d15,#0
+	ld.bu	d15,[a2]
+.L796:
+	st.b	[a15],d15
+.L797:
+	add	d0,#1
+.L444:
+	extr.u	d0,d0,#0,#8
+.L82:
+	jlt.u	d0,d4,.L83
+.L798:
+	ret
+.L274:
+	
+__FrIf_Internal_SwapToBigEndian_function_end:
+	.size	FrIf_Internal_SwapToBigEndian,__FrIf_Internal_SwapToBigEndian_function_end-FrIf_Internal_SwapToBigEndian
+.L142:
+	; End of function
+	
+	.sdecl	'.rodata.FrIf_Internal..1.ini',data,rom
+	.sect	'.rodata.FrIf_Internal..1.ini'
+.1.ini:	.type	object
+	.size	.1.ini,254
+	.space	254
+	.calls	'FrIf_Internal_HandleDecoupledTransmission','__INDIRECT__'
+	.calls	'FrIf_Internal_HandleDecoupledTransmission','markUB'
+	.calls	'FrIf_Internal_ProvideTxConfirmation','__INDIRECT__'
+	.calls	'FrIf_Internal_HandleReceiveAndStore','__INDIRECT__'
+	.calls	'FrIf_Internal_HandleReceiveAndStore','FrIf_Internal_SwapToBigEndian'
+	.calls	'FrIf_Internal_HandleReceiveAndStore','getValidLength'
+	.calls	'FrIf_Internal_HandleReceiveAndStore','readUB'
+	.calls	'FrIf_Internal_HandleReceiveAndIndicate','__INDIRECT__'
+	.calls	'FrIf_Internal_HandleReceiveAndIndicate','FrIf_Internal_SwapToBigEndian'
+	.calls	'FrIf_Internal_HandleReceiveAndIndicate','getValidLength'
+	.calls	'FrIf_Internal_HandleReceiveAndIndicate','readUB'
+	.calls	'FrIf_Internal_HandleReceiveAndIndicate','Fr_17_Eray_GetChannelStatus'
+	.calls	'FrIf_Internal_ProvideRxIndication','__INDIRECT__'
+	.calls	'FrIf_Internal_PrepareLPdu','__INDIRECT__'
+	.calls	'markUB','',0
+	.calls	'readUB','',0
+	.calls	'getValidLength','',0
+	.calls	'FrIf_Internal_HandleDecoupledTransmission','',264
+	.calls	'FrIf_Internal_ProvideTxConfirmation','',8
+	.calls	'FrIf_Internal_HandleReceiveAndStore','',256
+	.calls	'FrIf_Internal_HandleReceiveAndIndicate','',280
+	.calls	'FrIf_Internal_ProvideRxIndication','',8
+	.calls	'FrIf_Internal_PrepareLPdu','',0
+	.extern	Fr_17_Eray_GetChannelStatus
+	.extern	FrIf_Internal_Global
+	.extern	FrIf_ConfigCachePtr
+	.extern	__INDIRECT__
+	.calls	'FrIf_Internal_SwapToBigEndian','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L105:
+	.word	8325
+	.half	3
+	.word	.L106
+	.byte	4
+.L104:
+	.byte	1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L107
+.L159:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.word	202
+.L161:
+	.byte	2
+	.byte	'unsigned short int',0,2,7,4
+	.word	224
+	.byte	3
+	.word	246
+	.byte	3
+	.word	246
+	.byte	5
+	.byte	'Fr_17_Eray_GetChannelStatus',0,1,205,8,23
+	.word	202
+	.byte	1,1,1,1,6
+	.byte	'Fr_CtrlIdx',0,1,207,8,17
+	.word	219
+	.byte	6
+	.byte	'Fr_ChannelAStatusPtr',0,1,208,8,19
+	.word	251
+	.byte	6
+	.byte	'Fr_ChannelBStatusPtr',0,1,209,8,19
+	.word	256
+	.byte	0,7,2,90,9,8,8
+	.byte	'FrIf_UserTriggerTransmitHandle',0
+	.word	202
+	.byte	1,2,35,0,8
+	.byte	'FrIf_TxConfirmationHandle',0
+	.word	202
+	.byte	1,2,35,1,8
+	.byte	'FrIf_TxLength',0
+	.word	202
+	.byte	1,2,35,2,8
+	.byte	'FrIf_CounterLimit',0
+	.word	202
+	.byte	1,2,35,3,8
+	.byte	'FrIf_Confirm',0
+	.word	202
+	.byte	1,2,35,4,8
+	.byte	'FrIf_Immediate',0
+	.word	202
+	.byte	1,2,35,5,8
+	.byte	'FrIf_ImmediateTxCfgIdx',0
+	.word	202
+	.byte	1,2,35,6,8
+	.byte	'FrIf_NoneMode',0
+	.word	202
+	.byte	1,2,35,7,0,3
+	.word	383
+.L164:
+	.byte	4
+	.word	615
+	.byte	7,2,102,9,2,8
+	.byte	'FrIf_RxIndicationHandle',0
+	.word	202
+	.byte	1,2,35,0,8
+	.byte	'RxPduLength',0
+	.word	202
+	.byte	1,2,35,1,0,3
+	.word	625
+.L213:
+	.byte	4
+	.word	685
+	.byte	9,2,109,9,4,8
+	.byte	'FrIf_RxPduPtr',0
+	.word	690
+	.byte	4,2,35,0,8
+	.byte	'FrIf_TxPduPtr',0
+	.word	620
+	.byte	4,2,35,0,0,3
+	.word	695
+	.byte	4
+	.word	747
+	.byte	7,2,115,9,8,8
+	.byte	'FrIf_PduDirectionPtr',0
+	.word	752
+	.byte	4,2,35,0,8
+	.byte	'FrIf_PduId',0
+	.word	224
+	.byte	2,2,35,4,8
+	.byte	'FrIf_UpperLayerPduId',0
+	.word	224
+	.byte	2,2,35,6,0,3
+	.word	757
+	.byte	4
+	.word	843
+.L178:
+	.byte	2
+	.byte	'short int',0,2,5,7,2,122,9,8,8
+	.byte	'FrIf_Pdu',0
+	.word	848
+	.byte	4,2,35,0,8
+	.byte	'FrIf_PduUpdateBitOffset',0
+	.word	853
+	.byte	2,2,35,4,8
+	.byte	'FrIf_PduOffset',0
+	.word	202
+	.byte	1,2,35,6,0,3
+	.word	866
+.L170:
+	.byte	4
+	.word	947
+	.byte	10,2,62,9,1,11
+	.byte	'FRIF_BIG_ENDIAN',0,0,11
+	.byte	'FRIF_LITTLE_ENDIAN',0,1,0,7,2,129,1,9,8,8
+	.byte	'FrIf_PdusInFramePtr',0
+	.word	952
+	.byte	4,2,35,0,8
+	.byte	'FrIf_ByteOrder',0
+	.word	957
+	.byte	1,2,35,4,0,3
+	.word	1002
+	.byte	4
+	.word	1062
+	.byte	10,2,39,9,1,11
+	.byte	'FRIF_CHANNEL_A',0,0,11
+	.byte	'FRIF_CHANNEL_B',0,1,11
+	.byte	'FRIF_CHANNEL_AB',0,2,0,7,2,137,1,9,16,8
+	.byte	'FrIf_FrameStructureRef',0
+	.word	1067
+	.byte	4,2,35,0,8
+	.byte	'FrIf_SlotId',0
+	.word	224
+	.byte	2,2,35,4,8
+	.byte	'FrIf_NumberPdusInFrame',0
+	.word	224
+	.byte	2,2,35,6,8
+	.byte	'FrIf_LPduIdx',0
+	.word	224
+	.byte	2,2,35,8,8
+	.byte	'FrIf_LSduLength',0
+	.word	202
+	.byte	1,2,35,10,8
+	.byte	'FrIf_BaseCycle',0
+	.word	202
+	.byte	1,2,35,11,8
+	.byte	'FrIf_CycleRepetition',0
+	.word	202
+	.byte	1,2,35,12,8
+	.byte	'FrIf_FrameStructureIdx',0
+	.word	202
+	.byte	1,2,35,13,8
+	.byte	'FrIf_Channel',0
+	.word	1072
+	.byte	1,2,35,14,8
+	.byte	'FrIf_AlwaysTransmit',0
+	.word	202
+	.byte	1,2,35,15,0,3
+	.word	1130
+.L166:
+	.byte	4
+	.word	1406
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	0,4
+	.word	1416
+	.byte	3
+	.word	202
+	.byte	4
+	.word	1434
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	224
+	.byte	13
+	.word	1439
+	.byte	13
+	.word	202
+	.byte	0,4
+	.word	1444
+	.byte	4
+	.word	202
+.L219:
+	.byte	10,3,168,1,9,1,11
+	.byte	'FR_RECEIVED',0,0,11
+	.byte	'FR_NOT_RECEIVED',0,1,11
+	.byte	'FR_RECEIVED_MORE_DATA_AVAILABLE',0,2,0,4
+	.word	1482
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	224
+	.byte	13
+	.word	1477
+	.byte	13
+	.word	1555
+	.byte	13
+	.word	1477
+	.byte	0,4
+	.word	1560
+.L204:
+	.byte	10,3,156,1,9,1,11
+	.byte	'FR_TRANSMITTED',0,0,11
+	.byte	'FR_TRANSMITTED_CONFLICT',0,1,11
+	.byte	'FR_NOT_TRANSMITTED',0,2,0,4
+	.word	1598
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	224
+	.byte	13
+	.word	1669
+	.byte	0,4
+	.word	1674
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	224
+	.byte	0,4
+	.word	1702
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	202
+	.byte	13
+	.word	202
+	.byte	13
+	.word	224
+	.byte	0,4
+	.word	1725
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	202
+	.byte	0,4
+	.word	1758
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	202
+	.byte	13
+	.word	1477
+	.byte	0,4
+	.word	1781
+	.byte	4
+	.word	224
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	1477
+	.byte	13
+	.word	1809
+	.byte	0,4
+	.word	1814
+	.byte	10,3,180,1,9,1,11
+	.byte	'FR_CHANNEL_A',0,0,11
+	.byte	'FR_CHANNEL_B',0,1,11
+	.byte	'FR_CHANNEL_AB',0,2,0,12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	1842
+	.byte	0,4
+	.word	1895
+	.byte	10,3,61,9,1,11
+	.byte	'FR_POCSTATE_CONFIG',0,0,11
+	.byte	'FR_POCSTATE_DEFAULT_CONFIG',0,1,11
+	.byte	'FR_POCSTATE_HALT',0,2,11
+	.byte	'FR_POCSTATE_NORMAL_ACTIVE',0,3,11
+	.byte	'FR_POCSTATE_NORMAL_PASSIVE',0,4,11
+	.byte	'FR_POCSTATE_READY',0,5,11
+	.byte	'FR_POCSTATE_STARTUP',0,6,11
+	.byte	'FR_POCSTATE_WAKEUP',0,7,0,10,3,78,9,1,11
+	.byte	'FR_SLOTMODE_KEYSLOT',0,0,11
+	.byte	'FR_SLOTMODE_ALL_PENDING',0,1,11
+	.byte	'FR_SLOTMODE_ALL',0,2,0,10,3,90,9,1,11
+	.byte	'FR_ERRORMODE_ACTIVE',0,0,11
+	.byte	'FR_ERRORMODE_PASSIVE',0,1,11
+	.byte	'FR_ERRORMODE_COMM_HALT',0,2,0,10,3,102,9,1,11
+	.byte	'FR_WAKEUP_UNDEFINED',0,0,11
+	.byte	'FR_WAKEUP_RECEIVED_HEADER',0,1,11
+	.byte	'FR_WAKEUP_RECEIVED_WUP',0,2,11
+	.byte	'FR_WAKEUP_COLLISION_HEADER',0,3,11
+	.byte	'FR_WAKEUP_COLLISION_WUP',0,4,11
+	.byte	'FR_WAKEUP_COLLISION_UNKNOWN',0,5,11
+	.byte	'FR_WAKEUP_TRANSMITTED',0,6,0,10,3,118,9,1,11
+	.byte	'FR_STARTUP_UNDEFINED',0,0,11
+	.byte	'FR_STARTUP_COLDSTART_LISTEN',0,1,11
+	.byte	'FR_STARTUP_INTEGRATION_COLDSTART_CHECK',0,2,11
+	.byte	'FR_STARTUP_COLDSTART_JOIN',0,3,11
+	.byte	'FR_STARTUP_COLDSTART_COLLISION_RESOLUTION',0,4,11
+	.byte	'FR_STARTUP_COLDSTART_CONSISTENCY_CHECK',0,5,11
+	.byte	'FR_STARTUP_INTEGRATION_LISTEN',0,6,11
+	.byte	'FR_STARTUP_INITIALIZE_SCHEDULE',0,7,11
+	.byte	'FR_STARTUP_INTEGRATION_CONSISTENCY_CHECK',0,8,11
+	.byte	'FR_STARTUP_COLDSTART_GAP',0,9,11
+	.byte	'FR_STARTUP_EXTERNAL_STARTUP',0,10,0,7,3,138,1,9,12,8
+	.byte	'State',0
+	.word	1918
+	.byte	1,2,35,0,8
+	.byte	'Freeze',0
+	.word	202
+	.byte	1,2,35,1,8
+	.byte	'CHIHaltRequest',0
+	.word	202
+	.byte	1,2,35,2,8
+	.byte	'CHIReadyRequest',0
+	.word	202
+	.byte	1,2,35,3,8
+	.byte	'ColdstartNoise',0
+	.word	202
+	.byte	1,2,35,4,8
+	.byte	'SlotMode',0
+	.word	2113
+	.byte	1,2,35,5,8
+	.byte	'ErrorMode',0
+	.word	2185
+	.byte	1,2,35,6,8
+	.byte	'WakeupStatus',0
+	.word	2261
+	.byte	1,2,35,7,8
+	.byte	'StartupState',0
+	.word	2451
+	.byte	1,2,35,8,0,4
+	.word	2829
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	202
+	.byte	13
+	.word	3021
+	.byte	0,4
+	.word	3026
+	.byte	7,2,133,2,9,76,8
+	.byte	'Fr_ControllerInit',0
+	.word	1429
+	.byte	4,2,35,0,8
+	.byte	'Fr_StartCommunication',0
+	.word	1429
+	.byte	4,2,35,4,8
+	.byte	'Fr_AllowColdstart',0
+	.word	1429
+	.byte	4,2,35,8,8
+	.byte	'Fr_TransmitTxLPdu',0
+	.word	1472
+	.byte	4,2,35,12,8
+	.byte	'Fr_ReceiveRxLPdu',0
+	.word	1593
+	.byte	4,2,35,16,8
+	.byte	'Fr_CheckTxLPduStatus',0
+	.word	1697
+	.byte	4,2,35,20,8
+	.byte	'Fr_PrepareLPdu',0
+	.word	1720
+	.byte	4,2,35,24,8
+	.byte	'Fr_SetAbsoluteTimer',0
+	.word	1753
+	.byte	4,2,35,28,8
+	.byte	'Fr_EnableAbsoluteTimerIRQ',0
+	.word	1776
+	.byte	4,2,35,32,8
+	.byte	'Fr_AckAbsoluteTimerIRQ',0
+	.word	1776
+	.byte	4,2,35,36,8
+	.byte	'Fr_DisableAbsoluteTimerIRQ',0
+	.word	1776
+	.byte	4,2,35,40,8
+	.byte	'Fr_CancelAbsoluteTimer',0
+	.word	1776
+	.byte	4,2,35,44,8
+	.byte	'Fr_GetAbsoluteTimerIRQStatus',0
+	.word	1804
+	.byte	4,2,35,48,8
+	.byte	'Fr_GetGlobalTime',0
+	.word	1837
+	.byte	4,2,35,52,8
+	.byte	'Fr_SetWakeupChannel',0
+	.word	1913
+	.byte	4,2,35,56,8
+	.byte	'Fr_GetPOCStatus',0
+	.word	3044
+	.byte	4,2,35,60,8
+	.byte	'Fr_HaltCommunication',0
+	.word	1429
+	.byte	4,2,35,64,8
+	.byte	'Fr_AbortCommunication',0
+	.word	1429
+	.byte	4,2,35,68,8
+	.byte	'Fr_SendWUP',0
+	.word	1429
+	.byte	4,2,35,72,0,3
+	.word	3049
+.L168:
+	.byte	4
+	.word	3611
+.L172:
+	.byte	4
+	.word	202
+.L176:
+	.byte	10,2,28,9,1,11
+	.byte	'PDU_OUTDATED',0,0,11
+	.byte	'PDU_UPDATED',0,1,0
+.L185:
+	.byte	7,4,43,9,8,8
+	.byte	'SduDataPtr',0
+	.word	3621
+	.byte	4,2,35,0,8
+	.byte	'SduLength',0
+	.word	224
+	.byte	2,2,35,4,0
+.L187:
+	.byte	14,254,1
+	.word	202
+	.byte	15,253,1,0,3
+	.word	202
+.L275:
+	.byte	4
+	.word	3717
+	.byte	16
+	.byte	'__INDIRECT__',0,5,1,1,1,1,1,17
+	.byte	'__wchar_t',0,5,1,1
+	.word	853
+	.byte	2
+	.byte	'unsigned int',0,4,7,17
+	.byte	'__size_t',0,5,1,1
+	.word	3765
+	.byte	2
+	.byte	'int',0,4,5,17
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	3798
+	.byte	18,1,4
+	.word	3825
+	.byte	17
+	.byte	'__codeptr',0,5,1,1
+	.word	3827
+	.byte	17
+	.byte	'boolean',0,6,101,29
+	.word	202
+	.byte	17
+	.byte	'uint8',0,6,105,29
+	.word	202
+	.byte	17
+	.byte	'uint16',0,6,109,29
+	.word	224
+	.byte	2
+	.byte	'unsigned long int',0,4,7,17
+	.byte	'uint32',0,6,113,29
+	.word	3895
+	.byte	17
+	.byte	'sint16',0,6,126,29
+	.word	853
+	.byte	17
+	.byte	'Std_ReturnType',0,7,97,16
+	.word	202
+	.byte	17
+	.byte	'PduIdType',0,4,41,16
+	.word	224
+	.byte	17
+	.byte	'PduLengthType',0,4,42,16
+	.word	224
+	.byte	10,4,54,9,1,11
+	.byte	'TP_DATACONF',0,0,11
+	.byte	'TP_DATARETRY',0,1,11
+	.byte	'TP_CONFPENDING',0,2,11
+	.byte	'TP_NORETRY',0,3,0,17
+	.byte	'TpDataStateType',0,4,59,3
+	.word	4009
+	.byte	17
+	.byte	'Fr_POCStateType',0,3,71,2
+	.word	1918
+	.byte	17
+	.byte	'Fr_SlotModeType',0,3,83,2
+	.word	2113
+	.byte	17
+	.byte	'Fr_ErrorModeType',0,3,95,2
+	.word	2185
+	.byte	17
+	.byte	'Fr_WakeupStatusType',0,3,111,2
+	.word	2261
+	.byte	17
+	.byte	'Fr_StartupStateType',0,3,131,1,2
+	.word	2451
+	.byte	10,2,22,9,1,11
+	.byte	'FRIF_STATE_OFFLINE',0,0,11
+	.byte	'FRIF_STATE_ONLINE',0,1,0,17
+	.byte	'FrIf_StateType',0,2,22,56
+	.word	4228
+	.byte	17
+	.byte	'FrIf_PduUpdateBitType',0,2,31,3
+	.word	3626
+	.byte	17
+	.byte	'FrIf_ChannelType',0,2,43,3
+	.word	1072
+	.byte	10,2,51,9,1,11
+	.byte	'DECOUPLED_TRANSMISSION',0,0,11
+	.byte	'PREPARE_LPDU',0,1,11
+	.byte	'RECEIVE_AND_INDICATE',0,2,11
+	.byte	'RECEIVE_AND_STORE',0,3,11
+	.byte	'RX_INDICATION',0,4,11
+	.byte	'TX_CONFIRMATION',0,5,11
+	.byte	'FREE_OP_A',0,6,11
+	.byte	'FREE_OP_B',0,7,0,17
+	.byte	'FrIf_CommunicationActionType',0,2,60,3
+	.word	4353
+	.byte	17
+	.byte	'FrIf_ByteOrderType',0,2,65,3
+	.word	957
+	.byte	4
+	.word	3661
+	.byte	19,1,1,13
+	.word	224
+	.byte	13
+	.word	4564
+	.byte	0,4
+	.word	4569
+	.byte	17
+	.byte	'FrIf_RxIndicationType',0,2,68,16
+	.word	4583
+	.byte	12
+	.word	202
+	.byte	1,1,13
+	.word	224
+	.byte	13
+	.word	4564
+	.byte	0,4
+	.word	4618
+	.byte	17
+	.byte	'FrIf_TriggerTransmitType',0,2,69,26
+	.word	4636
+	.byte	19,1,1,13
+	.word	224
+	.byte	0,4
+	.word	4674
+	.byte	17
+	.byte	'FrIf_TxConfirmationType',0,2,70,16
+	.word	4683
+	.byte	7,2,84,9,4,8
+	.byte	'FrIf_FrCtrlIdx',0
+	.word	202
+	.byte	1,2,35,0,8
+	.byte	'Fr_Buffer',0
+	.word	224
+	.byte	2,2,35,2,0,17
+	.byte	'FrIf_ImmediateTxPduCfgType',0,2,87,2
+	.word	4720
+	.byte	17
+	.byte	'FrIf_TxPduType',0,2,99,3
+	.word	383
+	.byte	17
+	.byte	'FrIf_RxPduType',0,2,105,3
+	.word	625
+	.byte	17
+	.byte	'FrIf_PduDirectionType',0,2,112,3
+	.word	695
+	.byte	17
+	.byte	'FrIf_PduType',0,2,119,3
+	.word	757
+	.byte	17
+	.byte	'FrIf_PdusIn_FrameType',0,2,126,3
+	.word	866
+	.byte	17
+	.byte	'FrIf_FrameStructureType',0,2,132,1,3
+	.word	1002
+	.byte	17
+	.byte	'FrIf_FrameTriggeringType',0,2,151,1,3
+	.word	1130
+	.byte	7,2,154,1,9,8,8
+	.byte	'FrIf_VBTriggeringRef',0
+	.word	1411
+	.byte	4,2,35,0,8
+	.byte	'Fr_Buffer',0
+	.word	224
+	.byte	2,2,35,4,8
+	.byte	'FrIf_Reconfigurable',0
+	.word	202
+	.byte	1,2,35,6,0,17
+	.byte	'FrIf_LPduType',0,2,158,1,3
+	.word	4998
+	.byte	3
+	.word	4998
+	.byte	4
+	.word	5106
+	.byte	7,2,161,1,9,12,8
+	.byte	'FrIf_LpduPtr',0
+	.word	5111
+	.byte	4,2,35,0,8
+	.byte	'FrIf_FrameTriggeringPtr',0
+	.word	1411
+	.byte	4,2,35,4,8
+	.byte	'FrIf_FrCtrlIdx',0
+	.word	202
+	.byte	1,2,35,8,8
+	.byte	'FrIf_LPduCount',0
+	.word	202
+	.byte	1,2,35,9,8
+	.byte	'FrIf_CtrlIdx',0
+	.word	202
+	.byte	1,2,35,10,8
+	.byte	'FrIf_ClstrRefIdx',0
+	.word	202
+	.byte	1,2,35,11,0,17
+	.byte	'FrIf_ControllerType',0,2,169,1,3
+	.word	5116
+	.byte	7,2,172,1,9,12,8
+	.byte	'FrIf_LPduIdxRef',0
+	.word	5111
+	.byte	4,2,35,0,8
+	.byte	'FrIf_CommunicationAction',0
+	.word	4353
+	.byte	1,2,35,4,8
+	.byte	'FrIf_RxComOpMaxLoop',0
+	.word	224
+	.byte	2,2,35,6,8
+	.byte	'FrIf_CtrlIdx',0
+	.word	202
+	.byte	1,2,35,8,8
+	.byte	'FrIf_FrameConfigIdx',0
+	.word	202
+	.byte	1,2,35,9,8
+	.byte	'FrIf_CommunicationOperationIdx',0
+	.word	202
+	.byte	1,2,35,10,0,17
+	.byte	'FrIf_CommunicationOperationType',0,2,179,1,3
+	.word	5303
+	.byte	3
+	.word	5303
+	.byte	4
+	.word	5530
+	.byte	7,2,182,1,9,16,8
+	.byte	'FrIf_CommunicationOperationPtr',0
+	.word	5535
+	.byte	4,2,35,0,8
+	.byte	'FrIf_Macrotick',0
+	.word	3895
+	.byte	4,2,35,4,8
+	.byte	'FrIf_NbrOfOperations',0
+	.word	3895
+	.byte	4,2,35,8,8
+	.byte	'FrIf_Cycle',0
+	.word	202
+	.byte	1,2,35,12,0,17
+	.byte	'FrIf_JobType',0,2,187,1,3
+	.word	5540
+	.byte	3
+	.word	5540
+	.byte	4
+	.word	5683
+	.byte	7,2,190,1,9,8,8
+	.byte	'FrIf_JobPtr',0
+	.word	5688
+	.byte	4,2,35,0,8
+	.byte	'FrIf_NbrOfJobs',0
+	.word	202
+	.byte	1,2,35,4,8
+	.byte	'FrIf_FrAbsTimerIdx',0
+	.word	202
+	.byte	1,2,35,5,8
+	.byte	'FrIf_AbsTimerIdx',0
+	.word	202
+	.byte	1,2,35,6,0,17
+	.byte	'FrIf_JobListType',0,2,195,1,3
+	.word	5693
+	.byte	3
+	.word	5116
+	.byte	4
+	.word	5825
+	.byte	3
+	.word	5830
+	.byte	4
+	.word	5835
+	.byte	3
+	.word	5693
+	.byte	4
+	.word	5845
+	.byte	7,2,210,1,9,32,8
+	.byte	'FrIf_ControllerPtr',0
+	.word	5840
+	.byte	4,2,35,0,8
+	.byte	'FrIf_JobListPtr',0
+	.word	5850
+	.byte	4,2,35,4,8
+	.byte	'FrIf_GMacroPerCycle',0
+	.word	224
+	.byte	2,2,35,8,8
+	.byte	'FrIf_MainFunctionPeriod',0
+	.word	3895
+	.byte	4,2,35,10,8
+	.byte	'FrIf_MaxIsrDelay',0
+	.word	3895
+	.byte	4,2,35,14,8
+	.byte	'FrIf_GdCycle',0
+	.word	3895
+	.byte	4,2,35,18,8
+	.byte	'FrIf_GdMacrotick',0
+	.word	3895
+	.byte	4,2,35,22,8
+	.byte	'FrIf_GNumberOfStaticSlots',0
+	.word	224
+	.byte	2,2,35,26,8
+	.byte	'FrIf_ClstIdx',0
+	.word	202
+	.byte	1,2,35,28,8
+	.byte	'FrIf_ControllerCount',0
+	.word	202
+	.byte	1,2,35,29,8
+	.byte	'FrIf_GdStaticSlots',0
+	.word	202
+	.byte	1,2,35,30,0,17
+	.byte	'FrIf_ClusterType',0,2,130,2,3
+	.word	5855
+	.byte	17
+	.byte	'FrIf_FrAPIType',0,2,167,2,3
+	.word	3049
+	.byte	7,2,170,2,9,8,8
+	.byte	'FrIf_FrAPIPtr',0
+	.word	3616
+	.byte	4,2,35,0,8
+	.byte	'FrIf_CCPerDriver',0
+	.word	202
+	.byte	1,2,35,4,0,17
+	.byte	'FrIf_DriverConfigType',0,2,173,2,3
+	.word	6216
+	.byte	3
+	.word	5855
+	.byte	4
+	.word	6303
+	.byte	3
+	.word	6216
+	.byte	4
+	.word	6313
+	.byte	3
+	.word	4588
+	.byte	4
+	.word	6323
+	.byte	3
+	.word	4641
+	.byte	4
+	.word	6333
+	.byte	3
+	.word	4688
+	.byte	4
+	.word	6343
+	.byte	3
+	.word	4720
+	.byte	4
+	.word	6353
+	.byte	7,2,176,2,9,40,8
+	.byte	'FrIf_ClusterPtr',0
+	.word	6308
+	.byte	4,2,35,0,8
+	.byte	'FrIf_CtrlPtr',0
+	.word	5830
+	.byte	4,2,35,4,8
+	.byte	'Fr_Driver_ConfigPtr',0
+	.word	6318
+	.byte	4,2,35,8,8
+	.byte	'FrIf_TxPduCfgPtr',0
+	.word	620
+	.byte	4,2,35,12,8
+	.byte	'FrIf_RxPduCfgPtr',0
+	.word	690
+	.byte	4,2,35,16,8
+	.byte	'FrIf_RxIndicationFncs',0
+	.word	6328
+	.byte	4,2,35,20,8
+	.byte	'FrIf_TriggerTransmitFncs',0
+	.word	6338
+	.byte	4,2,35,24,8
+	.byte	'FrIf_TxConfirmationFncs',0
+	.word	6348
+	.byte	4,2,35,28,8
+	.byte	'FrIf_ImmediateTxPduCfgPtr',0
+	.word	6358
+	.byte	4,2,35,32,8
+	.byte	'FrIf_ClusterCount',0
+	.word	202
+	.byte	1,2,35,36,8
+	.byte	'FrIf_CtrlCount',0
+	.word	202
+	.byte	1,2,35,37,8
+	.byte	'FrIf_TxPduCount',0
+	.word	202
+	.byte	1,2,35,38,8
+	.byte	'FrIf_RxPduCount',0
+	.word	202
+	.byte	1,2,35,39,0,17
+	.byte	'FrIf_ConfigType',0,2,191,2,3
+	.word	6363
+	.byte	4
+	.word	4569
+	.byte	4
+	.word	4618
+	.byte	4
+	.word	4674
+	.byte	17
+	.byte	'Dem_EventIdType',0,8,41,16
+	.word	224
+	.byte	7,1,189,1,9,76,8
+	.byte	'Succ1CfgVal',0
+	.word	3895
+	.byte	4,2,35,0,8
+	.byte	'Succ2CfgVal',0
+	.word	3895
+	.byte	4,2,35,4,8
+	.byte	'Succ3CfgVal',0
+	.word	3895
+	.byte	4,2,35,8,8
+	.byte	'NemcCfgVal',0
+	.word	3895
+	.byte	4,2,35,12,8
+	.byte	'Prtc1CfgVal',0
+	.word	3895
+	.byte	4,2,35,16,8
+	.byte	'Prtc2CfgVal',0
+	.word	3895
+	.byte	4,2,35,20,8
+	.byte	'MhdcCfgVal',0
+	.word	3895
+	.byte	4,2,35,24,8
+	.byte	'Gtuc01CfgVal',0
+	.word	3895
+	.byte	4,2,35,28,8
+	.byte	'Gtuc02CfgVal',0
+	.word	3895
+	.byte	4,2,35,32,8
+	.byte	'Gtuc03CfgVal',0
+	.word	3895
+	.byte	4,2,35,36,8
+	.byte	'Gtuc04CfgVal',0
+	.word	3895
+	.byte	4,2,35,40,8
+	.byte	'Gtuc05CfgVal',0
+	.word	3895
+	.byte	4,2,35,44,8
+	.byte	'Gtuc06CfgVal',0
+	.word	3895
+	.byte	4,2,35,48,8
+	.byte	'Gtuc07CfgVal',0
+	.word	3895
+	.byte	4,2,35,52,8
+	.byte	'Gtuc08CfgVal',0
+	.word	3895
+	.byte	4,2,35,56,8
+	.byte	'Gtuc09CfgVal',0
+	.word	3895
+	.byte	4,2,35,60,8
+	.byte	'Gtuc10CfgVal',0
+	.word	3895
+	.byte	4,2,35,64,8
+	.byte	'Gtuc11CfgVal',0
+	.word	3895
+	.byte	4,2,35,68,8
+	.byte	'Cust1CfgVal',0
+	.word	3895
+	.byte	4,2,35,72,0,17
+	.byte	'Fr_17_Eray_CCConfigType',0,1,210,1,3
+	.word	6796
+	.byte	7,1,219,1,9,12,8
+	.byte	'Wrhs1CfgVal',0
+	.word	3895
+	.byte	4,2,35,0,8
+	.byte	'Wrhs2CfgVal',0
+	.word	3895
+	.byte	4,2,35,4,8
+	.byte	'LpduReconfigurable',0
+	.word	202
+	.byte	1,2,35,8,8
+	.byte	'FrDemFTSlotStatusErrId',0
+	.word	224
+	.byte	2,2,35,10,0,17
+	.byte	'Fr_17_Eray_LPduConfigType',0,1,227,1,3
+	.word	7244
+	.byte	3
+	.word	6796
+	.byte	4
+	.word	7388
+	.byte	3
+	.word	7244
+	.byte	4
+	.word	7398
+	.byte	3
+	.word	3895
+	.byte	4
+	.word	7408
+	.byte	3
+	.word	224
+	.byte	4
+	.word	7418
+	.byte	7,1,131,2,9,28,8
+	.byte	'CCCfgPtr',0
+	.word	7393
+	.byte	4,2,35,0,8
+	.byte	'LPduConfigPtr',0
+	.word	7403
+	.byte	4,2,35,4,8
+	.byte	'ConfigParamPtr',0
+	.word	7413
+	.byte	4,2,35,8,8
+	.byte	'LPduIdx2MsgBuffIdxPtr',0
+	.word	3722
+	.byte	4,2,35,12,8
+	.byte	'DataPointerOffsetPtr',0
+	.word	7423
+	.byte	4,2,35,16,8
+	.byte	'LPduCount',0
+	.word	224
+	.byte	2,2,35,20,8
+	.byte	'FrClockDivider',0
+	.word	202
+	.byte	1,2,35,22,8
+	.byte	'FrIsBuffReconfigOn',0
+	.word	202
+	.byte	1,2,35,23,8
+	.byte	'FrDemCtrlTestResultId',0
+	.word	224
+	.byte	2,2,35,24,8
+	.byte	'MsgBuffCountMax',0
+	.word	202
+	.byte	1,2,35,26,0,17
+	.byte	'Fr_17_Eray_CCType',0,1,169,2,3
+	.word	7428
+	.byte	7,9,21,9,2,8
+	.byte	'pduUpdated',0
+	.word	202
+	.byte	1,2,35,0,8
+	.byte	'pduRxLen',0
+	.word	202
+	.byte	1,2,35,1,0,17
+	.byte	'FrIf_Internal_rxPduStatisticsType',0,9,24,3
+	.word	7715
+	.byte	7,9,27,9,6,8
+	.byte	'clstrState',0
+	.word	4228
+	.byte	1,2,35,0,8
+	.byte	'jobListCntr',0
+	.word	202
+	.byte	1,2,35,1,8
+	.byte	'jobListSyncLost',0
+	.word	202
+	.byte	1,2,35,2,8
+	.byte	'jobListExecLock',0
+	.word	202
+	.byte	1,2,35,3,8
+	.byte	'interruptEnableSts',0
+	.word	202
+	.byte	1,2,35,4,0,17
+	.byte	'FrIf_Internal_ClusterRuntimeType',0,9,33,3
+	.word	7801
+	.byte	7,9,36,9,2,8
+	.byte	'trigTxCounter',0
+	.word	202
+	.byte	1,2,35,0,8
+	.byte	'txConfCounter',0
+	.word	202
+	.byte	1,2,35,1,0,17
+	.byte	'FrIf_Internal_txPduStatisticsType',0,9,39,3
+	.word	7967
+	.byte	14,252,3
+	.word	3706
+	.byte	15,1,0,14,2
+	.word	7715
+	.byte	15,0,0,14,2
+	.word	7967
+	.byte	15,0,0,14,6
+	.word	7801
+	.byte	15,0,0,7,9,41,9,136,4,8
+	.byte	'lSduBuffer',0
+	.word	8061
+	.byte	252,3,2,35,0,8
+	.byte	'rxPduStatistics',0
+	.word	8071
+	.byte	2,3,35,252,3,8
+	.byte	'txPduStatistics',0
+	.word	8080
+	.byte	2,3,35,254,3,8
+	.byte	'clstrRunTimeData',0
+	.word	8089
+	.byte	6,3,35,128,4,8
+	.byte	'initDone',0
+	.word	202
+	.byte	1,3,35,134,4,0,17
+	.byte	'FrIf_Internal_GlobalType',0,9,47,2
+	.word	8098
+	.byte	20
+	.byte	'FrIf_Internal_Global',0,9,48,33
+	.word	8098
+	.byte	1,1,3
+	.word	6363
+	.byte	4
+	.word	8288
+	.byte	20
+	.byte	'FrIf_ConfigCachePtr',0,5,19,31
+	.word	8293
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L106:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,15,0,73,19
+	.byte	0,0,5,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,6,5,0,3,8,58,15,59,15,57,15,73,19,0
+	.byte	0,7,19,1,58,15,59,15,57,15,11,15,0,0,8,13,0,3,8,73,19,11,15,56,9,0,0,9,23,1,58,15,59,15,57,15,11,15,0
+	.byte	0,10,4,1,58,15,59,15,57,15,11,15,0,0,11,40,0,3,8,28,13,0,0,12,21,1,73,19,54,15,39,12,0,0,13,5,0,73,19
+	.byte	0,0,14,1,1,11,15,73,19,0,0,15,33,0,47,15,0,0,16,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,17,22
+	.byte	0,3,8,58,15,59,15,57,15,73,19,0,0,18,21,0,54,15,0,0,19,21,1,54,15,39,12,0,0,20,52,0,3,8,58,15,59,15,57
+	.byte	15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L107:
+	.word	.L446-.L445
+.L445:
+	.half	3
+	.word	.L448-.L447
+.L447:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\MCAL\\\\Fr\\\\inc',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\EcuAbstr\\\\ComHwAb\\\\FrIf\\\\inc',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Platform',0
+	.byte	'D:\\\\AURIX-v1.10.40-workspace\\\\AS21\\\\BSW\\\\Infra\\\\Autosar_Srv',0,0
+	.byte	'Fr_17_Eray.h',0,1,0,0
+	.byte	'FrIf_Types.h',0,2,0,0
+	.byte	'Fr_GeneralTypes.h',0,3,0,0
+	.byte	'ComStack_Types.h',0,3,0,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Std_Types.h',0,3,0,0
+	.byte	'Dem.h',0,4,0,0
+	.byte	'..\\BSW\\EcuAbstr\\ComHwAb\\FrIf\\src\\FrIf_Internal.h',0,0,0,0,0
+.L448:
+.L446:
+	.sdecl	'.debug_info',debug,cluster('FrIf_Internal_HandleDecoupledTransmission')
+	.sect	'.debug_info'
+.L108:
+	.word	774
+	.half	3
+	.word	.L109
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L111,.L110
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'FrIf_Internal_HandleDecoupledTransmission',0,1,121,6,1,1,1
+	.word	.L91,.L158,.L90
+	.byte	4
+	.byte	'frIfIdx',0,1,121,54
+	.word	.L159,.L160
+	.byte	4
+	.byte	'frLPduIdx',0,1,121,72
+	.word	.L161,.L162
+	.byte	4
+	.byte	'frameCfgIdx',0,1,121,89
+	.word	.L159,.L163
+	.byte	5
+	.word	.L91,.L158
+	.byte	6
+	.byte	'txPduCfgPtr',0,1,123,28
+	.word	.L164,.L165
+	.byte	6
+	.byte	'frameTrigCfgPtr',0,1,124,38
+	.word	.L166,.L167
+	.byte	6
+	.byte	'myFuncPtr',0,1,125,27
+	.word	.L168,.L169
+	.byte	6
+	.byte	'pduInFramePtr',0,1,126,35
+	.word	.L170,.L171
+	.byte	6
+	.byte	'tempBuffPtr',0,1,127,13
+	.word	.L172,.L173
+	.byte	6
+	.byte	'frCCIdx',0,1,128,1,11
+	.word	.L159,.L174
+	.byte	6
+	.byte	'frameStructIdx',0,1,129,1,11
+	.word	.L159,.L175
+	.byte	6
+	.byte	'pduSts',0,1,130,1,27
+	.word	.L176,.L177
+	.byte	6
+	.byte	'pduUBOffset',0,1,132,1,12
+	.word	.L178,.L179
+	.byte	6
+	.byte	'pduCnt',0,1,133,1,11
+	.word	.L159,.L180
+	.byte	6
+	.byte	'pduId',0,1,134,1,15
+	.word	.L161,.L181
+	.byte	6
+	.byte	'pduOffset',0,1,135,1,11
+	.word	.L159,.L182
+	.byte	6
+	.byte	'resFlag',0,1,136,1,13
+	.word	.L159,.L183
+	.byte	6
+	.byte	'ret',0,1,137,1,20
+	.word	.L159,.L184
+	.byte	6
+	.byte	'pduInfo',0,1,138,1,17
+	.word	.L185,.L186
+	.byte	6
+	.byte	'tempBuffForBigEndian',0,1,140,1,12
+	.word	.L187,.L188
+	.byte	6
+	.byte	'pduLastByteIndex',0,1,141,1,12
+	.word	.L159,.L189
+	.byte	5
+	.word	.L190,.L27
+	.byte	6
+	.byte	'i',0,1,189,1,31
+	.word	.L159,.L191
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FrIf_Internal_HandleDecoupledTransmission')
+	.sect	'.debug_abbrev'
+.L109:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FrIf_Internal_HandleDecoupledTransmission')
+	.sect	'.debug_line'
+.L110:
+	.word	.L450-.L449
+.L449:
+	.half	3
+	.word	.L452-.L451
+.L451:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L452:
+	.byte	5,6,7,0,5,2
+	.word	.L91
+	.byte	3,248,0,1,5,58,9
+	.half	.L313-.L91
+	.byte	3,19,1,5,56,9
+	.half	.L453-.L313
+	.byte	1,5,29,9
+	.half	.L454-.L453
+	.byte	3,1,1,5,92,9
+	.half	.L314-.L454
+	.byte	3,3,1,5,59,9
+	.half	.L455-.L314
+	.byte	1,5,26,9
+	.half	.L456-.L455
+	.byte	1,5,45,9
+	.half	.L457-.L456
+	.byte	1,5,59,9
+	.half	.L458-.L457
+	.byte	1,5,68,9
+	.half	.L459-.L458
+	.byte	1,5,92,9
+	.half	.L460-.L459
+	.byte	1,5,39,9
+	.half	.L315-.L460
+	.byte	3,1,1,5,48,9
+	.half	.L316-.L315
+	.byte	3,1,1,5,15,9
+	.half	.L461-.L316
+	.byte	1,5,34,9
+	.half	.L462-.L461
+	.byte	1,5,48,9
+	.half	.L463-.L462
+	.byte	1,5,57,9
+	.half	.L464-.L463
+	.byte	1,5,50,9
+	.half	.L318-.L464
+	.byte	3,1,1,5,19,9
+	.half	.L317-.L318
+	.byte	1,5,50,9
+	.half	.L465-.L317
+	.byte	1,5,12,9
+	.half	.L319-.L465
+	.byte	3,1,1,5,17,9
+	.half	.L320-.L319
+	.byte	3,4,1,5,70,9
+	.half	.L321-.L320
+	.byte	1,5,13,9
+	.half	.L18-.L321
+	.byte	3,2,1,5,87,9
+	.half	.L323-.L18
+	.byte	3,1,1,5,42,9
+	.half	.L466-.L323
+	.byte	1,5,66,9
+	.half	.L467-.L466
+	.byte	1,5,87,9
+	.half	.L468-.L467
+	.byte	1,5,30,9
+	.half	.L325-.L468
+	.byte	3,1,1,5,40,9
+	.half	.L469-.L325
+	.byte	1,5,34,9
+	.half	.L327-.L469
+	.byte	3,1,1,5,36,9
+	.half	.L329-.L327
+	.byte	3,1,1,9
+	.half	.L330-.L329
+	.byte	3,1,1,5,46,9
+	.half	.L470-.L330
+	.byte	1,5,68,9
+	.half	.L471-.L470
+	.byte	1,5,42,9
+	.half	.L331-.L471
+	.byte	3,2,1,5,28,9
+	.half	.L472-.L331
+	.byte	1,5,47,9
+	.half	.L473-.L472
+	.byte	3,2,1,5,71,9
+	.half	.L474-.L473
+	.byte	1,5,9,9
+	.half	.L475-.L474
+	.byte	1,5,36,7,9
+	.half	.L476-.L475
+	.byte	3,1,1,5,32,9
+	.half	.L477-.L476
+	.byte	1,5,43,9
+	.half	.L478-.L477
+	.byte	3,1,1,5,58,9
+	.half	.L479-.L478
+	.byte	1,5,41,9
+	.half	.L19-.L479
+	.byte	3,3,1,5,28,9
+	.half	.L480-.L19
+	.byte	1,5,17,9
+	.half	.L481-.L480
+	.byte	3,3,1,5,57,9
+	.half	.L332-.L481
+	.byte	3,127,1,5,21,9
+	.half	.L482-.L332
+	.byte	1,5,57,9
+	.half	.L483-.L482
+	.byte	1,5,64,9
+	.half	.L484-.L483
+	.byte	1,5,20,9
+	.half	.L485-.L484
+	.byte	1,5,42,7,9
+	.half	.L486-.L485
+	.byte	3,1,1,5,52,9
+	.half	.L487-.L486
+	.byte	1,5,74,9
+	.half	.L488-.L487
+	.byte	1,5,89,9
+	.half	.L489-.L488
+	.byte	1,5,26,9
+	.half	.L490-.L489
+	.byte	1,5,17,7,9
+	.half	.L20-.L490
+	.byte	1,5,9,9
+	.half	.L21-.L20
+	.byte	3,2,1,5,29,7,9
+	.half	.L491-.L21
+	.byte	3,2,1,5,65,9
+	.half	.L328-.L491
+	.byte	1,5,17,9
+	.half	.L492-.L328
+	.byte	1,5,22,7,9
+	.half	.L493-.L492
+	.byte	3,1,1,5,91,9
+	.half	.L494-.L493
+	.byte	1,5,79,9
+	.half	.L495-.L494
+	.byte	1,5,34,9
+	.half	.L496-.L495
+	.byte	1,5,53,9
+	.half	.L497-.L496
+	.byte	1,5,79,9
+	.half	.L498-.L497
+	.byte	1,5,31,9
+	.half	.L499-.L498
+	.byte	1,5,80,7,9
+	.half	.L500-.L499
+	.byte	3,2,1,5,68,9
+	.half	.L501-.L500
+	.byte	1,5,23,9
+	.half	.L502-.L501
+	.byte	1,5,42,9
+	.half	.L503-.L502
+	.byte	1,5,68,9
+	.half	.L504-.L503
+	.byte	1,5,127,9
+	.half	.L505-.L504
+	.byte	1,5,137,1,9
+	.half	.L506-.L505
+	.byte	1,5,162,1,9
+	.half	.L507-.L506
+	.byte	1,5,13,9
+	.half	.L23-.L507
+	.byte	3,4,1,5,37,7,9
+	.half	.L508-.L23
+	.byte	3,1,1,5,51,9
+	.half	.L509-.L508
+	.byte	1,5,63,9
+	.half	.L324-.L509
+	.byte	1,5,55,9
+	.half	.L25-.L324
+	.byte	3,4,1,5,79,9
+	.half	.L510-.L25
+	.byte	1,5,17,9
+	.half	.L511-.L510
+	.byte	1,5,32,7,9
+	.half	.L190-.L511
+	.byte	3,2,1,5,55,9
+	.half	.L335-.L190
+	.byte	1,5,46,9
+	.half	.L29-.L335
+	.byte	3,1,1,5,36,9
+	.half	.L512-.L29
+	.byte	1,5,89,9
+	.half	.L513-.L512
+	.byte	1,5,72,9
+	.half	.L514-.L513
+	.byte	1,5,50,9
+	.half	.L515-.L514
+	.byte	1,5,58,9
+	.half	.L516-.L515
+	.byte	3,127,1,5,55,9
+	.half	.L28-.L516
+	.byte	1,5,24,7,9
+	.half	.L27-.L28
+	.byte	3,6,1,5,37,9
+	.half	.L517-.L27
+	.byte	3,2,1,5,50,9
+	.half	.L518-.L517
+	.byte	1,5,15,9
+	.half	.L26-.L518
+	.byte	3,115,1,5,33,9
+	.half	.L22-.L26
+	.byte	3,17,1,5,47,9
+	.half	.L519-.L22
+	.byte	1,5,78,9
+	.half	.L30-.L519
+	.byte	3,79,1,5,46,9
+	.half	.L17-.L30
+	.byte	1,5,70,9
+	.half	.L520-.L17
+	.byte	1,5,9,7,9
+	.half	.L521-.L520
+	.byte	3,54,1,5,60,7,9
+	.half	.L522-.L521
+	.byte	1,5,42,9
+	.half	.L523-.L522
+	.byte	1,5,22,7,9
+	.half	.L31-.L523
+	.byte	3,3,1,5,41,9
+	.half	.L524-.L31
+	.byte	1,5,77,9
+	.half	.L525-.L524
+	.byte	1,5,26,9
+	.half	.L342-.L525
+	.byte	3,2,1,5,95,9
+	.half	.L343-.L342
+	.byte	1,5,9,9
+	.half	.L345-.L343
+	.byte	3,2,1,5,25,7,9
+	.half	.L526-.L345
+	.byte	3,2,1,5,78,9
+	.half	.L341-.L526
+	.byte	1,5,95,9
+	.half	.L35-.L341
+	.byte	3,2,1,5,50,9
+	.half	.L527-.L35
+	.byte	1,5,74,9
+	.half	.L528-.L527
+	.byte	1,5,95,9
+	.half	.L529-.L528
+	.byte	1,5,38,9
+	.half	.L347-.L529
+	.byte	3,1,1,5,48,9
+	.half	.L530-.L347
+	.byte	1,5,57,9
+	.half	.L348-.L530
+	.byte	3,3,1,5,21,9
+	.half	.L531-.L348
+	.byte	1,5,57,9
+	.half	.L532-.L531
+	.byte	1,5,64,9
+	.half	.L533-.L532
+	.byte	1,5,17,9
+	.half	.L534-.L533
+	.byte	1,5,57,7,9
+	.half	.L535-.L534
+	.byte	3,1,1,5,21,9
+	.half	.L536-.L535
+	.byte	1,5,57,9
+	.half	.L537-.L536
+	.byte	1,5,21,9
+	.half	.L538-.L537
+	.byte	1,5,57,9
+	.half	.L539-.L538
+	.byte	1,5,64,9
+	.half	.L540-.L539
+	.byte	1,5,78,9
+	.half	.L541-.L540
+	.byte	1,5,25,9
+	.half	.L36-.L541
+	.byte	3,5,1,5,50,9
+	.half	.L349-.L36
+	.byte	3,127,1,5,60,9
+	.half	.L542-.L349
+	.byte	1,5,82,9
+	.half	.L543-.L542
+	.byte	1,5,97,9
+	.half	.L544-.L543
+	.byte	1,5,28,9
+	.half	.L545-.L544
+	.byte	1,5,65,7,9
+	.half	.L546-.L545
+	.byte	3,1,1,5,29,9
+	.half	.L547-.L546
+	.byte	1,5,65,9
+	.half	.L548-.L547
+	.byte	1,5,72,9
+	.half	.L549-.L548
+	.byte	1,5,64,9
+	.half	.L550-.L549
+	.byte	3,1,1,5,74,9
+	.half	.L551-.L550
+	.byte	1,5,96,9
+	.half	.L552-.L551
+	.byte	1,5,111,9
+	.half	.L553-.L552
+	.byte	1,5,49,9
+	.half	.L554-.L553
+	.byte	1,5,25,7,9
+	.half	.L555-.L554
+	.byte	3,127,1,5,17,9
+	.half	.L37-.L555
+	.byte	3,2,1,5,57,7,9
+	.half	.L556-.L37
+	.byte	3,2,1,5,21,9
+	.half	.L557-.L556
+	.byte	1,5,57,9
+	.half	.L558-.L557
+	.byte	1,5,21,9
+	.half	.L559-.L558
+	.byte	1,5,57,9
+	.half	.L560-.L559
+	.byte	1,5,64,9
+	.half	.L561-.L560
+	.byte	1,5,78,9
+	.half	.L562-.L561
+	.byte	1,5,86,9
+	.half	.L39-.L562
+	.byte	3,112,1,5,54,9
+	.half	.L34-.L39
+	.byte	1,5,78,9
+	.half	.L563-.L34
+	.byte	1,5,1,7,9
+	.half	.L32-.L563
+	.byte	3,21,1,7,9
+	.half	.L112-.L32
+	.byte	0,1,1
+.L450:
+	.sdecl	'.debug_ranges',debug,cluster('FrIf_Internal_HandleDecoupledTransmission')
+	.sect	'.debug_ranges'
+.L111:
+	.word	-1,.L91,0,.L112-.L91,0,0
+	.sdecl	'.debug_info',debug,cluster('FrIf_Internal_ProvideTxConfirmation')
+	.sect	'.debug_info'
+.L113:
+	.word	553
+	.half	3
+	.word	.L114
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L116,.L115
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'FrIf_Internal_ProvideTxConfirmation',0,1,246,1,6,1,1,1
+	.word	.L93,.L192,.L92
+	.byte	4
+	.byte	'frIfIdx',0,1,246,1,48
+	.word	.L159,.L193
+	.byte	4
+	.byte	'frLPduIdx',0,1,246,1,67
+	.word	.L161,.L194
+	.byte	4
+	.byte	'frameCfgIdx',0,1,246,1,84
+	.word	.L159,.L195
+	.byte	5
+	.word	.L93,.L192
+	.byte	6
+	.byte	'txPduCfgPtr',0,1,249,1,28
+	.word	.L164,.L196
+	.byte	6
+	.byte	'frameTrigCfgPtr',0,1,250,1,38
+	.word	.L166,.L197
+	.byte	6
+	.byte	'myFuncPtr',0,1,251,1,27
+	.word	.L168,.L198
+	.byte	6
+	.byte	'pduInFramePtr',0,1,252,1,35
+	.word	.L170,.L199
+	.byte	6
+	.byte	'frCCIdx',0,1,253,1,11
+	.word	.L159,.L200
+	.byte	6
+	.byte	'pduCnt',0,1,255,1,11
+	.word	.L159,.L201
+	.byte	6
+	.byte	'pduId',0,1,128,2,15
+	.word	.L161,.L202
+	.byte	6
+	.byte	'ret',0,1,129,2,20
+	.word	.L159,.L203
+	.byte	6
+	.byte	'frTxLPduStsPtr',0,1,130,2,25
+	.word	.L204,.L205
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FrIf_Internal_ProvideTxConfirmation')
+	.sect	'.debug_abbrev'
+.L114:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FrIf_Internal_ProvideTxConfirmation')
+	.sect	'.debug_line'
+.L115:
+	.word	.L565-.L564
+.L564:
+	.half	3
+	.word	.L567-.L566
+.L566:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L567:
+	.byte	5,6,7,0,5,2
+	.word	.L93
+	.byte	3,245,1,1,5,92,9
+	.half	.L350-.L93
+	.byte	3,14,1,5,59,9
+	.half	.L568-.L350
+	.byte	1,5,26,9
+	.half	.L569-.L568
+	.byte	1,5,45,9
+	.half	.L570-.L569
+	.byte	1,5,59,9
+	.half	.L571-.L570
+	.byte	1,5,68,9
+	.half	.L572-.L571
+	.byte	1,5,92,9
+	.half	.L573-.L572
+	.byte	1,5,48,9
+	.half	.L353-.L573
+	.byte	3,1,1,5,15,9
+	.half	.L574-.L353
+	.byte	1,5,34,9
+	.half	.L575-.L574
+	.byte	1,5,48,9
+	.half	.L576-.L575
+	.byte	1,5,57,9
+	.half	.L577-.L576
+	.byte	1,5,18,9
+	.half	.L351-.L577
+	.byte	3,5,1,5,37,9
+	.half	.L578-.L351
+	.byte	1,5,73,9
+	.half	.L579-.L578
+	.byte	1,5,22,9
+	.half	.L354-.L579
+	.byte	3,2,1,5,67,9
+	.half	.L355-.L354
+	.byte	1,5,9,9
+	.half	.L352-.L355
+	.byte	3,3,1,5,27,7,9
+	.half	.L580-.L352
+	.byte	1,5,42,9
+	.half	.L581-.L580
+	.byte	1,5,21,7,9
+	.half	.L582-.L581
+	.byte	3,2,1,5,74,9
+	.half	.L356-.L582
+	.byte	1,5,91,9
+	.half	.L43-.L356
+	.byte	3,2,1,5,46,9
+	.half	.L583-.L43
+	.byte	1,5,70,9
+	.half	.L584-.L583
+	.byte	1,5,91,9
+	.half	.L585-.L584
+	.byte	1,5,34,9
+	.half	.L358-.L585
+	.byte	3,1,1,5,44,9
+	.half	.L586-.L358
+	.byte	1,5,53,9
+	.half	.L359-.L586
+	.byte	3,2,1,5,17,9
+	.half	.L587-.L359
+	.byte	1,5,53,9
+	.half	.L588-.L587
+	.byte	1,5,60,9
+	.half	.L589-.L588
+	.byte	1,5,13,9
+	.half	.L590-.L589
+	.byte	1,5,100,7,9
+	.half	.L591-.L590
+	.byte	3,125,1,5,44,9
+	.half	.L44-.L591
+	.byte	3,6,1,5,54,9
+	.half	.L592-.L44
+	.byte	1,5,76,9
+	.half	.L593-.L592
+	.byte	1,5,40,9
+	.half	.L360-.L593
+	.byte	3,1,1,5,17,9
+	.half	.L594-.L360
+	.byte	1,5,37,7,9
+	.half	.L595-.L594
+	.byte	3,2,1,5,68,9
+	.half	.L596-.L595
+	.byte	1,5,25,9
+	.half	.L597-.L596
+	.byte	1,5,30,7,9
+	.half	.L598-.L597
+	.byte	3,1,1,5,98,9
+	.half	.L599-.L598
+	.byte	1,5,86,9
+	.half	.L600-.L599
+	.byte	1,5,42,9
+	.half	.L601-.L600
+	.byte	1,5,61,9
+	.half	.L602-.L601
+	.byte	1,5,86,9
+	.half	.L603-.L602
+	.byte	1,5,39,9
+	.half	.L604-.L603
+	.byte	1,5,81,7,9
+	.half	.L605-.L604
+	.byte	3,2,1,5,69,9
+	.half	.L606-.L605
+	.byte	1,5,25,9
+	.half	.L607-.L606
+	.byte	1,5,44,9
+	.half	.L608-.L607
+	.byte	1,5,69,9
+	.half	.L609-.L608
+	.byte	1,5,123,9
+	.half	.L610-.L609
+	.byte	1,5,133,1,9
+	.half	.L611-.L610
+	.byte	1,5,57,9
+	.half	.L47-.L611
+	.byte	3,3,1,5,21,9
+	.half	.L612-.L47
+	.byte	1,5,57,9
+	.half	.L613-.L612
+	.byte	1,5,21,9
+	.half	.L614-.L613
+	.byte	1,5,57,9
+	.half	.L615-.L614
+	.byte	1,5,64,9
+	.half	.L616-.L615
+	.byte	1,5,78,9
+	.half	.L617-.L616
+	.byte	1,5,80,9
+	.half	.L618-.L617
+	.byte	1,5,82,9
+	.half	.L45-.L618
+	.byte	3,111,1,5,50,9
+	.half	.L42-.L45
+	.byte	1,5,74,9
+	.half	.L619-.L42
+	.byte	1,5,1,7,9
+	.half	.L40-.L619
+	.byte	3,24,1,7,9
+	.half	.L117-.L40
+	.byte	0,1,1
+.L565:
+	.sdecl	'.debug_ranges',debug,cluster('FrIf_Internal_ProvideTxConfirmation')
+	.sect	'.debug_ranges'
+.L116:
+	.word	-1,.L93,0,.L117-.L93,0,0
+	.sdecl	'.debug_info',debug,cluster('FrIf_Internal_HandleReceiveAndStore')
+	.sect	'.debug_info'
+.L118:
+	.word	761
+	.half	3
+	.word	.L119
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L121,.L120
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'FrIf_Internal_HandleReceiveAndStore',0,1,178,2,6,1,1,1
+	.word	.L95,.L206,.L94
+	.byte	4
+	.byte	'frIfIdx',0,1,178,2,48
+	.word	.L159,.L207
+	.byte	4
+	.byte	'frLPduIdx',0,1,178,2,67
+	.word	.L161,.L208
+	.byte	4
+	.byte	'frameCfgIdx',0,1,178,2,84
+	.word	.L159,.L209
+	.byte	5
+	.word	.L95,.L206
+	.byte	6
+	.byte	'frameTrigCfgPtr',0,1,180,2,38
+	.word	.L166,.L210
+	.byte	6
+	.byte	'myFuncPtr',0,1,181,2,28
+	.word	.L168,.L211
+	.byte	6
+	.byte	'pduInFramePtr',0,1,182,2,35
+	.word	.L170,.L212
+	.byte	6
+	.byte	'rxPduCfgPtr',0,1,183,2,28
+	.word	.L213,.L214
+	.byte	6
+	.byte	'tempBuffPtr',0,1,184,2,13
+	.word	.L172,.L215
+	.byte	6
+	.byte	'pduId',0,1,186,2,15
+	.word	.L161,.L216
+	.byte	6
+	.byte	'pduUBOffset',0,1,187,2,12
+	.word	.L178,.L217
+	.byte	6
+	.byte	'pduOffset',0,1,188,2,11
+	.word	.L159,.L218
+	.byte	6
+	.byte	'frRxLPduStsPtr',0,1,189,2,25
+	.word	.L219,.L220
+	.byte	6
+	.byte	'frameStructIdx',0,1,190,2,11
+	.word	.L159,.L221
+	.byte	6
+	.byte	'ret',0,1,191,2,20
+	.word	.L159,.L222
+	.byte	6
+	.byte	'pduCnt',0,1,192,2,11
+	.word	.L159,.L223
+	.byte	6
+	.byte	'frCCIdx',0,1,193,2,11
+	.word	.L159,.L224
+	.byte	6
+	.byte	'rxLen',0,1,194,2,11
+	.word	.L159,.L225
+	.byte	6
+	.byte	'pduLen',0,1,195,2,11
+	.word	.L159,.L226
+	.byte	6
+	.byte	'sduBuffPtr',0,1,196,2,13
+	.word	.L172,.L227
+	.byte	5
+	.word	.L228,.L206
+	.byte	6
+	.byte	'tempBuffForBigEndian',0,1,207,2,11
+	.word	.L187,.L229
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FrIf_Internal_HandleReceiveAndStore')
+	.sect	'.debug_abbrev'
+.L119:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FrIf_Internal_HandleReceiveAndStore')
+	.sect	'.debug_line'
+.L120:
+	.word	.L621-.L620
+.L620:
+	.half	3
+	.word	.L623-.L622
+.L622:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L623:
+	.byte	5,6,7,0,5,2
+	.word	.L95
+	.byte	3,177,2,1,5,92,9
+	.half	.L362-.L95
+	.byte	3,21,1,5,59,9
+	.half	.L624-.L362
+	.byte	1,5,26,9
+	.half	.L625-.L624
+	.byte	1,5,45,9
+	.half	.L626-.L625
+	.byte	1,5,59,9
+	.half	.L627-.L626
+	.byte	1,5,68,9
+	.half	.L628-.L627
+	.byte	1,5,92,9
+	.half	.L629-.L628
+	.byte	1,5,39,9
+	.half	.L365-.L629
+	.byte	3,1,1,5,48,9
+	.half	.L366-.L365
+	.byte	3,1,1,5,15,9
+	.half	.L630-.L366
+	.byte	1,5,34,9
+	.half	.L631-.L630
+	.byte	1,5,48,9
+	.half	.L632-.L631
+	.byte	1,5,57,9
+	.half	.L633-.L632
+	.byte	1,5,18,9
+	.half	.L363-.L633
+	.byte	3,1,1,5,37,9
+	.half	.L634-.L363
+	.byte	1,5,73,9
+	.half	.L635-.L634
+	.byte	1,5,49,9
+	.half	.L367-.L635
+	.byte	3,1,1,5,18,9
+	.half	.L636-.L367
+	.byte	1,5,49,9
+	.half	.L637-.L636
+	.byte	1,5,17,9
+	.half	.L368-.L637
+	.byte	3,2,1,5,24,9
+	.half	.L228-.L368
+	.byte	3,4,1,5,48,9
+	.half	.L638-.L228
+	.byte	1,5,5,9
+	.half	.L639-.L638
+	.byte	1,5,23,7,9
+	.half	.L640-.L639
+	.byte	3,1,1,5,22,9
+	.half	.L50-.L640
+	.byte	3,5,1,5,76,9
+	.half	.L641-.L50
+	.byte	1,5,93,9
+	.half	.L642-.L641
+	.byte	1,5,9,9
+	.half	.L364-.L642
+	.byte	3,3,1,5,27,7,9
+	.half	.L643-.L364
+	.byte	1,5,42,9
+	.half	.L644-.L643
+	.byte	1,5,21,7,9
+	.half	.L645-.L644
+	.byte	3,3,1,5,74,9
+	.half	.L370-.L645
+	.byte	1,5,91,9
+	.half	.L54-.L370
+	.byte	3,2,1,5,46,9
+	.half	.L646-.L54
+	.byte	1,5,70,9
+	.half	.L647-.L646
+	.byte	1,5,91,9
+	.half	.L648-.L647
+	.byte	1,5,38,9
+	.half	.L372-.L648
+	.byte	3,1,1,5,34,9
+	.half	.L374-.L372
+	.byte	3,1,1,5,44,9
+	.half	.L649-.L374
+	.byte	1,5,40,9
+	.half	.L376-.L649
+	.byte	3,2,1,9
+	.half	.L377-.L376
+	.byte	3,1,1,5,50,9
+	.half	.L373-.L377
+	.byte	1,5,72,9
+	.half	.L650-.L373
+	.byte	1,5,32,9
+	.half	.L378-.L650
+	.byte	3,3,1,5,56,9
+	.half	.L651-.L378
+	.byte	1,5,13,9
+	.half	.L652-.L651
+	.byte	1,5,59,7,9
+	.half	.L653-.L652
+	.byte	3,1,1,5,82,9
+	.half	.L654-.L653
+	.byte	1,5,106,9
+	.half	.L655-.L654
+	.byte	1,5,48,9
+	.half	.L55-.L655
+	.byte	3,5,1,5,87,9
+	.half	.L656-.L55
+	.byte	1,5,20,9
+	.half	.L381-.L656
+	.byte	1,5,38,9
+	.half	.L384-.L381
+	.byte	3,5,1,5,17,9
+	.half	.L383-.L384
+	.byte	1,5,78,7,9
+	.half	.L657-.L383
+	.byte	1,5,53,7,9
+	.half	.L658-.L657
+	.byte	3,2,1,5,17,9
+	.half	.L375-.L658
+	.byte	1,5,53,9
+	.half	.L659-.L375
+	.byte	1,5,74,9
+	.half	.L660-.L659
+	.byte	1,5,72,9
+	.half	.L661-.L660
+	.byte	1,5,53,9
+	.half	.L662-.L661
+	.byte	3,1,1,5,17,9
+	.half	.L663-.L662
+	.byte	1,5,53,9
+	.half	.L664-.L663
+	.byte	1,5,70,9
+	.half	.L665-.L664
+	.byte	1,5,82,9
+	.half	.L56-.L665
+	.byte	3,104,1,5,50,9
+	.half	.L53-.L56
+	.byte	1,5,74,9
+	.half	.L666-.L53
+	.byte	1,5,1,7,9
+	.half	.L51-.L666
+	.byte	3,28,1,7,9
+	.half	.L122-.L51
+	.byte	0,1,1
+.L621:
+	.sdecl	'.debug_ranges',debug,cluster('FrIf_Internal_HandleReceiveAndStore')
+	.sect	'.debug_ranges'
+.L121:
+	.word	-1,.L95,0,.L122-.L95,0,0
+	.sdecl	'.debug_info',debug,cluster('FrIf_Internal_HandleReceiveAndIndicate')
+	.sect	'.debug_info'
+.L123:
+	.word	879
+	.half	3
+	.word	.L124
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L126,.L125
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'FrIf_Internal_HandleReceiveAndIndicate',0,1,131,3,6,1,1,1
+	.word	.L97,.L230,.L96
+	.byte	4
+	.byte	'frIfIdx',0,1,131,3,51
+	.word	.L159,.L231
+	.byte	4
+	.byte	'frLPduIdx',0,1,131,3,70
+	.word	.L161,.L232
+	.byte	4
+	.byte	'frameCfgIdx',0,1,131,3,87
+	.word	.L159,.L233
+	.byte	4
+	.byte	'maxLoop',0,1,131,3,107
+	.word	.L161,.L234
+	.byte	5
+	.word	.L97,.L230
+	.byte	6
+	.byte	'frameTrigCfgPtr',0,1,133,3,38
+	.word	.L166,.L235
+	.byte	6
+	.byte	'myFuncPtr',0,1,134,3,28
+	.word	.L168,.L236
+	.byte	6
+	.byte	'pduInFramePtr',0,1,135,3,35
+	.word	.L170,.L237
+	.byte	6
+	.byte	'rxPduCfgPtr',0,1,136,3,28
+	.word	.L213,.L238
+	.byte	6
+	.byte	'tempBuffPtr',0,1,137,3,13
+	.word	.L172,.L239
+	.byte	6
+	.byte	'ComOpLoopCounter',0,1,138,3,12
+	.word	.L161,.L240
+	.byte	6
+	.byte	'pduUBOffset',0,1,139,3,12
+	.word	.L178,.L241
+	.byte	6
+	.byte	'frameStructIdx',0,1,140,3,11
+	.word	.L159,.L242
+	.byte	6
+	.byte	'pduInfo',0,1,142,3,17
+	.word	.L185,.L243
+	.byte	6
+	.byte	'ret',0,1,143,3,20
+	.word	.L159,.L244
+	.byte	6
+	.byte	'pduCnt',0,1,144,3,11
+	.word	.L159,.L245
+	.byte	6
+	.byte	'pduOffset',0,1,145,3,11
+	.word	.L159,.L246
+	.byte	6
+	.byte	'frRxLPduStsPtr',0,1,146,3,25
+	.word	.L219,.L247
+	.byte	6
+	.byte	'frCCIdx',0,1,147,3,11
+	.word	.L159,.L248
+	.byte	6
+	.byte	'rxLen',0,1,148,3,11
+	.word	.L159,.L249
+	.byte	6
+	.byte	'pduLen',0,1,149,3,11
+	.word	.L159,.L250
+	.byte	6
+	.byte	'sduBuffPtr',0,1,150,3,13
+	.word	.L172,.L251
+	.byte	6
+	.byte	'ChannelAStatusPtr',0,1,151,3,12
+	.word	.L161,.L252
+	.byte	6
+	.byte	'ChannelBStatusPtr',0,1,152,3,12
+	.word	.L161,.L253
+	.byte	5
+	.word	.L254,.L230
+	.byte	6
+	.byte	'tempBuffForBigEndian',0,1,161,3,11
+	.word	.L187,.L255
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FrIf_Internal_HandleReceiveAndIndicate')
+	.sect	'.debug_abbrev'
+.L124:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FrIf_Internal_HandleReceiveAndIndicate')
+	.sect	'.debug_line'
+.L125:
+	.word	.L668-.L667
+.L667:
+	.half	3
+	.word	.L670-.L669
+.L669:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L670:
+	.byte	5,6,7,0,5,2
+	.word	.L97
+	.byte	3,130,3,1,5,92,9
+	.half	.L671-.L97
+	.byte	3,23,1,5,59,9
+	.half	.L672-.L671
+	.byte	1,5,26,9
+	.half	.L673-.L672
+	.byte	1,5,45,9
+	.half	.L674-.L673
+	.byte	1,5,59,9
+	.half	.L675-.L674
+	.byte	1,5,68,9
+	.half	.L676-.L675
+	.byte	1,5,92,9
+	.half	.L677-.L676
+	.byte	1,5,39,9
+	.half	.L388-.L677
+	.byte	3,1,1,5,48,9
+	.half	.L389-.L388
+	.byte	3,1,1,5,15,9
+	.half	.L678-.L389
+	.byte	1,5,34,9
+	.half	.L679-.L678
+	.byte	1,5,48,9
+	.half	.L680-.L679
+	.byte	1,5,57,9
+	.half	.L681-.L680
+	.byte	1,5,49,9
+	.half	.L390-.L681
+	.byte	3,1,1,5,18,9
+	.half	.L682-.L390
+	.byte	1,5,49,9
+	.half	.L683-.L682
+	.byte	1,5,24,9
+	.half	.L254-.L683
+	.byte	3,6,1,5,48,9
+	.half	.L684-.L254
+	.byte	1,5,5,9
+	.half	.L685-.L684
+	.byte	1,5,24,7,9
+	.half	.L686-.L685
+	.byte	3,1,1,5,18,9
+	.half	.L58-.L686
+	.byte	3,7,1,5,37,9
+	.half	.L687-.L58
+	.byte	1,5,73,9
+	.half	.L688-.L687
+	.byte	1,5,22,9
+	.half	.L393-.L688
+	.byte	3,1,1,5,26,9
+	.half	.L59-.L393
+	.byte	3,3,1,5,80,9
+	.half	.L396-.L59
+	.byte	1,5,97,9
+	.half	.L689-.L396
+	.byte	1,5,13,9
+	.half	.L400-.L689
+	.byte	3,2,1,5,31,7,9
+	.half	.L690-.L400
+	.byte	1,5,46,9
+	.half	.L691-.L690
+	.byte	1,5,25,7,9
+	.half	.L692-.L691
+	.byte	3,3,1,5,78,9
+	.half	.L401-.L692
+	.byte	1,5,95,9
+	.half	.L63-.L401
+	.byte	3,2,1,5,50,9
+	.half	.L693-.L63
+	.byte	1,5,74,9
+	.half	.L694-.L693
+	.byte	1,5,95,9
+	.half	.L695-.L694
+	.byte	1,5,42,9
+	.half	.L405-.L695
+	.byte	3,1,1,5,44,9
+	.half	.L406-.L405
+	.byte	3,2,1,9
+	.half	.L407-.L406
+	.byte	3,1,1,5,54,9
+	.half	.L404-.L407
+	.byte	1,5,76,9
+	.half	.L696-.L404
+	.byte	1,5,36,9
+	.half	.L408-.L696
+	.byte	3,3,1,5,60,9
+	.half	.L697-.L408
+	.byte	1,5,17,9
+	.half	.L698-.L697
+	.byte	1,5,63,7,9
+	.half	.L409-.L698
+	.byte	3,1,1,5,86,9
+	.half	.L410-.L409
+	.byte	1,5,110,9
+	.half	.L699-.L410
+	.byte	1,5,52,9
+	.half	.L64-.L699
+	.byte	3,5,1,5,91,9
+	.half	.L700-.L64
+	.byte	1,5,24,9
+	.half	.L413-.L700
+	.byte	1,5,42,9
+	.half	.L416-.L413
+	.byte	3,5,1,5,21,9
+	.half	.L415-.L416
+	.byte	1,5,82,7,9
+	.half	.L701-.L415
+	.byte	1,5,55,7,9
+	.half	.L702-.L701
+	.byte	3,2,1,5,42,9
+	.half	.L421-.L702
+	.byte	1,5,40,9
+	.half	.L703-.L421
+	.byte	3,1,1,5,37,9
+	.half	.L704-.L703
+	.byte	3,2,1,5,66,9
+	.half	.L705-.L704
+	.byte	1,5,25,9
+	.half	.L417-.L705
+	.byte	1,5,30,7,9
+	.half	.L706-.L417
+	.byte	3,1,1,5,96,9
+	.half	.L707-.L706
+	.byte	1,5,84,9
+	.half	.L708-.L707
+	.byte	1,5,42,9
+	.half	.L709-.L708
+	.byte	1,5,61,9
+	.half	.L710-.L709
+	.byte	1,5,84,9
+	.half	.L711-.L710
+	.byte	1,5,39,9
+	.half	.L712-.L711
+	.byte	1,5,79,7,9
+	.half	.L713-.L712
+	.byte	3,2,1,5,67,9
+	.half	.L714-.L713
+	.byte	1,5,25,9
+	.half	.L715-.L714
+	.byte	1,5,44,9
+	.half	.L716-.L715
+	.byte	1,5,67,9
+	.half	.L717-.L716
+	.byte	1,5,119,9
+	.half	.L718-.L717
+	.byte	1,5,129,1,9
+	.half	.L423-.L718
+	.byte	1,5,154,1,9
+	.half	.L719-.L423
+	.byte	1,5,86,9
+	.half	.L65-.L719
+	.byte	3,100,1,5,54,9
+	.half	.L62-.L65
+	.byte	1,5,78,9
+	.half	.L720-.L62
+	.byte	1,7,9
+	.half	.L721-.L720
+	.byte	1,5,10,9
+	.half	.L60-.L721
+	.byte	3,35,1,5,48,7,9
+	.half	.L722-.L60
+	.byte	3,3,1,5,68,9
+	.half	.L723-.L722
+	.byte	1,5,10,9
+	.half	.L70-.L723
+	.byte	3,3,1,5,13,9
+	.half	.L69-.L70
+	.byte	3,2,1,5,9,9
+	.half	.L724-.L69
+	.byte	1,5,29,7,9
+	.half	.L725-.L724
+	.byte	3,1,1,5,31,9
+	.half	.L425-.L725
+	.byte	1,5,13,9
+	.half	.L72-.L425
+	.byte	3,3,1,5,41,9
+	.half	.L73-.L72
+	.byte	3,2,1,5,1,7,9
+	.half	.L71-.L73
+	.byte	3,1,1,7,9
+	.half	.L127-.L71
+	.byte	0,1,1
+.L668:
+	.sdecl	'.debug_ranges',debug,cluster('FrIf_Internal_HandleReceiveAndIndicate')
+	.sect	'.debug_ranges'
+.L126:
+	.word	-1,.L97,0,.L127-.L97,0,0
+	.sdecl	'.debug_info',debug,cluster('FrIf_Internal_ProvideRxIndication')
+	.sect	'.debug_info'
+.L128:
+	.word	559
+	.half	3
+	.word	.L129
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L131,.L130
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'FrIf_Internal_ProvideRxIndication',0,1,241,3,6,1,1,1
+	.word	.L99,.L256,.L98
+	.byte	4
+	.byte	'frIfIdx',0,1,241,3,46
+	.word	.L159,.L257
+	.byte	4
+	.byte	'frLPduIdx',0,1,241,3,65
+	.word	.L161,.L258
+	.byte	4
+	.byte	'frameCfgIdx',0,1,241,3,82
+	.word	.L159,.L259
+	.byte	5
+	.word	.L99,.L256
+	.byte	6
+	.byte	'frameTrigCfgPtr',0,1,243,3,38
+	.word	.L166,.L260
+	.byte	6
+	.byte	'pduInFramePtr',0,1,244,3,35
+	.word	.L170,.L261
+	.byte	6
+	.byte	'rxPduCfgPtr',0,1,245,3,28
+	.word	.L213,.L262
+	.byte	6
+	.byte	'tempBuffPtr',0,1,246,3,13
+	.word	.L172,.L263
+	.byte	6
+	.byte	'frameStructIdx',0,1,247,3,11
+	.word	.L159,.L264
+	.byte	6
+	.byte	'pduId',0,1,249,3,15
+	.word	.L161,.L265
+	.byte	6
+	.byte	'pduOffset',0,1,250,3,11
+	.word	.L159,.L266
+	.byte	6
+	.byte	'pduInfo',0,1,251,3,17
+	.word	.L185,.L267
+	.byte	6
+	.byte	'pduCnt',0,1,252,3,11
+	.word	.L159,.L268
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FrIf_Internal_ProvideRxIndication')
+	.sect	'.debug_abbrev'
+.L129:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FrIf_Internal_ProvideRxIndication')
+	.sect	'.debug_line'
+.L130:
+	.word	.L727-.L726
+.L726:
+	.half	3
+	.word	.L729-.L728
+.L728:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L729:
+	.byte	5,6,7,0,5,2
+	.word	.L99
+	.byte	3,240,3,1,5,92,9
+	.half	.L426-.L99
+	.byte	3,15,1,5,59,9
+	.half	.L730-.L426
+	.byte	1,5,26,9
+	.half	.L731-.L730
+	.byte	1,5,45,9
+	.half	.L732-.L731
+	.byte	1,5,59,9
+	.half	.L733-.L732
+	.byte	1,5,68,9
+	.half	.L734-.L733
+	.byte	1,5,92,9
+	.half	.L735-.L734
+	.byte	1,5,39,9
+	.half	.L427-.L735
+	.byte	3,1,1,5,50,9
+	.half	.L428-.L427
+	.byte	3,2,1,5,19,9
+	.half	.L429-.L428
+	.byte	1,5,50,9
+	.half	.L736-.L429
+	.byte	1,5,17,9
+	.half	.L430-.L736
+	.byte	3,3,1,5,70,9
+	.half	.L431-.L430
+	.byte	1,5,87,9
+	.half	.L76-.L431
+	.byte	3,2,1,5,42,9
+	.half	.L737-.L76
+	.byte	1,5,66,9
+	.half	.L738-.L737
+	.byte	1,5,87,9
+	.half	.L739-.L738
+	.byte	1,5,30,9
+	.half	.L433-.L739
+	.byte	3,1,1,5,40,9
+	.half	.L740-.L433
+	.byte	1,5,57,9
+	.half	.L435-.L740
+	.byte	3,3,1,5,21,9
+	.half	.L741-.L435
+	.byte	1,5,57,9
+	.half	.L742-.L741
+	.byte	1,5,64,9
+	.half	.L743-.L742
+	.byte	1,5,9,9
+	.half	.L744-.L743
+	.byte	1,5,38,7,9
+	.half	.L745-.L744
+	.byte	3,2,1,5,40,9
+	.half	.L436-.L745
+	.byte	3,1,1,5,50,9
+	.half	.L746-.L436
+	.byte	1,5,72,9
+	.half	.L747-.L746
+	.byte	1,5,46,9
+	.half	.L438-.L747
+	.byte	3,2,1,5,32,9
+	.half	.L748-.L438
+	.byte	1,5,70,9
+	.half	.L749-.L748
+	.byte	3,1,1,5,34,9
+	.half	.L437-.L749
+	.byte	1,5,70,9
+	.half	.L750-.L437
+	.byte	1,5,77,9
+	.half	.L751-.L750
+	.byte	1,5,32,9
+	.half	.L752-.L751
+	.byte	1,5,29,9
+	.half	.L753-.L752
+	.byte	3,3,1,5,58,9
+	.half	.L754-.L753
+	.byte	1,5,17,9
+	.half	.L755-.L754
+	.byte	1,5,22,7,9
+	.half	.L756-.L755
+	.byte	3,1,1,5,88,9
+	.half	.L757-.L756
+	.byte	1,5,76,9
+	.half	.L758-.L757
+	.byte	1,5,34,9
+	.half	.L759-.L758
+	.byte	1,5,53,9
+	.half	.L760-.L759
+	.byte	1,5,76,9
+	.half	.L761-.L760
+	.byte	1,5,31,9
+	.half	.L762-.L761
+	.byte	1,5,71,7,9
+	.half	.L763-.L762
+	.byte	3,2,1,5,59,9
+	.half	.L764-.L763
+	.byte	1,5,17,9
+	.half	.L765-.L764
+	.byte	1,5,36,9
+	.half	.L766-.L765
+	.byte	1,5,59,9
+	.half	.L767-.L766
+	.byte	1,5,111,9
+	.half	.L768-.L767
+	.byte	1,5,121,9
+	.half	.L769-.L768
+	.byte	1,5,146,1,9
+	.half	.L770-.L769
+	.byte	1,5,154,1,9
+	.half	.L439-.L770
+	.byte	1,5,49,9
+	.half	.L80-.L439
+	.byte	3,5,1,5,13,9
+	.half	.L771-.L80
+	.byte	1,5,49,9
+	.half	.L772-.L771
+	.byte	1,5,70,9
+	.half	.L773-.L772
+	.byte	1,5,68,9
+	.half	.L774-.L773
+	.byte	1,5,78,9
+	.half	.L77-.L774
+	.byte	3,105,1,5,46,9
+	.half	.L75-.L77
+	.byte	1,5,70,9
+	.half	.L775-.L75
+	.byte	1,5,1,7,9
+	.half	.L776-.L775
+	.byte	3,27,1,7,9
+	.half	.L132-.L776
+	.byte	0,1,1
+.L727:
+	.sdecl	'.debug_ranges',debug,cluster('FrIf_Internal_ProvideRxIndication')
+	.sect	'.debug_ranges'
+.L131:
+	.word	-1,.L99,0,.L132-.L99,0,0
+	.sdecl	'.debug_info',debug,cluster('FrIf_Internal_PrepareLPdu')
+	.sect	'.debug_info'
+.L133:
+	.word	353
+	.half	3
+	.word	.L134
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L136,.L135
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'FrIf_Internal_PrepareLPdu',0,1,168,4,6,1,1,1
+	.word	.L101,.L269,.L100
+	.byte	4
+	.byte	'frIfIdx',0,1,168,4,38
+	.word	.L159,.L270
+	.byte	4
+	.byte	'frLPduIdx',0,1,168,4,57
+	.word	.L161,.L271
+	.byte	5
+	.word	.L101,.L269
+	.byte	6
+	.byte	'myFuncPtr',0,1,170,4,28
+	.word	.L168,.L272
+	.byte	6
+	.byte	'frCCIdx',0,1,171,4,11
+	.word	.L159,.L273
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FrIf_Internal_PrepareLPdu')
+	.sect	'.debug_abbrev'
+.L134:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FrIf_Internal_PrepareLPdu')
+	.sect	'.debug_line'
+.L135:
+	.word	.L778-.L777
+.L777:
+	.half	3
+	.word	.L780-.L779
+.L779:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L780:
+	.byte	5,18,7,0,5,2
+	.word	.L101
+	.byte	3,173,4,1,5,37,9
+	.half	.L781-.L101
+	.byte	1,5,73,9
+	.half	.L782-.L781
+	.byte	1,5,48,9
+	.half	.L441-.L782
+	.byte	3,2,1,5,15,9
+	.half	.L783-.L441
+	.byte	1,5,34,9
+	.half	.L784-.L783
+	.byte	1,5,48,9
+	.half	.L785-.L784
+	.byte	1,5,57,9
+	.half	.L786-.L785
+	.byte	1,5,18,9
+	.half	.L440-.L786
+	.byte	3,2,1,5,5,9
+	.half	.L787-.L440
+	.byte	1,5,26,7,9
+	.half	.L788-.L787
+	.byte	3,1,1,5,53,9
+	.half	.L442-.L788
+	.byte	1,5,1,9
+	.half	.L81-.L442
+	.byte	3,3,1,7,9
+	.half	.L137-.L81
+	.byte	0,1,1
+.L778:
+	.sdecl	'.debug_ranges',debug,cluster('FrIf_Internal_PrepareLPdu')
+	.sect	'.debug_ranges'
+.L136:
+	.word	-1,.L101,0,.L137-.L101,0,0
+	.sdecl	'.debug_info',debug,cluster('FrIf_Internal_SwapToBigEndian')
+	.sect	'.debug_info'
+.L138:
+	.word	351
+	.half	3
+	.word	.L139
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L141,.L140
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'FrIf_Internal_SwapToBigEndian',0,1,199,4,6,1,1,1
+	.word	.L103,.L274,.L102
+	.byte	4
+	.byte	'srcBuffer',0,1,199,4,49
+	.word	.L275,.L276
+	.byte	4
+	.byte	'destBuffer',0,1,199,4,66
+	.word	.L172,.L277
+	.byte	4
+	.byte	'length',0,1,199,4,84
+	.word	.L159,.L278
+	.byte	5
+	.word	.L103,.L274
+	.byte	6
+	.byte	'i',0,1,200,4,11
+	.word	.L159,.L279
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FrIf_Internal_SwapToBigEndian')
+	.sect	'.debug_abbrev'
+.L139:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FrIf_Internal_SwapToBigEndian')
+	.sect	'.debug_line'
+.L140:
+	.word	.L790-.L789
+.L789:
+	.half	3
+	.word	.L792-.L791
+.L791:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L792:
+	.byte	5,12,7,0,5,2
+	.word	.L103
+	.byte	3,201,4,1,5,27,9
+	.half	.L443-.L103
+	.byte	1,5,19,9
+	.half	.L83-.L443
+	.byte	3,1,1,5,43,9
+	.half	.L793-.L83
+	.byte	1,5,48,9
+	.half	.L794-.L793
+	.byte	1,5,34,9
+	.half	.L795-.L794
+	.byte	1,5,23,9
+	.half	.L796-.L795
+	.byte	1,5,30,9
+	.half	.L797-.L796
+	.byte	3,127,1,5,27,9
+	.half	.L82-.L797
+	.byte	1,5,1,7,9
+	.half	.L798-.L82
+	.byte	3,3,1,7,9
+	.half	.L142-.L798
+	.byte	0,1,1
+.L790:
+	.sdecl	'.debug_ranges',debug,cluster('FrIf_Internal_SwapToBigEndian')
+	.sect	'.debug_ranges'
+.L141:
+	.word	-1,.L103,0,.L142-.L103,0,0
+	.sdecl	'.debug_info',debug,cluster('markUB')
+	.sect	'.debug_info'
+.L143:
+	.word	370
+	.half	3
+	.word	.L144
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L146,.L145
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'markUB',0,1,32,13,1,1
+	.word	.L85,.L280,.L84
+	.byte	4
+	.byte	'pduUBOffset',0,1,32,27
+	.word	.L178,.L281
+	.byte	4
+	.byte	'pduUBSts',0,1,32,62
+	.word	.L176,.L282
+	.byte	4
+	.byte	'frSduPtr',0,1,32,79
+	.word	.L172,.L283
+	.byte	5
+	.word	.L85,.L280
+	.byte	6
+	.byte	'dataByte',0,1,34,11
+	.word	.L159,.L284
+	.byte	6
+	.byte	'bytePos',0,1,35,11
+	.word	.L159,.L285
+	.byte	6
+	.byte	'bitPos',0,1,36,11
+	.word	.L159,.L286
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('markUB')
+	.sect	'.debug_abbrev'
+.L144:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('markUB')
+	.sect	'.debug_line'
+.L145:
+	.word	.L800-.L799
+.L799:
+	.half	3
+	.word	.L802-.L801
+.L801:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L802:
+	.byte	5,5,7,0,5,2
+	.word	.L85
+	.byte	3,37,1,5,49,7,9
+	.half	.L803-.L85
+	.byte	3,1,1,5,47,9
+	.half	.L804-.L803
+	.byte	1,5,19,9
+	.half	.L805-.L804
+	.byte	1,5,40,9
+	.half	.L300-.L805
+	.byte	3,1,1,5,38,9
+	.half	.L806-.L300
+	.byte	1,5,28,9
+	.half	.L301-.L806
+	.byte	3,1,1,5,9,9
+	.half	.L302-.L301
+	.byte	3,2,1,5,33,7,9
+	.half	.L807-.L302
+	.byte	3,2,1,5,36,9
+	.half	.L808-.L807
+	.byte	1,5,25,9
+	.half	.L809-.L808
+	.byte	1,5,22,9
+	.half	.L810-.L809
+	.byte	1,5,46,9
+	.half	.L811-.L810
+	.byte	1,5,38,9
+	.half	.L3-.L811
+	.byte	3,3,1,5,41,9
+	.half	.L812-.L3
+	.byte	1,5,36,9
+	.half	.L813-.L812
+	.byte	1,5,33,9
+	.half	.L814-.L813
+	.byte	1,5,17,9
+	.half	.L4-.L814
+	.byte	3,4,1,5,27,9
+	.half	.L815-.L4
+	.byte	1,5,1,9
+	.half	.L2-.L815
+	.byte	3,2,1,7,9
+	.half	.L147-.L2
+	.byte	0,1,1
+.L800:
+	.sdecl	'.debug_ranges',debug,cluster('markUB')
+	.sect	'.debug_ranges'
+.L146:
+	.word	-1,.L85,0,.L147-.L85,0,0
+	.sdecl	'.debug_info',debug,cluster('readUB')
+	.sect	'.debug_info'
+.L148:
+	.word	369
+	.half	3
+	.word	.L149
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L151,.L150
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'readUB',0,1,62,30
+	.word	.L176
+	.byte	1,1
+	.word	.L87,.L287,.L86
+	.byte	4
+	.byte	'pduUBOffset',0,1,62,44
+	.word	.L178,.L288
+	.byte	4
+	.byte	'frSduPtr',0,1,62,70
+	.word	.L275,.L289
+	.byte	5
+	.word	.L87,.L287
+	.byte	6
+	.byte	'dataByte',0,1,64,11
+	.word	.L159,.L290
+	.byte	6
+	.byte	'bytePos',0,1,65,11
+	.word	.L159,.L291
+	.byte	6
+	.byte	'bitPos',0,1,66,11
+	.word	.L159,.L292
+	.byte	6
+	.byte	'ret',0,1,67,27
+	.word	.L176,.L293
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('readUB')
+	.sect	'.debug_abbrev'
+.L149:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('readUB')
+	.sect	'.debug_line'
+.L150:
+	.word	.L817-.L816
+.L816:
+	.half	3
+	.word	.L819-.L818
+.L818:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L819:
+	.byte	5,5,7,0,5,2
+	.word	.L87
+	.byte	3,196,0,1,5,49,7,9
+	.half	.L820-.L87
+	.byte	3,1,1,5,47,9
+	.half	.L821-.L820
+	.byte	1,5,19,9
+	.half	.L822-.L821
+	.byte	1,5,40,9
+	.half	.L304-.L822
+	.byte	3,1,1,5,38,9
+	.half	.L823-.L304
+	.byte	1,5,28,9
+	.half	.L306-.L823
+	.byte	3,1,1,5,26,9
+	.half	.L307-.L306
+	.byte	3,1,1,5,29,9
+	.half	.L305-.L307
+	.byte	1,5,23,9
+	.half	.L824-.L305
+	.byte	1,5,9,9
+	.half	.L308-.L824
+	.byte	1,5,17,7,9
+	.half	.L825-.L308
+	.byte	3,1,1,5,30,9
+	.half	.L309-.L825
+	.byte	1,5,17,9
+	.half	.L6-.L309
+	.byte	3,2,1,5,11,9
+	.half	.L7-.L6
+	.byte	3,127,1,5,13,9
+	.half	.L5-.L7
+	.byte	3,5,1,5,5,9
+	.half	.L8-.L5
+	.byte	3,3,1,5,1,9
+	.half	.L9-.L8
+	.byte	3,1,1,7,9
+	.half	.L152-.L9
+	.byte	0,1,1
+.L817:
+	.sdecl	'.debug_ranges',debug,cluster('readUB')
+	.sect	'.debug_ranges'
+.L151:
+	.word	-1,.L87,0,.L152-.L87,0,0
+	.sdecl	'.debug_info',debug,cluster('getValidLength')
+	.sect	'.debug_info'
+.L153:
+	.word	363
+	.half	3
+	.word	.L154
+	.byte	4,1
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\AURIX-v1.10.40-workspace\\AS21\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L156,.L155
+	.byte	2
+	.word	.L104
+	.byte	3
+	.byte	'getValidLength',0,1,96,7
+	.word	.L159
+	.byte	1,1,1
+	.word	.L89,.L294,.L88
+	.byte	4
+	.byte	'rxPduLength',0,1,96,28
+	.word	.L159,.L295
+	.byte	4
+	.byte	'pduOffset',0,1,96,47
+	.word	.L159,.L296
+	.byte	4
+	.byte	'pduUBOffset',0,1,96,65
+	.word	.L178,.L297
+	.byte	4
+	.byte	'lSduLen',0,1,96,84
+	.word	.L159,.L298
+	.byte	5
+	.word	.L89,.L294
+	.byte	6
+	.byte	'len',0,1,98,11
+	.word	.L159,.L299
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('getValidLength')
+	.sect	'.debug_abbrev'
+.L154:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('getValidLength')
+	.sect	'.debug_line'
+.L155:
+	.word	.L827-.L826
+.L826:
+	.half	3
+	.word	.L829-.L828
+.L828:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../BSW/EcuAbstr/ComHwAb/FrIf/src/FrIf_Internal.c',0,0,0,0,0
+.L829:
+	.byte	5,20,7,0,5,2
+	.word	.L89
+	.byte	3,227,0,1,5,5,9
+	.half	.L830-.L89
+	.byte	1,5,26,7,9
+	.half	.L831-.L830
+	.byte	3,1,1,5,16,9
+	.half	.L10-.L831
+	.byte	3,1,1,5,54,7,9
+	.half	.L832-.L10
+	.byte	1,5,23,7,9
+	.half	.L833-.L832
+	.byte	3,3,1,5,34,9
+	.half	.L834-.L833
+	.byte	1,5,13,9
+	.half	.L12-.L834
+	.byte	3,2,1,5,5,9
+	.half	.L11-.L12
+	.byte	3,2,1,5,1,9
+	.half	.L15-.L11
+	.byte	3,1,1,7,9
+	.half	.L157-.L15
+	.byte	0,1,1
+.L827:
+	.sdecl	'.debug_ranges',debug,cluster('getValidLength')
+	.sect	'.debug_ranges'
+.L156:
+	.word	-1,.L89,0,.L157-.L89,0,0
+	.sdecl	'.debug_loc',debug,cluster('FrIf_Internal_HandleDecoupledTransmission')
+	.sect	'.debug_loc'
+.L90:
+	.word	-1,.L91,0,.L312-.L91
+	.half	2
+	.byte	138,0
+	.word	.L312-.L91,.L158-.L91
+	.half	3
+	.byte	138,136,2
+	.word	.L158-.L91,.L158-.L91
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L174:
+	.word	-1,.L91,.L318-.L91,.L158-.L91
+	.half	1
+	.byte	91
+	.word	0,0
+.L160:
+	.word	-1,.L91,0,.L18-.L91
+	.half	1
+	.byte	84
+	.word	0,0
+.L162:
+	.word	-1,.L91,0,.L18-.L91
+	.half	1
+	.byte	85
+	.word	.L313-.L91,.L158-.L91
+	.half	1
+	.byte	88
+	.word	0,0
+.L163:
+	.word	-1,.L91,0,.L18-.L91
+	.half	1
+	.byte	86
+	.word	0,0
+.L175:
+	.word	-1,.L91,.L316-.L91,.L317-.L91
+	.half	1
+	.byte	95
+	.word	0,0
+.L167:
+	.word	-1,.L91,.L315-.L91,.L158-.L91
+	.half	1
+	.byte	108
+	.word	0,0
+.L191:
+	.word	-1,.L91,.L335-.L91,.L336-.L91
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L28-.L91,.L27-.L91
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L169:
+	.word	-1,.L91,.L342-.L91,.L343-.L91
+	.half	1
+	.byte	111
+	.word	0,0
+.L180:
+	.word	-1,.L91,.L321-.L91,.L322-.L91
+	.half	1
+	.byte	93
+	.word	.L17-.L91,.L341-.L91
+	.half	1
+	.byte	93
+	.word	.L341-.L91,.L346-.L91
+	.half	1
+	.byte	82
+	.word	.L34-.L91,.L32-.L91
+	.half	1
+	.byte	82
+	.word	0,0
+.L181:
+	.word	-1,.L91,.L327-.L91,.L328-.L91
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L22-.L91,.L30-.L91
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L348-.L91,.L34-.L91
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L171:
+	.word	-1,.L91,.L325-.L91,.L326-.L91
+	.half	1
+	.byte	100
+	.word	.L22-.L91,.L339-.L91
+	.half	1
+	.byte	100
+	.word	.L347-.L91,.L34-.L91
+	.half	1
+	.byte	100
+	.word	0,0
+.L186:
+	.word	-1,.L91,0,.L158-.L91
+	.half	3
+	.byte	145,248,125
+	.word	0,0
+.L189:
+	.word	-1,.L91,.L314-.L91,.L158-.L91
+	.half	1
+	.byte	89
+	.word	0,0
+.L182:
+	.word	-1,.L91,.L329-.L91,.L17-.L91
+	.half	1
+	.byte	90
+	.word	0,0
+.L177:
+	.word	-1,.L91,.L320-.L91,.L158-.L91
+	.half	1
+	.byte	92
+	.word	0,0
+.L179:
+	.word	-1,.L91,.L330-.L91,.L17-.L91
+	.half	1
+	.byte	94
+	.word	.L333-.L91,.L324-.L91
+	.half	1
+	.byte	84
+	.word	.L337-.L91,.L26-.L91
+	.half	1
+	.byte	84
+	.word	.L340-.L91,.L30-.L91
+	.half	1
+	.byte	84
+	.word	0,0
+.L183:
+	.word	-1,.L91,.L332-.L91,.L23-.L91
+	.half	1
+	.byte	81
+	.word	.L22-.L91,.L30-.L91
+	.half	1
+	.byte	81
+	.word	.L349-.L91,.L34-.L91
+	.half	1
+	.byte	81
+	.word	0,0
+.L184:
+	.word	-1,.L91,.L323-.L91,.L324-.L91
+	.half	1
+	.byte	82
+	.word	.L25-.L91,.L26-.L91
+	.half	1
+	.byte	82
+	.word	.L22-.L91,.L30-.L91
+	.half	1
+	.byte	82
+	.word	.L345-.L91,.L341-.L91
+	.half	1
+	.byte	82
+	.word	0,0
+.L188:
+	.word	-1,.L91,0,.L158-.L91
+	.half	3
+	.byte	145,128,126
+	.word	0,0
+.L173:
+	.word	-1,.L91,.L319-.L91,.L158-.L91
+	.half	1
+	.byte	109
+	.word	.L334-.L91,.L324-.L91
+	.half	1
+	.byte	100
+	.word	.L338-.L91,.L26-.L91
+	.half	1
+	.byte	100
+	.word	.L339-.L91,.L30-.L91
+	.half	1
+	.byte	100
+	.word	.L344-.L91,.L345-.L91
+	.half	1
+	.byte	100
+	.word	0,0
+.L165:
+	.word	-1,.L91,.L331-.L91,.L23-.L91
+	.half	1
+	.byte	101
+	.word	.L22-.L91,.L30-.L91
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('FrIf_Internal_HandleReceiveAndIndicate')
+	.sect	'.debug_loc'
+.L252:
+	.word	-1,.L97,0,.L230-.L97
+	.half	3
+	.byte	145,242,125
+	.word	0,0
+.L253:
+	.word	-1,.L97,0,.L230-.L97
+	.half	3
+	.byte	145,244,125
+	.word	0,0
+.L240:
+	.word	-1,.L97,.L59-.L97,.L394-.L97
+	.half	1
+	.byte	92
+	.word	.L425-.L97,.L230-.L97
+	.half	1
+	.byte	92
+	.word	0,0
+.L96:
+	.word	-1,.L97,0,.L387-.L97
+	.half	2
+	.byte	138,0
+	.word	.L387-.L97,.L230-.L97
+	.half	3
+	.byte	138,152,2
+	.word	.L230-.L97,.L230-.L97
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L248:
+	.word	-1,.L97,.L390-.L97,.L230-.L97
+	.half	1
+	.byte	90
+	.word	.L424-.L97,.L70-.L97
+	.half	1
+	.byte	84
+	.word	0,0
+.L231:
+	.word	-1,.L97,0,.L59-.L97
+	.half	1
+	.byte	84
+	.word	0,0
+.L232:
+	.word	-1,.L97,0,.L59-.L97
+	.half	1
+	.byte	85
+	.word	.L397-.L97,.L398-.L97
+	.half	1
+	.byte	88
+	.word	0,0
+.L247:
+	.word	-1,.L97,0,.L230-.L97
+	.half	3
+	.byte	145,240,125
+	.word	0,0
+.L233:
+	.word	-1,.L97,0,.L59-.L97
+	.half	1
+	.byte	86
+	.word	0,0
+.L242:
+	.word	-1,.L97,.L389-.L97,.L59-.L97
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L235:
+	.word	-1,.L97,.L388-.L97,.L230-.L97
+	.half	1
+	.byte	108
+	.word	0,0
+.L234:
+	.word	-1,.L97,0,.L59-.L97
+	.half	1
+	.byte	87
+	.word	.L73-.L97,.L71-.L97
+	.half	1
+	.byte	89
+	.word	0,0
+.L236:
+	.word	-1,.L97,.L392-.L97,.L59-.L97
+	.half	1
+	.byte	111
+	.word	.L393-.L97,.L230-.L97
+	.half	2
+	.byte	145,124
+	.word	.L395-.L97,.L396-.L97
+	.half	1
+	.byte	111
+	.word	0,0
+.L245:
+	.word	-1,.L97,.L401-.L97,.L402-.L97
+	.half	1
+	.byte	93
+	.word	.L62-.L97,.L60-.L97
+	.half	1
+	.byte	93
+	.word	.L69-.L97,.L71-.L97
+	.half	1
+	.byte	93
+	.word	0,0
+.L237:
+	.word	-1,.L97,.L403-.L97,.L404-.L97
+	.half	1
+	.byte	111
+	.word	.L405-.L97,.L62-.L97
+	.half	2
+	.byte	145,116
+	.word	.L422-.L97,.L423-.L97
+	.half	1
+	.byte	111
+	.word	0,0
+.L243:
+	.word	-1,.L97,0,.L230-.L97
+	.half	3
+	.byte	145,232,125
+	.word	0,0
+.L250:
+	.word	-1,.L97,.L413-.L97,.L415-.L97
+	.half	1
+	.byte	82
+	.word	.L416-.L97,.L417-.L97
+	.half	1
+	.byte	95
+	.word	0,0
+.L246:
+	.word	-1,.L97,.L406-.L97,.L62-.L97
+	.half	1
+	.byte	91
+	.word	.L412-.L97,.L413-.L97
+	.half	1
+	.byte	85
+	.word	0,0
+.L241:
+	.word	-1,.L97,.L407-.L97,.L62-.L97
+	.half	1
+	.byte	94
+	.word	.L414-.L97,.L413-.L97
+	.half	1
+	.byte	86
+	.word	.L418-.L97,.L415-.L97
+	.half	1
+	.byte	84
+	.word	0,0
+.L244:
+	.word	-1,.L97,.L400-.L97,.L63-.L97
+	.half	1
+	.byte	82
+	.word	.L60-.L97,.L70-.L97
+	.half	1
+	.byte	82
+	.word	0,0
+.L249:
+	.word	-1,.L97,0,.L230-.L97
+	.half	3
+	.byte	145,241,125
+	.word	0,0
+.L238:
+	.word	-1,.L97,.L408-.L97,.L62-.L97
+	.half	1
+	.byte	110
+	.word	0,0
+.L251:
+	.word	-1,.L97,.L391-.L97,.L59-.L97
+	.half	1
+	.byte	109
+	.word	.L254-.L97,.L230-.L97
+	.half	2
+	.byte	145,120
+	.word	.L398-.L97,.L399-.L97
+	.half	1
+	.byte	109
+	.word	.L399-.L97,.L400-.L97
+	.half	1
+	.byte	100
+	.word	.L409-.L97,.L410-.L97
+	.half	1
+	.byte	109
+	.word	.L411-.L97,.L64-.L97
+	.half	1
+	.byte	111
+	.word	.L418-.L97,.L419-.L97
+	.half	1
+	.byte	109
+	.word	.L419-.L97,.L415-.L97
+	.half	1
+	.byte	100
+	.word	.L420-.L97,.L421-.L97
+	.half	1
+	.byte	111
+	.word	0,0
+.L255:
+	.word	-1,.L97,0,.L230-.L97
+	.half	3
+	.byte	145,246,125
+	.word	0,0
+.L239:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('FrIf_Internal_HandleReceiveAndStore')
+	.sect	'.debug_loc'
+.L94:
+	.word	-1,.L95,0,.L362-.L95
+	.half	2
+	.byte	138,0
+	.word	.L362-.L95,.L206-.L95
+	.half	3
+	.byte	138,128,2
+	.word	.L206-.L95,.L206-.L95
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L224:
+	.word	-1,.L95,.L363-.L95,.L364-.L95
+	.half	1
+	.byte	84
+	.word	0,0
+.L207:
+	.word	-1,.L95,0,.L363-.L95
+	.half	1
+	.byte	84
+	.word	0,0
+.L208:
+	.word	-1,.L95,0,.L364-.L95
+	.half	1
+	.byte	85
+	.word	0,0
+.L220:
+	.word	-1,.L95,0,.L206-.L95
+	.half	3
+	.byte	145,128,126
+	.word	0,0
+.L209:
+	.word	-1,.L95,0,.L364-.L95
+	.half	1
+	.byte	86
+	.word	0,0
+.L221:
+	.word	-1,.L95,.L366-.L95,.L364-.L95
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L210:
+	.word	-1,.L95,.L365-.L95,.L206-.L95
+	.half	1
+	.byte	108
+	.word	0,0
+.L211:
+	.word	-1,.L95,.L367-.L95,.L364-.L95
+	.half	1
+	.byte	98
+	.word	0,0
+.L223:
+	.word	-1,.L95,.L370-.L95,.L371-.L95
+	.half	1
+	.byte	90
+	.word	.L53-.L95,.L51-.L95
+	.half	1
+	.byte	90
+	.word	0,0
+.L216:
+	.word	-1,.L95,.L376-.L95,.L53-.L95
+	.half	1
+	.byte	88
+	.word	0,0
+.L212:
+	.word	-1,.L95,.L372-.L95,.L373-.L95
+	.half	1
+	.byte	111
+	.word	0,0
+.L226:
+	.word	-1,.L95,.L381-.L95,.L383-.L95
+	.half	1
+	.byte	82
+	.word	.L384-.L95,.L53-.L95
+	.half	1
+	.byte	91
+	.word	0,0
+.L218:
+	.word	-1,.L95,.L374-.L95,.L375-.L95
+	.half	1
+	.byte	95
+	.word	.L380-.L95,.L381-.L95
+	.half	1
+	.byte	85
+	.word	0,0
+.L217:
+	.word	-1,.L95,.L377-.L95,.L53-.L95
+	.half	1
+	.byte	89
+	.word	.L382-.L95,.L381-.L95
+	.half	1
+	.byte	86
+	.word	.L385-.L95,.L383-.L95
+	.half	1
+	.byte	84
+	.word	0,0
+.L222:
+	.word	-1,.L95,.L364-.L95,.L54-.L95
+	.half	1
+	.byte	82
+	.word	0,0
+.L225:
+	.word	-1,.L95,0,.L206-.L95
+	.half	3
+	.byte	145,129,126
+	.word	0,0
+.L214:
+	.word	-1,.L95,.L378-.L95,.L379-.L95
+	.half	1
+	.byte	111
+	.word	0,0
+.L227:
+	.word	-1,.L95,.L368-.L95,.L206-.L95
+	.half	1
+	.byte	109
+	.word	0,0
+.L229:
+	.word	-1,.L95,0,.L206-.L95
+	.half	3
+	.byte	145,130,126
+	.word	0,0
+.L215:
+	.word	-1,.L95,.L228-.L95,.L206-.L95
+	.half	1
+	.byte	110
+	.word	.L369-.L95,.L364-.L95
+	.half	1
+	.byte	100
+	.word	.L386-.L95,.L383-.L95
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('FrIf_Internal_PrepareLPdu')
+	.sect	'.debug_loc'
+.L100:
+	.word	-1,.L101,0,.L269-.L101
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L273:
+	.word	-1,.L101,.L440-.L101,.L81-.L101
+	.half	1
+	.byte	84
+	.word	0,0
+.L270:
+	.word	-1,.L101,0,.L440-.L101
+	.half	1
+	.byte	84
+	.word	0,0
+.L271:
+	.word	-1,.L101,0,.L81-.L101
+	.half	1
+	.byte	85
+	.word	0,0
+.L272:
+	.word	-1,.L101,.L441-.L101,.L442-.L101
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('FrIf_Internal_ProvideRxIndication')
+	.sect	'.debug_loc'
+.L98:
+	.word	-1,.L99,0,.L426-.L99
+	.half	2
+	.byte	138,0
+	.word	.L426-.L99,.L256-.L99
+	.half	2
+	.byte	138,8
+	.word	.L256-.L99,.L256-.L99
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L257:
+	.word	-1,.L99,0,.L76-.L99
+	.half	1
+	.byte	84
+	.word	0,0
+.L258:
+	.word	-1,.L99,0,.L76-.L99
+	.half	1
+	.byte	85
+	.word	0,0
+.L259:
+	.word	-1,.L99,0,.L76-.L99
+	.half	1
+	.byte	86
+	.word	0,0
+.L264:
+	.word	-1,.L99,.L428-.L99,.L429-.L99
+	.half	1
+	.byte	95
+	.word	0,0
+.L260:
+	.word	-1,.L99,.L427-.L99,.L256-.L99
+	.half	1
+	.byte	108
+	.word	0,0
+.L268:
+	.word	-1,.L99,.L431-.L99,.L432-.L99
+	.half	1
+	.byte	88
+	.word	.L75-.L99,.L256-.L99
+	.half	1
+	.byte	88
+	.word	0,0
+.L265:
+	.word	-1,.L99,.L435-.L99,.L75-.L99
+	.half	1
+	.byte	89
+	.word	0,0
+.L261:
+	.word	-1,.L99,.L433-.L99,.L434-.L99
+	.half	1
+	.byte	100
+	.word	0,0
+.L267:
+	.word	-1,.L99,0,.L256-.L99
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L266:
+	.word	-1,.L99,.L436-.L99,.L437-.L99
+	.half	1
+	.byte	95
+	.word	0,0
+.L262:
+	.word	-1,.L99,.L438-.L99,.L439-.L99
+	.half	1
+	.byte	101
+	.word	0,0
+.L263:
+	.word	-1,.L99,.L430-.L99,.L256-.L99
+	.half	1
+	.byte	109
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('FrIf_Internal_ProvideTxConfirmation')
+	.sect	'.debug_loc'
+.L92:
+	.word	-1,.L93,0,.L350-.L93
+	.half	2
+	.byte	138,0
+	.word	.L350-.L93,.L192-.L93
+	.half	2
+	.byte	138,8
+	.word	.L192-.L93,.L192-.L93
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L200:
+	.word	-1,.L93,.L351-.L93,.L352-.L93
+	.half	1
+	.byte	84
+	.word	0,0
+.L193:
+	.word	-1,.L93,0,.L351-.L93
+	.half	1
+	.byte	84
+	.word	0,0
+.L194:
+	.word	-1,.L93,0,.L352-.L93
+	.half	1
+	.byte	85
+	.word	0,0
+.L205:
+	.word	-1,.L93,0,.L192-.L93
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L195:
+	.word	-1,.L93,0,.L352-.L93
+	.half	1
+	.byte	86
+	.word	0,0
+.L197:
+	.word	-1,.L93,.L353-.L93,.L192-.L93
+	.half	1
+	.byte	108
+	.word	0,0
+.L198:
+	.word	-1,.L93,.L354-.L93,.L355-.L93
+	.half	1
+	.byte	111
+	.word	0,0
+.L201:
+	.word	-1,.L93,.L356-.L93,.L357-.L93
+	.half	1
+	.byte	88
+	.word	.L42-.L93,.L40-.L93
+	.half	1
+	.byte	88
+	.word	0,0
+.L202:
+	.word	-1,.L93,.L359-.L93,.L42-.L93
+	.half	1
+	.byte	89
+	.word	0,0
+.L199:
+	.word	-1,.L93,.L358-.L93,.L47-.L93
+	.half	1
+	.byte	101
+	.word	0,0
+.L203:
+	.word	-1,.L93,.L352-.L93,.L43-.L93
+	.half	1
+	.byte	82
+	.word	0,0
+.L196:
+	.word	-1,.L93,.L360-.L93,.L361-.L93
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('FrIf_Internal_SwapToBigEndian')
+	.sect	'.debug_loc'
+.L102:
+	.word	-1,.L103,0,.L274-.L103
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L277:
+	.word	-1,.L103,0,.L274-.L103
+	.half	1
+	.byte	101
+	.word	0,0
+.L279:
+	.word	-1,.L103,.L443-.L103,.L444-.L103
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L82-.L103,.L274-.L103
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L278:
+	.word	-1,.L103,0,.L274-.L103
+	.half	1
+	.byte	84
+	.word	0,0
+.L276:
+	.word	-1,.L103,0,.L274-.L103
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('getValidLength')
+	.sect	'.debug_loc'
+.L88:
+	.word	-1,.L89,0,.L294-.L89
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L298:
+	.word	-1,.L89,0,.L310-.L89
+	.half	1
+	.byte	87
+	.word	.L12-.L89,.L11-.L89
+	.half	1
+	.byte	87
+	.word	0,0
+.L299:
+	.word	-1,.L89,0,.L294-.L89
+	.half	1
+	.byte	84
+	.word	.L311-.L89,.L294-.L89
+	.half	1
+	.byte	82
+	.word	0,0
+.L296:
+	.word	-1,.L89,0,.L294-.L89
+	.half	1
+	.byte	85
+	.word	0,0
+.L297:
+	.word	-1,.L89,0,.L294-.L89
+	.half	1
+	.byte	86
+	.word	0,0
+.L295:
+	.word	-1,.L89,0,.L294-.L89
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('markUB')
+	.sect	'.debug_loc'
+.L286:
+	.word	-1,.L85,.L301-.L85,.L2-.L85
+	.half	1
+	.byte	83
+	.word	0,0
+.L285:
+	.word	-1,.L85,.L300-.L85,.L2-.L85
+	.half	1
+	.byte	95
+	.word	0,0
+.L284:
+	.word	-1,.L85,.L302-.L85,.L303-.L85
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L4-.L85,.L2-.L85
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L283:
+	.word	-1,.L85,0,.L280-.L85
+	.half	1
+	.byte	100
+	.word	0,0
+.L84:
+	.word	-1,.L85,0,.L280-.L85
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L281:
+	.word	-1,.L85,0,.L280-.L85
+	.half	1
+	.byte	84
+	.word	0,0
+.L282:
+	.word	-1,.L85,0,.L280-.L85
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('readUB')
+	.sect	'.debug_loc'
+.L292:
+	.word	-1,.L87,.L306-.L87,.L5-.L87
+	.half	1
+	.byte	83
+	.word	0,0
+.L291:
+	.word	-1,.L87,.L304-.L87,.L305-.L87
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L290:
+	.word	-1,.L87,.L307-.L87,.L308-.L87
+	.half	1
+	.byte	95
+	.word	0,0
+.L289:
+	.word	-1,.L87,0,.L287-.L87
+	.half	1
+	.byte	100
+	.word	0,0
+.L288:
+	.word	-1,.L87,0,.L287-.L87
+	.half	1
+	.byte	84
+	.word	0,0
+.L86:
+	.word	-1,.L87,0,.L287-.L87
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L293:
+	.word	-1,.L87,.L309-.L87,.L6-.L87
+	.half	1
+	.byte	82
+	.word	.L7-.L87,.L5-.L87
+	.half	1
+	.byte	82
+	.word	.L8-.L87,.L287-.L87
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L835:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('markUB')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L835,.L85,.L280-.L85
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('readUB')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L835,.L87,.L287-.L87
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('getValidLength')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L835,.L89,.L294-.L89
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('FrIf_Internal_HandleDecoupledTransmission')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L835,.L91,.L158-.L91
+	.byte	4
+	.word	(.L312-.L91)/2
+	.byte	19,136,2,22,26,4,19,138,136,2,4
+	.word	(.L158-.L312)/2
+	.byte	19,0,8,26
+	.sdecl	'.debug_frame',debug,cluster('FrIf_Internal_ProvideTxConfirmation')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L835,.L93,.L192-.L93
+	.byte	4
+	.word	(.L350-.L93)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L192-.L350)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('FrIf_Internal_HandleReceiveAndStore')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L835,.L95,.L206-.L95
+	.byte	4
+	.word	(.L362-.L95)/2
+	.byte	19,128,2,22,26,4,19,138,128,2,4
+	.word	(.L206-.L362)/2
+	.byte	19,0,8,26
+	.sdecl	'.debug_frame',debug,cluster('FrIf_Internal_HandleReceiveAndIndicate')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L835,.L97,.L230-.L97
+	.byte	4
+	.word	(.L387-.L97)/2
+	.byte	19,152,2,22,26,4,19,138,152,2,4
+	.word	(.L230-.L387)/2
+	.byte	19,0,8,26
+	.sdecl	'.debug_frame',debug,cluster('FrIf_Internal_ProvideRxIndication')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L835,.L99,.L256-.L99
+	.byte	4
+	.word	(.L426-.L99)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L256-.L426)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('FrIf_Internal_PrepareLPdu')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L835,.L101,.L269-.L101
+	.sdecl	'.debug_frame',debug,cluster('FrIf_Internal_SwapToBigEndian')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L835,.L103,.L274-.L103
+	.byte	8,19,8,22,8,23,0,0
+	; Module end
